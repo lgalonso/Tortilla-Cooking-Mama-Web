@@ -16,7 +16,7 @@ aside{
 nav{
 	background-color:#FFFFFF;
 }
-.contmenu{
+.contmenu{(/*menu de continentes*/
 	padding:10px;
 	margin:10px;
 	flex:1;
