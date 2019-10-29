@@ -2,13 +2,14 @@ main{
 	display:inline;
 	display:flex;
 	justify-content:center;
+	justify-content:space-between;
 	flex-direction:row;
 }
 section{
 	display:inline-block;
 	font-size: 2em;
 	text-align: center;
-	/*width: 40%;*/
+	width: 45%;
 	padding: 10px;
 	margin: 10px;
 	background-color: #04B486;
