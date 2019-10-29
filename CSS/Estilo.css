@@ -25,7 +25,7 @@ nav{
 	text-align:center;
 	font-size:3em;
 }
-#menu{/*menu de continetes*/
+#menu{/*menu de continentes*/
 		display:flex;
 	flex-direction:row;
 	justify-content:center;
