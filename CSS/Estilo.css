@@ -3,6 +3,7 @@ main{
 }
 section{
 	display:block;
+	font-size: 2em;
 }
 aside{
 	border:5px solid black;
@@ -16,7 +17,7 @@ aside{
 nav{
 	background-color:#FFFFFF;
 }
-.contmenu{(/*menu de continentes*/
+.contmenu{/*menu de continentes*/
 	padding:10px;
 	margin:10px;
 	flex:1;
