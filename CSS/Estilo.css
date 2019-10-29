@@ -2,7 +2,7 @@ main{
 	display:inline;
 }
 section{
-	display:inline;
+	display:block;
 }
 aside{
 	border:5px solid black;
