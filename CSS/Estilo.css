@@ -5,6 +5,16 @@ main{
 	justify-content:space-between;
 	flex-direction:row;
 }
+#menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style-type: none;
+	align-content: center;
+
+
+}
+
 section{
 	display:inline-block;
 	font-size: 2em;
@@ -31,6 +41,12 @@ aside{
 nav{
 	background-color:#FFFFFF;
 }
+.supmenu{/* cada elemento del menu de continentes*/
+	padding:10px;
+	margin:10px;
+	font-size:1em;
+}
+
 .contmenu{/* cada elemento del menu de continentes*/
 	padding:10px;
 	margin:10px;
@@ -39,7 +55,7 @@ nav{
 	font-size:3em;
 }
 #navmenu{/*menu de continentes*/
-		display:flex;
+	display:flex;
 	flex-direction:row;
 	justify-content:center;
 	align-items:center;
