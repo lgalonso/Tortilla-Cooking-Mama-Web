@@ -1,9 +1,5 @@
-main{
-	display:inline;
-	display:flex;
-	justify-content:center;
-	justify-content:space-between;
-	flex-direction:row;
+body{
+	background:#e6e6e6;
 }
 #menu{
 	display: flex;
@@ -11,10 +7,96 @@ main{
 	justify-content: flex-end;
 	list-style-type: none;
 	align-content: center;
-
-
+}
+.supmenu{/* cada elemento del menu de superior*/
+	padding:10px;
+	margin:10px;
+	font-size:1em;
+}
+/*MENU CONTINENTES*/
+header{
+	width:90%;
+	max-width:1600px;
+	margin:auto;
+}
+nav{
+	background-color:#528fd5;
+	position:relative;
+	margin-top:20px;
 }
 
+nav ul{
+	list-style:none;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	display:flex;
+}	
+nav > ul > li{
+	float:left;
+	flex:1;
+	justify-content:center;
+	text-align:center;
+	font-size:18pt;
+}
+nav ul li a{
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding:10px 20px;
+}
+nav ul li a:hover {
+	background:#3669a3;
+}
+nav > ul > li:hover div{
+	display:table;
+}
+/*SUBMENU*/
+nav ul li div{
+	width:1600px;
+	position:absolute;
+	left:0;
+	background:#ccc;
+	box-sizing:border-box;
+	display:none;
+}
+nav ul li div ul{
+	width:20%;
+	display:table-cell;
+	border-right:1px solid rgba(255,255,255,.5);
+	box-sizing:border-box;
+}
+nav ul li div ul:last-child {
+	border:none;
+}
+nav ul li div ul .titulosub {
+	background:#000;
+	color:#fff;
+}
+nav ul li div ul .titulosub a {
+	color:#fff;
+	padding:10px 20px;
+}
+.titulosub.azul {background:#3498db;}
+.titulosub.verde {background:#27ae60;}
+.titulosub.rojo {background:#c0392b; color;#000;}
+nav ul li div ul .titulosub a:hover {
+	background:none;
+}
+nav ul li div ul li a {
+	color:#000;
+}
+nav ul li div ul li a:hover {
+	color:#fff;
+}
+/*FIN SUBMENU*/
+main{
+	display:inline;
+	display:flex;
+	justify-content:center;
+	justify-content:space-between;
+	flex-direction:row;
+}
 section{
 	display:inline-block;
 	font-size: 2em;
@@ -28,7 +110,6 @@ section{
 	flex-wrap: wrap;
 
 }
-
 aside{
 	border:5px solid black;
 	padding:10px;
@@ -38,45 +119,8 @@ aside{
 	float:right;
 	text-align:center;
     }
-nav{
-	background-color:#FFFFFF;
-}
-.supmenu{/* cada elemento del menu de continentes*/
-	padding:10px;
-	margin:10px;
-	font-size:1em;
-}
 
-.contmenu{/* cada elemento del menu de continentes*/
-	padding:10px;
-	margin:10px;
-	flex:1;
-	text-align:center;
-	font-size:3em;
-}
-#navmenu{/*menu de continentes*/
-	display:flex;
-	flex-direction:row;
-	justify-content:center;
-	align-items:center;
-	list-style-type:none;
-	border-color:black;
-	border:6px solid black;
-}
-a{
-	display:block;
-	text-decoration:none;
-	background-color:#FFFFFF;
-}
-a:link{
-	color:#000000;
-}
-a:hover{
-	background-color:#E2A9F3;
-}
-a:visited{
-	color:#000000;
-}
-a:active{
-    background-color:red;
-}
+
+
+
+
