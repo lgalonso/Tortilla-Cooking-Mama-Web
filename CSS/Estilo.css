@@ -16,7 +16,7 @@ body{
 
 /*SLIDESHOW*/
 
-*{
+#slideshow *{
 	padding:0px;
 	margin:0px;
 }
