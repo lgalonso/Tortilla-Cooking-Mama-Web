@@ -14,6 +14,44 @@ body{
 	font-size:1em;
 }
 
+/*SLIDESHOW*/
+
+*{
+	padding:0px;
+	margin:0px;
+}
+#slideshow img {
+	width:700px;
+	height:500px;
+}
+#slideshow {
+	width:700px;
+	margin: 30px auto;
+	overflow:hidden;
+}
+#slideshow ul {
+	list-style:none;
+	width:2800px;
+	display:flex;
+	animation:slide 20s infinite alternate;
+}
+@keyframes slide{
+	0%{margin-left:0px;}
+	0%{margin-left:0px;}
+	20%{margin-left:0px;}
+	
+	25%{margin-left:-700px;}
+	45%{margin-left:-700px;}
+	
+	50%{margin-left:-1400px;}
+	70%{margin-left:-1400px;}
+	
+	75%{margin-left:-2100px;}
+	100%{margin-left:-2100px;}
+}
+
+/*FIN SLIDESHOW*/
+
 /*MENU CONTINENTES*/
 
 header{
