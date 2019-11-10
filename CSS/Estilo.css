@@ -1,19 +1,21 @@
 body{
 	background:#e6e6e6;
 }
-#menu{
+#menu{ /*menu superior derecho*/
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	list-style-type: none;
 	align-content: center;
 }
-.supmenu{/* cada elemento del menu de superior*/
+.supmenu{/* cada elemento del menu de superior derecho*/
 	padding:10px;
 	margin:10px;
 	font-size:1em;
 }
+
 /*MENU CONTINENTES*/
+
 header{
 	width:90%;
 	max-width:1600px;
@@ -51,7 +53,9 @@ nav ul li a:hover {
 nav > ul > li:hover div{
 	display:table;
 }
+
 /*SUBMENU*/
+
 nav ul li div{
 	width:1600px;
 	position:absolute;
@@ -89,7 +93,9 @@ nav ul li div ul li a {
 nav ul li div ul li a:hover {
 	color:#fff;
 }
+
 /*FIN SUBMENU*/
+
 main{
 	display:inline;
 	display:flex;
