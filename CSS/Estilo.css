@@ -1,32 +1,41 @@
 body{
 	background:#e6e6e6;
 }
-h1{
+
+/*BARRA SUPERIOR*/
+
+#topbar{
+	display:flex;
+}
+
+/*TITULO*/
+
+#topbar h1{
 	text-align:center;
 	color:green;
 	font-size:42px;
 	font-family:Courier,arial,helvetica,sans-serif;
-	display:inline;
+	display:inline-block;
+	justify-content:center;
+	margin-left:43%;
 }
-#topbar{
-	display:inline;
+
+/*MENU SUPERIOR DERECHO*/
+
+#topbar ul{ 
+	display:inline-block;
 	display:flex;
+	list-style:none;
+	margin-left: 20%;
 }
-#topbar ul{
+#topbar ul li{  /* cada elemento del menu de superior derecho*/
 	flex-wrap:no-wrap;
-}
-#menu{ /*menu superior derecho*/
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	list-style-type: none;
-	align-content: center;
-}
-.supmenu{/* cada elemento del menu de superior derecho*/
 	padding:10px;
 	margin:10px;
 	font-size:1em;
 }
+
+/*FIN BARRA SUPERIOR*/
 
 /*SLIDESHOW*/
 
@@ -146,7 +155,7 @@ nav ul li div ul li a:hover {
 	color:#fff;
 }
 
-/*FIN SUBMENU*/
+/*FIN MENU CONTINENTES*/
 
 main{
 	display:inline;
