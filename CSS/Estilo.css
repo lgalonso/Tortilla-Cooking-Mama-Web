@@ -22,17 +22,19 @@ body{
 
 /*MENU SUPERIOR DERECHO*/
 
-#topbar ul{ 
+#topbar > ul{ 
 	display:inline-block;
 	display:flex;
-	list-style:none;
 	margin-left: 15%;
 }
-#topbar ul li{  /* cada elemento del menu de superior derecho*/
+#topbar > ul > li{  /* cada elemento del menu de superior derecho*/
 	flex-wrap:no-wrap;
 	padding:6px;
 	margin:6px;
 	font-size:1em;
+}
+#topbar ul li{
+	list-style:none;
 }
 #topbar ul li img{  /*logo bandera idioma*/
 	width:1.4em;
@@ -44,6 +46,22 @@ body{
 }
 #topbar ul li a:hover{
 	color:blue;
+}
+#topbar > ul > li:hover div{
+	display:table;
+}
+
+/*SUBMENUS SUPERIOR DERECHA*/
+
+#topbar ul li div{
+	position:absolute;
+	background:#ccc;
+	box-sizing:border-box;
+	display:none;
+}
+#topbar ul li div ul{
+	display:table-cell;
+	box-sizing:border-box;
 }
 
 /*FIN BARRA SUPERIOR*/
@@ -126,7 +144,7 @@ nav > ul > li:hover div{
 	display:table;
 }
 
-/*SUBMENU*/
+/*SUBMENU CONTINENTES*/
 
 nav ul li div{
 	width:1600px;
