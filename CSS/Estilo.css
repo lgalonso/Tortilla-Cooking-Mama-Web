@@ -26,13 +26,24 @@ body{
 	display:inline-block;
 	display:flex;
 	list-style:none;
-	margin-left: 20%;
+	margin-left: 15%;
 }
 #topbar ul li{  /* cada elemento del menu de superior derecho*/
 	flex-wrap:no-wrap;
-	padding:10px;
-	margin:10px;
+	padding:6px;
+	margin:6px;
 	font-size:1em;
+}
+#topbar ul li img{  /*logo bandera idioma*/
+	width:1.4em;
+	height:1em;
+}
+#topbar ul li a{
+	text-decoration:none;
+	color:black;
+}
+#topbar ul li a:hover{
+	color:blue;
 }
 
 /*FIN BARRA SUPERIOR*/
