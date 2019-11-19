@@ -25,7 +25,7 @@ body{
 #topbar > ul{ 
 	display:inline-block;
 	display:flex;
-	margin-left: 15%;
+	margin-left: 18%;
 }
 #topbar > ul > li{  /* cada elemento del menu de superior derecho*/
 	flex-wrap:no-wrap;
