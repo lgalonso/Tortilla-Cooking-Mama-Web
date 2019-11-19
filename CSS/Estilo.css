@@ -10,7 +10,7 @@ body{
 
 /*TITULO*/
 
-#topbar h1{
+#topbar h1{/*Todos los h1 por debajo de topbar */
 	text-align:center;
 	color:green;
 	font-size:42px;
@@ -150,8 +150,8 @@ nav > ul > li:hover div{
 
 /*SUBMENU CONTINENTES*/
 
-nav ul li div{
-	width:90%;
+nav ul li div{/*Cada uno de los submenus de continentes */
+	width:100%;
 	max-width:1600px;
 	position:absolute;
 	left:0;
@@ -159,34 +159,42 @@ nav ul li div{
 	box-sizing:border-box;
 	display:none;
 }
-nav ul li div ul{
+nav ul li div ul{/*Cada una de las categorías de los submenus*/
 	width:20%;
 	display:table-cell;
-	border-right:1px solid rgba(255,255,255,.5);
-	box-sizing:border-box;
+	/*Borde de serparación entre los apartados del submenu*/
+	border-right:1px solid rgba(255,255,255,.5);/*valores rgb y opacidad*/
+	/*box-sizing:border-box;*/
 }
-nav ul li div ul:last-child {
+nav ul li div ul:last-child {/*A la última categoría de los submenus le elimina el borde,
+ esto es para evitar que haya una línea de pixeles blancos al final*/
 	border:none;
 }
-nav ul li div ul .titulosub {
+
+nav ul li div ul .titulosub {/*Estilo por defecto de los títulos del submenu*/
 	background:#000;
 	color:#fff;
 }
-nav ul li div ul .titulosub a {
+nav ul li div ul .titulosub a {/*Estilo de los títulos del submenu*/
 	color:#fff;
 	padding:10px 20px;
 }
+
 .titulosub.azul {background:#3498db;}
 .titulosub.verde {background:#27ae60;}
-.titulosub.rojo {background:#c0392b; color;#000;}
-nav ul li div ul .titulosub a:hover {
+.titulosub.rojo {background:#c0392b;}
+
+nav ul li div ul .titulosub a:hover {/*Referencia a los titulos de los diferentes submenus*/
 	background:none;
 }
-nav ul li div ul li a {
+
+nav ul li div ul li a {/*Estilos de los links del contenido de los submenus, 
+	color de la letra cuando no se está haciendo hover sobre ella.*/
 	color:#000;
 }
-nav ul li div ul li a:hover {
+nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 	color:#fff;
+	background-color: coral;
 }
 
 /*FIN MENU CONTINENTES*/
