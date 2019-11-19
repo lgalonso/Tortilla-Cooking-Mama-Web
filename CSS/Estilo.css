@@ -151,7 +151,7 @@ nav > ul > li:hover div{
 /*SUBMENU CONTINENTES*/
 
 nav ul li div{
-	width:90%;
+	width:100%;
 	max-width:1600px;
 	position:absolute;
 	left:0;
