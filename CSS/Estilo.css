@@ -13,7 +13,7 @@ body{
 #topbar h1{/*Todos los h1 por debajo de topbar */
 	text-align:center;
 	color:green;
-	font-size:42px;
+	font-size:240%;
 	font-family:Courier,arial,helvetica,sans-serif;
 	display:inline-block;
 	justify-content:center;
