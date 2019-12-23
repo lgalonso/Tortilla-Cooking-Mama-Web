@@ -260,8 +260,14 @@ aside{
 	float:left;
 	text-align:center;
 	position:fixed;
-	
+	margin-top:6%;
 }
+footer{
+	background-color:#000;
+	margin:0px;
+	padding:0px;
+}
+
 
 
 
