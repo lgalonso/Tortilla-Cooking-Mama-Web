@@ -1,24 +1,23 @@
 body{
-	background:#FE642E;
+	background:#bdbdbd;
 }
 
 /*BARRA SUPERIOR*/
 
 #topbar{
 	display:flex;
-	background-image:url("../Media/madera.jpg");
 }
 
 /*TITULO*/
 
 #topbar h1{/*Todos los h1 por debajo de topbar */
 	text-align:center;
-	color:green;
+	color:black;
 	font-size:240%;
 	font-family:Courier,arial,helvetica,sans-serif;
 	display:inline-block;
 	justify-content:center;
-	margin-left:43%;
+	margin-left:43%;  
 }
 
 /*MENU SUPERIOR DERECHO*/
@@ -91,7 +90,6 @@ body{
 	width:80%;
 	margin: 3px auto;
 	overflow:hidden;
-	border: 3px solid black;
 }
 #slideshow ul {
 	list-style:none;
@@ -127,7 +125,7 @@ header{
 	margin:auto;
 }
 nav{
-	background-color:#528fd5;
+	background-color:#1b1b1b;
 	position:relative;
 	margin-top:20px;
 }
@@ -192,9 +190,9 @@ nav ul li div ul .titulosub a {/*Estilo de los títulos del submenu*/
 	padding:10px 20px;
 }
 
-.titulosub.azul {background:#3498db;}
-.titulosub.verde {background:#27ae60;}
-.titulosub.rojo {background:#c0392b;}
+.titulosub.azul {background:#8e8e8e;}
+.titulosub.verde {background:#8e8e8e;}
+.titulosub.rojo {background:#8e8e8e;}
 
 nav ul li div ul .titulosub a:hover {/*Referencia a los titulos de los diferentes submenus*/
 	background:none;
@@ -206,7 +204,7 @@ nav ul li div ul li a {/*Estilos de los links del contenido de los submenus,
 }
 nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 	color:#fff;
-	background-color: coral;
+	background-color: #484848;
 }
 
 /*FIN MENU CONTINENTES*/
