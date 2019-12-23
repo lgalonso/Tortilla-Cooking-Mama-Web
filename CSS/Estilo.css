@@ -166,10 +166,11 @@ nav ul li a{
 	padding:10px 20px;
 }
 nav ul li a:hover {
-	background:#3669a3;
+	background:#484848;
 }
 nav > ul > li:hover div{
 	display:table;
+
 }
 
 /*SUBMENU CONTINENTES*/
