@@ -18,7 +18,7 @@ body{
 	font-family:Courier,arial,helvetica,sans-serif;
 	display:inline-block;
 	justify-content:center;
-	margin-left:32%;
+	margin-left:43%;
 }
 
 /*MENU SUPERIOR DERECHO*/
@@ -54,6 +54,12 @@ body{
 }
 #topbar > ul > li:hover div{
 	display:table;
+}
+#topbar ul li:last-child a:hover{
+	color:black;
+}
+#topbar > ul > li:last-child:hover div{
+	display:none;
 }
 
 /*SUBMENUS SUPERIOR DERECHA*/
@@ -248,11 +254,12 @@ aside{
 	border:3px solid black;
 	padding:3px;
 	margin:3px;
-	background-color:#FF8000;
+	background-color:none;
 	width:8%;
+	height:33%;
 	float:left;
 	text-align:center;
-	position:realtive;
+	position:fixed;
 	
 }
 
