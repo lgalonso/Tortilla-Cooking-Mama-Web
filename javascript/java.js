@@ -1,28 +1,41 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+//Controles de slideshow
+var control=1;
+var contador = setInterval( cambiar, 4500);
+var cambio = 0;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function cambiar(){
+  siguiente();
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+function anterior(){
+  if(control<0){//Trabajamos sobre el margen del objeto 
+    control+=700;
+    document.getElementById('i1').src ="img"+control+".jpg";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  else {
+    document.getElementById('i1').src="img3.jpg";
+    control = -2100;
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  reset();
 }
+
+function siguiente(){
+  if(control>0){
+    control-=700;
+    document.getElementById('i1').src="img"+control+".jpg";
+  }
+  else {
+    document.getElementById('i1').src="img1.jpg";
+    control = 0;
+  }
+  reset();
+}
+
+function reset(){
+  clearInterval(contador);
+  contador = setInterval( cambiar, 4500);
+
+}
+
+//Fin de controles de slideshow
