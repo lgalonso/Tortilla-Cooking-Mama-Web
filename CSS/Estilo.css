@@ -142,7 +142,6 @@ nav > ul > li{
 	flex:1;
 	justify-content:center;
 	text-align:center;
-	font-size:18pt;
 }
 nav ul li a{
 	color:#fff;
@@ -235,15 +234,11 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 	width: 45%;
 	padding: 10px;
 	margin: 10px;
-	background-color: #04B486;
 }
 #ranking{
 	flex-wrap: wrap;
-	background-image:url("../Media/ranking.jpg");
 }
 #novedades{
-	background-image:url("../Media/novedades.jpg");
-	color:#088A08;
 }
 
 /*FIN NOVEDADES Y RANKING*/
