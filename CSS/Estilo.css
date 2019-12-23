@@ -20,12 +20,34 @@ body{
 	margin-left:43%;  
 }
 
-/*MENU SUPERIOR DERECHO*/
+/*MENU SUPERIOR IZQUIERDA*/
 
+.iconmenu *{
+	margin:0;
+	padding:0;
+}
+.iconmenu{
+	display:table-cell;
+}
+.iconmenu span{
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-100%;
+}
+.iconmenu span img{
+	display:block;
+}
+.iconmenu a:hover > span{
+	top:0;
+}
 #topbar > ul{ 
 	display:inline-block;
 	display:flex;
-	margin-left: 18%;
+	position:fixed;
 }
 #topbar > ul > li{  /* cada elemento del menu de superior derecho*/
 	flex-wrap:no-wrap;
@@ -33,7 +55,7 @@ body{
 	margin:6px;
 	font-size:1em;
 }
-#topbar ul li{
+#topbar > ul li{
 	list-style:none;
 }
 #topbar ul li img{  /*logos menu superior derecha*/
@@ -53,12 +75,6 @@ body{
 }
 #topbar > ul > li:hover div{
 	display:table;
-}
-#topbar ul li:last-child a:hover{
-	color:black;
-}
-#topbar > ul > li:last-child:hover div{
-	display:none;
 }
 
 /*SUBMENUS SUPERIOR DERECHA*/
@@ -243,17 +259,30 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 
 /*FIN NOVEDADES Y RANKING*/
 
-aside{
+#aside1{
 	border:3px solid black;
 	padding:3px;
 	margin:3px;
 	background-color:none;
-	width:8%;
+	width:8.8%;
 	height:33%;
 	float:left;
 	text-align:center;
 	position:fixed;
-	margin-top:6%;
+	margin-top:5.2%;
+}
+#aside2{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:none;
+	width:8.8%;
+	height:33%;
+	float:right;
+	text-align:center;
+	position:fixed;
+	margin-top:5.2%;
+	margin-right:3px;
 }
 footer{
 	background-color:#000;
