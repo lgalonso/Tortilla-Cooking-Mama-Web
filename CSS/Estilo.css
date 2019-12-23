@@ -205,14 +205,26 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 
 /*FIN MENU CONTINENTES*/
 
-main{
+/*INTRODUCCIÓN A LA WEB*/
+
+#texto{
+	margin:3% 10%;
+	font-size:2em;
+	font-family:Georgia;
+}
+
+/*FIN INTRODUCCION*/
+
+/*NOVEDADES Y RANKING*/
+
+#listados{
 	display:inline;
 	display:flex;
 	justify-content:center;
 	justify-content:space-between;
 	flex-direction:row;
 }
-section{
+#listados section{
 	display:inline-block;
 	font-size: 2em;
 	text-align: center;
@@ -223,14 +235,22 @@ section{
 }
 #ranking{
 	flex-wrap: wrap;
+	background-image:url("../Media/ranking.jpg");
 }
+#novedades{
+	background-image:url("../Media/novedades.jpg");
+	color:#088A08;
+}
+
+/*FIN NOVEDADES Y RANKING*/
+
 aside{
 	border:5px solid black;
 	padding:10px;
 	margin:10px;
 	background-color:#FF8000;
 	width:20%;
-	float:right;
+	float:left;
 	text-align:center;
 }
 
