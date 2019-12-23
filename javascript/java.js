@@ -1,3 +1,22 @@
+//Buscador
+var arrayLinks = ['españa', 'europa', 'italia'];
+function buscar(){
+  var clave = document.getElementById('barra').value.toLowerCase();
+
+  var control = false;
+  var contador = 0;
+
+  for(contador; contador < arrayLinks.length && !control; contador++){
+      if(clave == arrayLinks[contador]) control = true;
+    }
+
+  if(control) alert("La búsqueda es: "+clave);
+  else alert("La búsqueda no se realizó porque no existe la página.");
+
+}
+
+
+
 //Controles de slideshow
 var control=1;
 var contador = setInterval( cambiar, 4500);
