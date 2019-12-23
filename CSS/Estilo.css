@@ -18,7 +18,7 @@ body{
 	font-family:Courier,arial,helvetica,sans-serif;
 	display:inline-block;
 	justify-content:center;
-	margin-left:43%;
+	margin-left:32%;
 }
 
 /*MENU SUPERIOR DERECHO*/
@@ -245,13 +245,15 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 /*FIN NOVEDADES Y RANKING*/
 
 aside{
-	border:5px solid black;
-	padding:10px;
-	margin:10px;
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
 	background-color:#FF8000;
-	width:20%;
+	width:8%;
 	float:left;
 	text-align:center;
+	position:realtive;
+	
 }
 
 
