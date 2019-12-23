@@ -1,0 +1,57 @@
+#img1{
+    width:50%;
+	padding:0px,10px,10px;
+	height:520px;
+	margin:30px auto;
+	display:block;
+    
+	
+}
+h1{
+	text-align:center;
+	font-size:45px;
+	color:rgba(21,93,193,0.81);
+	font-family:algerian;
+	background:rgb(240,129,67);
+	
+}
+h2{
+	text-align:center;
+	font-weight:900;
+	
+}
+#seccion1{
+	background-color:rgb(201,244,71);
+	height:5%;
+	
+}
+#slidebar{
+	width:60%;
+	margin-left:7%;
+	margin-right:7%;
+	height:5%;
+	
+}
+body div {
+	background:rgba(25,19,71);
+	
+	
+}
+footer{
+	text-align:center;
+}
+#footer{
+	margin:10px;
+	font-size:25px;
+}
+button{
+	
+}
+#seccion3{
+	margin-top:3px;
+}
+
+nav{
+	color:#fff;
+	text-align:center;
+}
