@@ -6,6 +6,7 @@ body{
 
 #topbar{
 	display:flex;
+	background-image:url("../Media/madera.jpg");
 }
 
 /*TITULO*/
@@ -82,12 +83,13 @@ body{
 }
 #slideshow {
 	width:80%;
-	margin: 30px auto;
+	margin: 3px auto;
 	overflow:hidden;
+	border: 3px solid black;
 }
 #slideshow ul {
 	list-style:none;
-	width:424%;
+	width:530%;
 	display:flex;
 	animation:slide 25s infinite alternate;
 }
