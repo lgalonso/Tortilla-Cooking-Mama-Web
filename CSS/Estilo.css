@@ -107,6 +107,68 @@ body{
 	background:#484848;
 }
 
+/*INDICE IZQUIERDA*/
+
+#aside1{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:none;
+	width:8.8%;
+	height:33%;
+	float:left;
+	text-align:center;
+	position:fixed;
+	margin-top:5.2%;
+}
+#aside1 *{
+	margin:0;
+	padding;0;
+}
+#aside1 ul{
+	padding-left:0;
+	list-style:none;
+	background-color:none;
+}
+#aside1 h3{
+	font-style:tahoma;
+}
+#aside1 ul li{
+	padding-right:1em;
+	-webkit-transition: padding 0.6s;
+	-moz-transition: padding 0.6s;
+	-ms-transition: padding 0.6s;
+	-o-transition: padding 0.6s;
+	transition: padding 0.6s;
+}
+#aside1 ul li:hover{
+	padding-right:0em;
+}
+#aside1 ul li a{
+	margin-top:15px;
+	font-family:tahoma;
+	display:block;
+	font-size:1em;
+	background-color:#ccc;
+	color:#000;
+	text-decoration:none;
+	padding-top:0.6em;
+	padding-bottom:0.6em;
+	padding-left:0em;
+	border-radius:0em 1.2em 1.2em 0em;
+	box-shadow:0.3em 0em 0.6em #939393;
+	-webkit-transition: padding 0.6s;
+	-moz-transition: padding 0.6s;
+	-ms-transition: padding 0.6s;
+	-o-transition: padding 0.6s;
+	transition: padding 0.6s;
+}
+#aside1 ul li a:hover{
+	padding-left:1em;
+	padding-right:0em;
+	background-color:#484848;
+}
+
 /*FIN BARRA SUPERIOR*/
 
 /*SLIDESHOW*/
@@ -277,62 +339,6 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 
 /*FIN NOVEDADES Y RANKING*/
 
-#aside1{
-	border:3px solid black;
-	padding:3px;
-	margin:3px;
-	background-color:none;
-	width:8.8%;
-	height:33%;
-	float:left;
-	text-align:center;
-	position:fixed;
-	margin-top:5.2%;
-}
-#aside1 *{
-	margin:0;
-	padding;0;
-}
-#aside1 ul{
-	padding-left:0;
-	list-style:none;
-	background-color:none;
-}
-#aside1 ul li{
-	padding-right:1em;
-	-webkit-transition: padding 0.6s;
-	-moz-transition: padding 0.6s;
-	-ms-transition: padding 0.6s;
-	-o-transition: padding 0.6s;
-	transition: padding 0.6s;
-}
-#aside1 ul li:hover{
-	padding-right:0em;
-}
-#aside1 ul li a{
-	margin-top:15px;
-	font-family:tahoma;
-	display:block;
-	font-size:1em;
-	background-color:#ccc;
-	color:#000;
-	text-decoration:none;
-	padding-top:0.6em;
-	padding-bottom:0.6em;
-	padding-left:0em;
-	border-radius:0em 1.2em 1.2em 0em;
-	box-shadow:0.3em 0em 0.6em #939393;
-	-webkit-transition: padding 0.6s;
-	-moz-transition: padding 0.6s;
-	-ms-transition: padding 0.6s;
-	-o-transition: padding 0.6s;
-	transition: padding 0.6s;
-}
-#aside1 ul li a:hover{
-	padding-left:1em;
-	padding-right:0em;
-	background-color:#484848;
-}
 #aside2{
 	border:3px solid black;
 	padding:3px;
