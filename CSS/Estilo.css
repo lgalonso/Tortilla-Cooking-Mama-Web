@@ -295,28 +295,43 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 }
 #aside1 ul{
 	padding-left:0;
-	padding-right:1em;
 	list-style:none;
 	background-color:none;
 }
 #aside1 ul li{
+	padding-right:1em;
+	-webkit-transition: padding 0.6s;
+	-moz-transition: padding 0.6s;
+	-ms-transition: padding 0.6s;
+	-o-transition: padding 0.6s;
+	transition: padding 0.6s;
+}
+#aside1 ul li:hover{
+	padding-right:0em;
+}
+#aside1 ul li a{
 	margin-top:15px;
 	font-family:tahoma;
+	display:block;
 	font-size:1em;
-	background-color:#484848;
+	background-color:#ccc;
+	color:#000;
+	text-decoration:none;
 	padding-top:0.6em;
 	padding-bottom:0.6em;
 	padding-left:0em;
 	border-radius:0em 1.2em 1.2em 0em;
 	box-shadow:0.3em 0em 0.6em #939393;
-	-webkit-transition: padding-left 0.6s;
-	-moz-transition: padding-left 0.6s;
-	-ms-transition: padding-left 0.6s;
-	-o-transition: padding-left 0.6s;
-	transition: padding-left 0.6s;
+	-webkit-transition: padding 0.6s;
+	-moz-transition: padding 0.6s;
+	-ms-transition: padding 0.6s;
+	-o-transition: padding 0.6s;
+	transition: padding 0.6s;
 }
-#aside1 ul li:hover{
+#aside1 ul li a:hover{
 	padding-left:1em;
+	padding-right:0em;
+	background-color:#484848;
 }
 #aside2{
 	border:3px solid black;
