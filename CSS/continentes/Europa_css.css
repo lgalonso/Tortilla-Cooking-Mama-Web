@@ -23,12 +23,12 @@ h2{
 #seccion1{
 	background-color:rgb(201,244,71);
 	height:5%;
+	display:flex;
 	
 }
 #slidebar{
 	width:60%;
-	margin-left:7%;
-	margin-right:7%;
+	margin:auto;
 	height:5%;
 	
 }
@@ -44,8 +44,16 @@ footer{
 	margin:10px;
 	font-size:25px;
 }
-button{
-	
+#seccion1 button{
+	display:block;
+	height:10em;
+	margin-top:12%;
+}
+#ant{
+	margin-left:15%;
+}
+#sig{
+	margin-right:15%;
 }
 #seccion3{
 	margin-top:3px;
