@@ -17,12 +17,12 @@
 		<div id="aside1">
 			<br>
 			<h3>INDICE</h3>
-			<br>
 			<ul>
-				<li><a href="">Slideshow</a></li>
-				<li><a href="">Menu continentes</a></li>
-				<li><a href="">Ranking y novedades</a></li>
-				<li><a href="">Footer</a></li>
+				<li><a href="#topbar">Titulo</a></li>
+				<li><a href="#slideshow">Slideshow</a></li>
+				<li><a href="#menucontinentes">Menu continentes</a></li>
+				<li><a href="#listados">Ranking y novedades</a></li>
+				<li><a href="#piepagina">Footer</a></li>
 			</ul>
 		</div>
 		<h1><u>GASTROWORLD</u></h1>
@@ -40,7 +40,17 @@
   			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
 				<div id="perfil">
 					<ul>
-						<li><a href="">Iniciar sesión</a></li>
+						<li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
+							<div>
+								<ul>
+									<li>
+										<input type="text" name="correo" id="correo" placeholder="E-MAIL"><br>
+										<input type="password" name="coontraseña" id="contraseña" placeholder="Contraseña"><br>
+										<input id="botonsesion" type="submit" value="Iniciar Sesión">
+									</li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="Registro.html">Registrarse</a></li>
 					</ul>
 				</div>
@@ -61,7 +71,7 @@
 			<li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Buscar</a>
 				<div id="buscador">
 					<ul>
-						<li><input type="text" name="buscador"><br><input id="botonbuscar" type="submit" value="Buscar"></li>
+						<li><input type="text" name="buscador" placeholder="Buscador"><br><input id="botonbuscar" type="submit" value="Buscar"></li>
 					</ul>
 				</div>
 			</li>
@@ -96,7 +106,7 @@
 </div>
 
 	<header>
-	  <nav><!--Menú de navegación-->
+	  <nav id="menucontinentes"><!--Menú de navegación-->
 	    <ul>
 	        <li><a href="#">ASIA</a>
 				<div>
@@ -273,7 +283,7 @@
 
 		</div>
 	</main>
-	<footer>
+	<footer id="piepagina">
 		<ul>
 			<li><a href="contacto.html">Contacto</a></li>
 			<li></li>

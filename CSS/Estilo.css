@@ -86,7 +86,7 @@ body{
 #topbar ul li a:hover{
 	color:#fff;
 }
-#topbar > ul > li:hover div{
+#topbar > ul > li:hover > div{
 	display:table;
 }
 
@@ -111,6 +111,12 @@ body{
 	background-color:#000;
 	color:#fff;
 	border-color:#000;
+}
+#iniciosesion div{
+	display:none;
+}
+#iniciosesion:target div{
+	display:table;
 }
 
 /*INDICE IZQUIERDA*/
