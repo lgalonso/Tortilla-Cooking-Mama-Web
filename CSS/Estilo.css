@@ -132,6 +132,7 @@ body{
 
 #iniciosesion div{
 	display:none;
+	background:#ccc;
 }
 #iniciosesion:target div{
 	display:table;
