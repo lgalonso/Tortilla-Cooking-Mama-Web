@@ -94,8 +94,19 @@ body{
 
 #topbar ul li div{
 	position:absolute;
-	background:#ccc;
 	display:none;
+}
+#idioma{
+	background:#ccc;
+}
+#perfil{
+	background:#ccc;
+}
+#ajustes{
+	background:#ccc;
+}
+#buscador{
+	background:none;
 }
 #topbar ul li div ul{
 	display:table-cell;
@@ -108,7 +119,11 @@ body{
 }
 #botonbuscar{
 	width:100%;
-	background-color:#000;
+	background-color:#ccc;
+	color:#000;
+}
+#botonbuscar:hover{
+	background-color:#484848;
 	color:#fff;
 	border-color:#000;
 }
