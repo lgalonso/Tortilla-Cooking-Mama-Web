@@ -14,7 +14,7 @@ function buscar(){
   else alert("La búsqueda no se realizó porque no existe la página.");
 
 }
-
+//Fin de buscador
 
 
 //Controles de slideshow
