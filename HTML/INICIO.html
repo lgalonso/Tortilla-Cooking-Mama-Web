@@ -12,6 +12,15 @@
   </head>
 
   <body>
+  	<script>//Script necesario para lanzar la búsqueda con el botón enter
+		var input = document.getElementById("barra");
+		input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
+  			if (event.keyCode === 13) { //Si la tecla pulsada es enter activamos el botón de búsqueda
+   				document.getElementById("botonbuscar").click();
+  			}
+			});
+	</script>
+
   	<!--Menú esquina superior derecha -->
   	<div id="topbar">
 		<div id="aside1">
@@ -75,8 +84,8 @@
 				<div id="buscador">
 					<ul>
 						<li>
-							<input type="text" name="buscador" placeholder="Buscador"><br>
-							<input id="botonbuscar" type="submit" value="Buscar">
+							<input type="text" id="barra" placeholder="Buscador"><br>
+							<input id="botonbuscar" type="submit" value="Buscar" onclick="buscar()">
 						</li>
 					</ul>
 				</div>

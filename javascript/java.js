@@ -10,11 +10,17 @@ function buscar(){
       if(clave == arrayLinks[contador]) control = true;
     }
 
-  if(control) alert("La búsqueda es: "+clave);
+  if(control){ 
+    alert("La búsqueda es: "+clave);
+    document.getElementById(clave).click();
+    /*La esencia del buscador está en que cuando recibimos una búsqueda válida la función va a buscar el 
+    id de la página y lo va a pinchar (click de ratón) lo que provocará que se cargue la página nueva
+    */
+  }
   else alert("La búsqueda no se realizó porque no existe la página.");
 
 }
-
+//Fin de buscador
 
 
 //Controles de slideshow
