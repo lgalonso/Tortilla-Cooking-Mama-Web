@@ -10,14 +10,14 @@ body{
 
 /*TITULO*/
 
-#topbar h1{/*Todos los h1 por debajo de topbar */
+#topbar > img{/*Todos los h1 por debajo de topbar */
 	text-align:center;
 	color:black;
-	font-size:240%;
 	font-family:Courier,arial,helvetica,sans-serif;
 	display:inline-block;
 	justify-content:center;
-	margin-left:43%;  
+	margin-left:38%;
+	height:11em;	
 }
 
 /*MENU SUPERIOR IZQUIERDA*/
