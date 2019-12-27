@@ -20,6 +20,16 @@ function buscar(){
   else alert("La búsqueda no se realizó porque no existe la página.");
 
 }
+
+function buscar2(){
+    var clave = document.getElementById('buscador').getElementById('barra').value.toLowerCase();
+
+    if(document.getElementById(clave) === null) alert("La página no existe.");
+    else
+      document.getElementById(clave).click();
+
+
+}
 //Fin de buscador
 
 
