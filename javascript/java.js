@@ -22,7 +22,7 @@ function buscar(){
 }
 
 function buscar2(){
-    var clave = document..getElementById('barra').value.toLowerCase();
+    var clave = document.getElementById('barra').value.toLowerCase();
 
     if(document.getElementById(clave) === null) alert("La página no existe.");
     else
@@ -32,6 +32,9 @@ function buscar2(){
 }
 //Fin de buscador
 
+function test2(){
+  alert("Test2");
+}
 function test(){
   alert("Test");
 }
