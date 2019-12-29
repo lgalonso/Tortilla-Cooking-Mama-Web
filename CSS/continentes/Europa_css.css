@@ -1,3 +1,20 @@
+/*INDICE IZQUIERDA*/
+
+#aside1{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:none;
+	width:8.8%;
+	height:39%;
+	float:left;
+	text-align:center;
+	position:fixed;
+	margin-top:5.2%;
+}
+
+/*FIN INDICE*/
+
 #img1{
     width:50%;
 	padding:0px,10px,10px;
@@ -7,12 +24,12 @@
     
 	
 }
-h1{
+#cabecera img{
 	text-align:center;
-	font-size:45px;
-	color:rgba(21,93,193,0.81);
+	height:9em;
 	font-family:algerian;
-	background:rgb(223,240,159);
+	margin:auto;
+	display:block;
 	
 }
 h2{
@@ -21,48 +38,68 @@ h2{
 	
 }
 #seccion1{
-	background-color:rgb(223,240,159);
+	background-color:rgb(201,244,71);
 	height:5%;
+	display:flex;
 	
 }
 #slidebar{
 	width:60%;
-	margin-left:7%;
-	margin-right:7%;
+	margin:auto;
 	height:5%;
 	
 }
 body div {
-	background:rgba(223,240,159);
+	background:rgba(25,19,71);
 	
 	
 }
-footer{
-	text-align:center;
+#seccion1 button{
+	display:block;
+	height:10em;
+	margin-top:12%;
 }
-#footer{
-	margin:10px;
-	font-size:25px;
+#ant{
+	margin-left:15%;
 }
-button{
-	
+#sig{
+	margin-right:15%;
 }
 #seccion3{
 	margin-top:3px;
 }
-#seccion3 img{
-	border-radius:10%;
+#seccion3 > div article{
+	width:80%;
+	background:#484848;
+	display:block;
+	margin:auto;
 }
-
-
-nav{
-	color:#000000;
+#seccion3 > div article:hover{
+	box-shadow: 3em 0em 6em #939393;
+}
+#seccion3 > div article > h1{
+	padding:0.4em;
+	padding-bottom:0;
+}
+#seccion3 > div article img{
+	width:25%;
+	height:25%;
+	padding-left:0.2em;
+}
+#seccion3 > div article ul{
+	display:inline-block;
+}
+#seccion3 > div > h1{
 	text-align:center;
 }
-footer img{
-	border-radius:20%;
+#seccion3 > div > a{
+	color:#000;
+	text-decoration:none;
 }
-footer p{
-	margin-right:70%;
-	color:rgb(175, 178, 161);
+#seccion3 > div > a:hover{
+	color:#fff;
+}
+nav{
+	color:#fff;
+	text-align:center;
 }

@@ -1,3 +1,43 @@
+//Buscador
+var arrayLinks = ['españa', 'europa', 'italia'];
+function buscar(){
+  var clave = document.getElementById('barra').value.toLowerCase();
+
+  var control = false;
+  var contador = 0;
+
+  for(contador; contador < arrayLinks.length && !control; contador++){
+      if(clave == arrayLinks[contador]) control = true;
+    }
+
+  if(control){ 
+    alert("La búsqueda es: "+clave);
+    document.getElementById(clave).click();
+    /*La esencia del buscador está en que cuando recibimos una búsqueda válida la función va a buscar el 
+    id de la página y lo va a pinchar (click de ratón) lo que provocará que se cargue la página nueva
+    */
+  }
+  else alert("La búsqueda no se realizó porque no existe la página.");
+
+}
+
+function buscar2(){
+    var clave = document.getElementById('barra').value.toLowerCase();
+
+    if(document.getElementById(clave) === null) alert("La página no existe.");
+    else
+      document.getElementById(clave).click();
+
+
+}
+//Fin de buscador
+
+function test2(){
+  alert("Test2");
+}
+function test(){
+  alert("Test");
+}
 //Controles de slideshow
 var control=1;
 var contador = setInterval( cambiar, 4500);

@@ -1,0 +1,34 @@
+/*INDICE IZQUIERDA*/
+
+#aside1{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:none;
+	width:8.8%;
+	height:39%;
+	float:left;
+	text-align:center;
+	position:fixed;
+	margin-top:5.2%;
+}
+
+/*FIN INDICE*/
+
+main > div{
+	display:flex;
+	margin-left:10%;
+	margin-top:0.6%;
+}
+#imagenes img{
+	display:block;
+	width:25%;
+}
+#material > article{
+	width:50%;
+	background:#484848;
+	text-align:center;
+}
+#ingredientes{
+	margin-right:0.5%;
+}

@@ -1,0 +1,61 @@
+body{
+	background-image:url('../Media/fondoreg.jpg');
+}
+main *{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+main section{
+	display:block;
+	margin:auto;
+	padding:2%;
+	width:25%;
+	background:#24303c;
+	margin-top:6%;
+	border-radius:0.2em;
+	font-family: 'calibri';
+	color:white;
+	box-shadow:0.35em 0.65em 1.85em #000;
+}
+main section h4{
+	font-size:1.1em;
+	margin-bottom:1em;
+}
+.controles{
+	width:100%;
+	background:#24303c;
+	padding:0.5em;
+	border-radius:0.2em;
+	margin-bottom:0.8em;
+	border: 1px solid #1f53c5;
+	font-family: 'calibri';
+	font-size:0.9em;
+	color:white;
+}
+main section p{
+	height:2em;
+	text-align:center;
+	font-size:0.9em;
+	line-height:2em;
+}
+main section a{
+	color:white;
+	text-decoration:none;
+}
+main section a:hover{
+	color:white;
+	text-decoration:underline;
+}
+.buttons{
+	width:100%;
+	background:#1f53c5;
+	border:none;
+	padding:0.6em;
+	color:white;
+	margin:0.8em 0;
+	font-size:0.8em;
+}
+#terminos{
+	display:inline-block;
+}
