@@ -1,0 +1,25 @@
+/*INDICE IZQUIERDA*/
+
+#aside1{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:none;
+	width:8.8%;
+	height:39%;
+	float:left;
+	text-align:center;
+	position:fixed;
+	margin-top:5.2%;
+}
+
+/*FIN INDICE*/
+
+#imagenes{
+	display:flex;
+	margin-left:10%;
+}
+#imagenes img{
+	display:block;
+	width:25%;
+}
