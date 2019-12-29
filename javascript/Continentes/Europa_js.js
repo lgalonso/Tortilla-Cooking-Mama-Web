@@ -10,6 +10,7 @@ var num=1;
 function siguiente(){
 	if(num==5){ num=1;
                  	document.getElementById("slidebar").src="../../Media/Continentes/Comidas/foto"+num+".jpg";
+					document.getElementById("slidebar").alt="Imagen del plato típico alemán pretzels & patatas"
 					clearInterval(set);
 					set = setInterval(inicio, 4500);
 			  }
@@ -19,28 +20,28 @@ function siguiente(){
 	             switch(num){
 			
 	                    case 2: document.getElementById("slidebar").src="../../Media/Continentes/Comidas/foto"+num+".jpg";
-	                            document.getElementById("slidebar").alt="Imagen del plato espaguetti alle vongole";
+	                            document.getElementById("slidebar").alt="Imagen del plato típico español tortilla de patata";
 								clearInterval(set);
 								set = setInterval(inicio, 4500);
 	        
 			                     break;
 	
 	                    case 3: document.getElementById("slidebar").src="../../Media/Continentes/Comidas/foto"+num+".jpg";
-	                            document.getElementById("slidebar").alt="Imagen del plato salchichas & pretzels con cerveza";
+	                            document.getElementById("slidebar").alt="Imagen del plato típico francés cassoulet";
 								clearInterval(set);
 								set = setInterval(inicio, 4500);
 	        
 			                     break;
 			
 	                    case 4: document.getElementById("slidebar").src="../../Media/Continentes/Comidas/foto"+num+".jpg";
-	                            document.getElementById("slidebar").alt="Imagen del plato fish & chips";
+	                            document.getElementById("slidebar").alt="Imagen del`plato típico italiano macarrones carbonara";
 								clearInterval(set);
 								set = setInterval(inicio, 4500);
 			                    
 								break;
 			
 	                    case 5: document.getElementById("slidebar").src="../../Media/Continentes/Comidas/foto"+num+".jpg";
-	                            document.getElementById("slidebar").alt="Imagen del plato ratatouille";
+	                            document.getElementById("slidebar").alt="Imagen del plato típico británico fish & chips";
 								clearInterval(set);
 								set = setInterval(inicio, 4500);
 		    
