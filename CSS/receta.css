@@ -15,11 +15,20 @@
 
 /*FIN INDICE*/
 
-#imagenes{
+main > div{
 	display:flex;
 	margin-left:10%;
+	margin-top:0.6%;
 }
 #imagenes img{
 	display:block;
 	width:25%;
+}
+#material > article{
+	width:50%;
+	background:#484848;
+	text-align:center;
+}
+#ingredientes{
+	margin-right:0.5%;
 }

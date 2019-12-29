@@ -187,28 +187,6 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 
 /*FIN NOVEDADES Y RANKING*/
 
-#aside2{
-	border:3px solid black;
-	padding:3px;
-	margin:3px;
-	background-color:none;
-	width:8.8%;
-	height:33%;
-	float:right;
-	text-align:center;
-	position:fixed;
-	margin-top:5.2%;
-	margin-right:3px;
-}
-footer{
-	background-color:#000;
-	margin:0;
-	padding:0;
-}
-footer ul li a{
-	color:#fff;
-	text-decoration:none;
-}
 
 
 
