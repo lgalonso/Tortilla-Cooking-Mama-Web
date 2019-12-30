@@ -67,6 +67,7 @@ function contacto(){
     contenido.style.background = 'red';
     control = false;
   }
+  
   if(control){
     confirm("Su mensaje con asunto: "+asunto.value+" ha sido envíado correctamente. En un plazo de 24 horas recibirá una respuesta a la dirección: "+email.value);
     clearInput('asunto');
