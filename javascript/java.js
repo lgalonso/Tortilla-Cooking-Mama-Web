@@ -33,8 +33,34 @@ function buscar2(){
 
 //Funciones de inicio de sesión
 function inicioSesion(){
-  alert('Sesión iniciada con éxito');
-  document.getElementById("titulo").click();
+  var credenciales = [document.getElementById('correo'), document.getElementById('contraseña')]
+  var control = true;
+
+  for(var i=0; i < credenciales.length; i++){
+    if(credenciales[i].value == ""){
+      credenciales[i].style.background = 'red';
+      control = false;
+
+    }
+  }
+
+  if(control){
+    alert('Sesión iniciada con éxito. Bienvenido de nuevo '+credenciales[0].value+'.');
+
+    for(var i=0; i < credenciales.length; i++){
+      clearInput(credenciales[i].id);
+    }
+
+    clearLogIn();
+
+    document.getElementById("titulo").click();
+  }
+  else alert("Existen campos incompletos en el formulario");
+}
+
+function clearLogIn(){
+  document.getElementById('iniciosesion').remove();
+  document.getElementById('registro').remove();
 }
 
 //Funciones del registro
