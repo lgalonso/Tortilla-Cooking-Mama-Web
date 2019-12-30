@@ -49,16 +49,17 @@ function registro(){
 }
 
 //Controles de slideshow
+/*
 var control=1;
 var contador = setInterval( cambiar, 4500);
 var cambio = 0;
 
-function cambiar(){
+function cambiar2(){
   siguiente();
 }
 
 
-function anterior(){
+function anterior2(){
   if(control<0){//Trabajamos sobre el margen del objeto 
     control+=700;
     document.getElementById('i1').src ="img"+control+".jpg";
@@ -70,7 +71,7 @@ function anterior(){
   reset();
 }
 
-function siguiente(){
+function siguiente2(){
   if(control>0){
     control-=700;
     document.getElementById('i1').src="img"+control+".jpg";
@@ -82,11 +83,11 @@ function siguiente(){
   reset();
 }
 
-function reset(){//Esta función resetea el intervalo
+function reset2(){//Esta función resetea el intervalo
   clearInterval(contador);
   contador = setInterval( cambiar, 4500);
 
-}//Fin de controles de slideshow
+}//Fin de controles de slideshow */
 
 
 function noDisponible(){
