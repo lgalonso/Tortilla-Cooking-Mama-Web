@@ -3,6 +3,7 @@
   <head>
 
   <link href="../CSS/Registro.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../javascript/java.js"></script>
   <meta charset="utf-8">
 
     <title>Gastroworld: Registro</title>
@@ -17,8 +18,9 @@
 			<input class="controles" type="email" name="correo" id="correo" placeholder="Introduzca su Correo">
 			<input class="controles" type="password" name="password" id="contraseña" placeholder="Introduzca su Contraseña">
 			<input class="controles" type="text" name="dirección" id="direccion" placeholder="Introduzca su Dirección">
-			<input type="checkbox"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="terminos">Estoy de acuerdo con los <a href="#">Términos y Condiciones</a></p>
-			<input class="buttons" type="submit" value="Registrar">
+			<input id="checkbox" type="checkbox"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="terminos">Estoy de acuerdo con los <a href="#">Términos y Condiciones</a></p><br>
+			<p id="error"></p>
+			<input class="buttons" type="submit" value="Registrar" onclick="registro()">
 			<p><a href="Inicio.html">Ya tengo Cuenta</a></p>
 		</section>
 	</main>
