@@ -27,6 +27,7 @@ main > div{
 }
 #material h1{
 	font-size:2.1em;
+	text-align:center;
 }
 #material ul{
 	font-size:1.6em;
@@ -38,7 +39,6 @@ main > div{
 #material > article{
 	width:50%;
 	background:#484848;
-	text-align:center;
 }
 #ingredientes{
 	margin-right:0.5%;
