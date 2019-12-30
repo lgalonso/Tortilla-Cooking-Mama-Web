@@ -7,7 +7,7 @@
      <link rel="stylesheet" type="text/css" href="../../CSS/Continentes/Europa_css.css">
 	 <link rel="stylesheet" type="text/css" href="../../CSS/menusuperior.css">	 <!--enlazado con css-->
      <script type="text/javascript" src="../../javascript/Continentes/Europa_js.js"></script>   <!--enlazado con javaScript-->
-     <script type="text/javascript" src="../../javascript/test_js.js"></script>
+     <script type="text/javascript" src="../../javascript/java.js"></script>
      <link rel="shortcut icon" type="image/x-icon" href="../../Media/GastroLogo/Gastro-Avioneta-Fondo.png"> <!-- al laod del title continentes aparece nuestro logo-->
  </head>
  <body>
@@ -17,7 +17,7 @@
 			<br>
 			<h3>INDICE</h3>
 			<ul>
-				<li><a href="#topbar">Titulo</a></li>
+				<li><a id="titulo" href="#topbar">Titulo</a></li>
 				<li><a href="#seccion1">Slideshow</a></li>
 				<li><a href="#seccion2">Mapa interactivo</a></li>
 				<li><a href="#popular">Lo mas popular</a></li>
@@ -47,7 +47,7 @@
 											<input type="text" name="correo" id="correo" placeholder="E-MAIL"><br>
 											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"><br>
 											<p>Olvidé mi contraseña</p>
-											<a href="#topbar"><input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="alert('Sesión iniciada con éxito')"></a>
+											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
 									</li>
 								</ul>
 							</div>

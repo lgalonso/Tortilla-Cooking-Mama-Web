@@ -4,7 +4,7 @@
 
   <link href="../CSS/receta.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="../CSS/menusuperior.css">
-  <script type="text/javascript" src=""></script>
+  <script type="text/javascript" src="../javascript/java.js"></script>
   <meta charset="utf-8">
 
     <title>Gastroworld: Receta</title>
@@ -16,7 +16,7 @@
 			<br>
 			<h3>INDICE</h3>
 			<ul>
-				<li><a href="#topbar">Titulo</a></li>
+				<li><a id="titulo" href="#topbar">Titulo</a></li>
 				<li><a href="#imagenes">Imágenes</a></li>
 				<li><a href="#material">Material</a></li>
 				<li><a href="#preparacion">Modo de preparación</a></li>
@@ -46,7 +46,7 @@
 											<input type="text" name="correo" id="correo" placeholder="E-MAIL"><br>
 											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"><br>
 											<p>Olvidé mi contraseña</p>
-											<a href="#topbar"><input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="alert('Sesión iniciada con éxito')"></a>
+											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
 									</li>
 								</ul>
 							</div>

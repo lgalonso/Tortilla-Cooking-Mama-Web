@@ -31,11 +31,16 @@ function buscar2(){
 }
 //Fin de buscador
 
-//Funciones del registro
+//Funciones de inicio de sesión
+function inicioSesion(){
+  alert('Sesión iniciada con éxito');
+  document.getElementById("titulo").click();
+}
 
+//Funciones del registro
 function registro(){
   var checkbox = document.getElementById('checkbox').checked;
-  if(checkbox) window.location = "file:///C:/Users/Lucas/Desktop/U-Tad/F.%20Desarrollo%20Web/Proyecto%20Web/Repositorio/Tortilla-Cooking-Mama-Web/HTML/INICIO.html";
+  if(checkbox) document.getElementById('inicio').click()
   else {
     document.getElementById('error').innerHTML = "*Acepta los términos y condiciones para completar tu registro.";
 
