@@ -16,9 +16,21 @@
 /*FIN INDICE*/
 
 main > div{
-	display:flex;
 	margin-left:10%;
 	margin-top:0.6%;
+}
+#imagenes{
+	display:flex;
+}
+#material{
+	display:flex;
+}
+#material h1{
+	font-size:2.1em;
+	text-align:center;
+}
+#material ul{
+	font-size:1.6em;
 }
 #imagenes img{
 	display:block;
@@ -27,11 +39,22 @@ main > div{
 #material > article{
 	width:50%;
 	background:#484848;
-	text-align:center;
 }
 #ingredientes{
 	margin-right:0.5%;
 }
 #preparacion{
 	background:#484848;
+}
+#preparacion *{
+	padding:1%;
+}
+#preparacion h1{
+	font-size:3em;
+}
+#preparacion p{
+	font-size:2em;
+}
+#video{
+	margin-left:20%;
 }
