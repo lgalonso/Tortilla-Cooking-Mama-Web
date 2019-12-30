@@ -4,25 +4,13 @@
 
   <link href="../CSS/Estilo.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="../CSS/menusuperior.css">
-  <script type="text/javascript" src="test_js.js"></script>
+  <script type="text/javascript" src="../javascript/java.js"></script>
   <meta charset="utf-8">
 
     <title>Gastroworld: Inicio</title>
   </head>
 
   <body>
-  	<!--Buscador fuera del topbar -->
-  	<input type="text" id="barrabuscador">
-  	<button id="test" onclick="buscar2()">Buscar</button>
-	<script>//Script necesario para lanzar la búsqueda con el botón enter
-		var input = document.getElementById("barrabuscador");
-		input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
-  			if (event.keyCode === 13) { //Si la tecla pulsada es enter activamos el botón de búsqueda
-   				document.getElementById("test").click();
-  			}
-			});
-	</script>
-
   	<!--Menú esquina superior derecha -->
   	<div id="topbar">
 		<div id="aside1">
@@ -63,7 +51,7 @@
 								</ul>
 							</div>
 						</li>
-						<li><a href="Registro.html">Registrarse</a></li>
+						<li><a id="registro" href="Registro.html">Registrarse</a></li>
 					</ul>
 				</div>
 			</li>
@@ -84,8 +72,17 @@
 				<div id="buscador">
 					<ul>
 						<li>
-							<input type="text" id="barra" placeholder ="NO DISPONIBLE">			
-							<button id="buscar" onclick="noDisponible()">BUSCAR</button>
+							<input type="text" id="barra" placeholder ="Buscar...">			
+							<button id="buscar" onclick="buscar2()">Buscar</button>
+							<script>//Script necesario para lanzar la búsqueda con el botón enter
+								var input = document.getElementById("barra");
+								input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
+  									if (event.keyCode === 13) { //Si la tecla pulsada es enter activamos el botón de búsqueda
+   										document.getElementById("buscar").click();
+  									}
+								});
+							</script>
+
 						</li>
 					</ul>
 				</div>

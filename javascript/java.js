@@ -23,21 +23,14 @@ function buscar(){
 
 function buscar2(){
     var clave = document.getElementById('barra').value.toLowerCase();
-
+    //alert("la búsqueda es: "+ clave);
     if(document.getElementById(clave) === null) alert("La página no existe.");
     else
       document.getElementById(clave).click();
-
-
+  
 }
 //Fin de buscador
 
-function test2(){
-  alert("Test2");
-}
-function test(){
-  alert("Test");
-}
 //Controles de slideshow
 var control=1;
 var contador = setInterval( cambiar, 4500);
@@ -72,10 +65,22 @@ function siguiente(){
   reset();
 }
 
-function reset(){
+function reset(){//Esta función resetea el intervalo
   clearInterval(contador);
   contador = setInterval( cambiar, 4500);
 
+}//Fin de controles de slideshow
+
+
+function noDisponible(){
+  alert('Esta funcionalidad se encuentra temporalmente fuera de servicio. Disculpen las molestias.');
 }
 
-//Fin de controles de slideshow
+//Funciones de prueba
+function test(){
+  alert("Test");
+}
+
+function test2(){
+  alert("Test2");
+}
