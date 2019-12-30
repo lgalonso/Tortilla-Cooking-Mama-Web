@@ -48,6 +48,39 @@ function registro(){
 
 }
 
+//Funciones de contacto
+function contacto(){
+  var asunto = document.getElementById('asunto');
+  var contenido = document.getElementById('contenido');
+  var email = document.getElementById('email');
+  var control = true;
+
+  if(asunto.value == "") {
+    asunto.style.background = 'red';
+    control = false;
+  }
+  if(email.value ==""){
+    email.style.background = 'red';
+    control = false;
+  }
+  if(contenido.value ==""){
+    contenido.style.background = 'red';
+    control = false;
+  }
+  if(control){
+    confirm("Su mensaje con asunto: "+asunto.value+" ha sido envíado correctamente. En un plazo de 24 horas recibirá una respuesta a la dirección: "+email.value);
+    clearInput('asunto');
+    clearInput('contenido');
+    clearInput('email');
+  } 
+  else alert("Existen campos incompletos en el formulario.");
+}
+
+function clearInput(inputID){
+  document.getElementById(inputID).value = "";
+
+}
+
 //Controles de slideshow
 /*
 var control=1;
