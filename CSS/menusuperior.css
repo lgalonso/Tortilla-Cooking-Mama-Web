@@ -1,3 +1,7 @@
+body{
+	background:#bdbdbd;
+}
+
 /*BARRA SUPERIOR*/
 
 #topbar{
@@ -211,10 +215,27 @@ footer{
 	margin:0;
 	padding:0;
 	display:flex;
+	margin-top:3%;
 }
-footer ul li a{
+footer a{
 	color:#fff;
 	text-decoration:none;
+}
+footer ul{
+	list-style:none;
+}
+#redes{
+	display:flex;
+	margin-left:40%;
+}
+#redes li{
+	margin-left:5%;
+}
+#redes p{
+	color:white;
+}
+#redes a{
+	line-height:3em;
 }
 
 /*FIN PIE DE PÁGINA*/
