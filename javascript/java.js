@@ -31,6 +31,18 @@ function buscar2(){
 }
 //Fin de buscador
 
+//Funciones del registro
+
+function registro(){
+  var checkbox = document.getElementById('checkbox').checked;
+  if(checkbox) window.location = "file:///C:/Users/Lucas/Desktop/U-Tad/F.%20Desarrollo%20Web/Proyecto%20Web/Repositorio/Tortilla-Cooking-Mama-Web/HTML/INICIO.html";
+  else {
+    document.getElementById('error').innerHTML = "*Acepta los términos y condiciones para completar tu registro.";
+
+  }
+
+}
+
 //Controles de slideshow
 var control=1;
 var contador = setInterval( cambiar, 4500);
