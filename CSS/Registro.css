@@ -41,7 +41,7 @@ main section p{
 	color: white;
 
 }
-#error{
+.error{
 	color:#ff0000;
 }
 

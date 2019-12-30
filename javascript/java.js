@@ -64,12 +64,27 @@ function clearLogIn(){
 }
 
 //Funciones del registro
-function registro(){
-  var checkbox = document.getElementById('checkbox').checked;
-  if(checkbox) document.getElementById('inicio').click()
-  else {
-    document.getElementById('error').innerHTML = "*Acepta los términos y condiciones para completar tu registro.";
 
+function registro(){
+  var datos = ['nombre', 'apellidos', 'correo', 'direccion', 'contraseña'];
+  var checkbox = document.getElementById('checkbox').checked;
+  var control = true;
+
+  for(var i=0; i < datos.length; i++){
+    
+    if(document.getElementById(datos[i]).value == ""){
+      control = false;
+      document.getElementById("error-"+datos[i]).innerHTML = "*Este campo es obligatorio.";
+    } else document.getElementById("error-"+datos[i]).innerHTML = '';
+
+  }
+
+  if(checkbox && control) {
+    alert("Registro completado. Inicie sesión en perfil.");
+    document.getElementById('inicio').click();
+  }
+  else if(!checkbox){
+    document.getElementById('error').innerHTML = "*Acepta los términos y condiciones para completar tu registro.";
   }
 
 }
