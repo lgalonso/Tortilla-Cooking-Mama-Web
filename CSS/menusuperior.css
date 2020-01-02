@@ -19,6 +19,7 @@ body{
 	margin-left:38%;
 	height:9em;
 	padding-bottom:1%;
+	padding-top: 5%;
 }
 #topbar > a{
 	display:inline-block;
@@ -33,7 +34,7 @@ body{
 	overflow:hidden;
 	background:#000;
 	color:#fff;
-	width:20%;
+	width:100%;
 	height:5%;
 	list-style:none;
 }
@@ -65,10 +66,9 @@ body{
 	background:#484848;
 	display:block;
 	height:100%;
-	width:100%;
 	left:0;
 	position:absolute;
-	top:-90%;
+	top:-99%;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
