@@ -11,7 +11,7 @@ function buscar(){
     }
 
   if(control){ 
-    alert("La búsqueda es: "+clave);
+    //alert("La búsqueda es: "+clave);
     document.getElementById(clave).click();
     /*La esencia del buscador está en que cuando recibimos una búsqueda válida la función va a buscar el 
     id de la página y lo va a pinchar (click de ratón) lo que provocará que se cargue la página nueva
@@ -30,14 +30,20 @@ function buscar2(){
   
 }
 
-function buscar3(){
+function buscar3(){//Buscador que admite espacios y los omite a la hora de buscar por ID
   var busqueda = document.getElementById('barra').value.toLowerCase();
   var clave = [];
   var i=0;
 
   while(i<busqueda.length){
 
-    if(busqueda[i] == " ") clave[i] = "";
+    if(busqueda[i] == " ") { 
+      clave[i] = "";
+      if(esLetra(busqueda[i+1])) {//si el caracter siguiente es letra lo transforma a mayuscula y actualiza el contador i
+        i++;
+        clave[i] = busqueda[i].toUpperCase(); 
+      }
+    }
     else clave[i] = busqueda[i];
     i++;
   }
@@ -45,8 +51,12 @@ function buscar3(){
   alert(clave.join(""));
 
 }
-
 //Fin de buscador
+
+function esLetra(entrada){//Funcion que comprueba si un caracter recibido es letra
+  if( entrada >= 'a' || entrada >= 'A' || entrada <= 'z' || entrada <= 'Z' ) return true;
+  else return false;
+}
 
 //Funciones de inicio de sesión
 function inicioSesion(){
@@ -81,7 +91,6 @@ function clearLogIn(){
 }
 
 //Funciones del registro
-
 function registro(){
   var datos = ['nombre', 'apellidos', 'correo', 'direccion', 'contraseña'];
   var checkbox = document.getElementById('checkbox').checked;
@@ -141,7 +150,6 @@ function clearInput(inputID){
 }
 
 //Controles de slideshow
-/*
 var control=1;
 var contador = setInterval( cambiar, 4500);
 var cambio = 0;
