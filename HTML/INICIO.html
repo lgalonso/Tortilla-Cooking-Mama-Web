@@ -43,8 +43,8 @@
 							<div>
 								<ul>
 									<li>
-											<input type="text" name="correo" id="correo" placeholder="E-MAIL"><br>
-											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"><br>
+											<input type="text" name="correo" id="correo" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
+											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
 											<p>Olvidé mi contraseña</p>
 											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
 									</li>
@@ -66,14 +66,14 @@
 				</div>
 			</li>
 
-  			<li><a id="faq" style="cursor: not-allowed;" href="#"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
+  			<li><a id="faq" style="cursor: not-allowed;" href="#" onclick="noDisponible()"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
 
 			<li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Buscar</a>
 				<div id="buscador">
 					<ul>
 						<li>
 							<input type="text" id="barra" placeholder ="Buscar...">			
-							<button id="buscar" onclick="buscar2()">Buscar</button>
+							<button id="buscar" onclick="buscar3()">Buscar</button>
 							<script>//Script necesario para lanzar la búsqueda con el botón enter
 								var input = document.getElementById("barra");
 								input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador

@@ -29,6 +29,23 @@ function buscar2(){
       document.getElementById(clave).click();
   
 }
+
+function buscar3(){
+  var busqueda = document.getElementById('barra').value.toLowerCase();
+  var clave = [];
+  var i=0;
+
+  while(i<busqueda.length){
+
+    if(busqueda[i] == " ") clave[i] = "";
+    else clave[i] = busqueda[i];
+    i++;
+  }
+  
+  alert(clave.join(""));
+
+}
+
 //Fin de buscador
 
 //Funciones de inicio de sesión
