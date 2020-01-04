@@ -38,6 +38,16 @@ main section h4{
 	width: 50%;
 }
 
+#dominio{
+	background: #24303c;
+	color: white;
+	width: 49%;
+	height: 70%;
+	padding: 1.9%;
+	border: 1px solid #1f53c5;
+	border-radius:0.2em;
+}
+
 main section p{
 	height:2em;
 	text-align:center;
