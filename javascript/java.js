@@ -1,3 +1,10 @@
+//Navegador es Edge o no
+function targetBrowser(){
+  if (!(/Edge/.test(navigator.userAgent))) {
+    alert('Este sitio web ha sido optimizado para su uso en Microsoft Edge. Si desea disfrutar de todas las funcionalidades abra esta página en Microsoft Edge. Disculpen las molestias.');
+  }
+}
+
 //Buscador
 var arrayLinks = ['españa', 'europa', 'italia'];
 function buscar(){
@@ -11,7 +18,7 @@ function buscar(){
     }
 
   if(control){ 
-    alert("La búsqueda es: "+clave);
+    //alert("La búsqueda es: "+clave);
     document.getElementById(clave).click();
     /*La esencia del buscador está en que cuando recibimos una búsqueda válida la función va a buscar el 
     id de la página y lo va a pinchar (click de ratón) lo que provocará que se cargue la página nueva
@@ -29,22 +36,102 @@ function buscar2(){
       document.getElementById(clave).click();
   
 }
+
+function buscar3(){//Buscador que admite espacios y los omite a la hora de buscar por ID
+  var busqueda = document.getElementById('barra').value.toLowerCase();
+  var clave = [];
+  var i=0;
+
+  while(i<busqueda.length){
+
+    if(busqueda[i] == " ") { 
+      clave[i] = "";
+      if(esLetra(busqueda[i+1])) {//si el caracter siguiente es letra lo transforma a mayuscula y actualiza el contador i
+        i++;
+        clave[i] = busqueda[i].toUpperCase(); 
+      }
+    }
+    else clave[i] = busqueda[i];
+    i++;
+  }
+  
+  alert(clave.join(""));
+
+  if(document.getElementById(clave.join("")) === null) alert("La página no existe en el sitio web o la búsqueda es errónea.");
+    else
+      document.getElementById(clave.join("")).click();
+
+}
 //Fin de buscador
+
+function esLetra(entrada){//Funcion que comprueba si un caracter recibido es letra
+  if( entrada >= 'a' || entrada >= 'A' || entrada <= 'z' || entrada <= 'Z' ) return true;
+  else return false;
+}
 
 //Funciones de inicio de sesión
 function inicioSesion(){
-  alert('Sesión iniciada con éxito');
-  document.getElementById("titulo").click();
+  var credenciales = [document.getElementById('correo'), document.getElementById('contraseña')]
+  var control = true;
+
+  for(var i=0; i < credenciales.length; i++){
+    if(credenciales[i].value == ""){
+      credenciales[i].style.background = 'red';
+      control = false;
+
+    }
+  }
+
+  if(control){
+    alert('Sesión iniciada con éxito. Bienvenido de nuevo '+credenciales[0].value+'.');
+
+    for(var i=0; i < credenciales.length; i++){
+      clearInput(credenciales[i].id);
+    }
+
+    clearLogIn();
+
+    document.getElementById("titulo").click();
+  }
+  else alert("Existen campos incompletos en el formulario");
+}
+
+function clearLogIn(){
+  document.getElementById('iniciosesion').remove();
+  document.getElementById('registro').remove();
 }
 
 //Funciones del registro
 function registro(){
+  var datos = ['nombre', 'apellidos', 'correo', 'direccion', 'contraseña'];
   var checkbox = document.getElementById('checkbox').checked;
-  if(checkbox) document.getElementById('inicio').click()
-  else {
-    document.getElementById('error').innerHTML = "*Acepta los términos y condiciones para completar tu registro.";
+  var controlVacio = true;
+  var controlLong = true;
+
+  for(var i=0; i < datos.length; i++){
+    
+    if(document.getElementById(datos[i]).value == ""){
+      controlVacio = false;
+      document.getElementById("error-"+datos[i]).innerHTML = "*Este campo es obligatorio.";
+    } else if(document.getElementById(datos[i]).value.length < 2) {
+      controlLong = false;
+      document.getElementById("error-"+datos[i]).innerHTML = "*Este campo no cumple los requisitos de longitud mínima.";
+    } else document.getElementById("error-"+datos[i]).innerHTML = '';
 
   }
+
+  if(checkbox && controlVacio && controlLong) {
+    alert("Registro completado. Inicie sesión en perfil.");
+    document.getElementById('inicio').click();
+  }
+  else if(!checkbox){
+    document.getElementById('error').innerHTML = "*Acepta los términos y condiciones para completar tu registro.";
+  }
+
+}
+
+function correoValido(){//Función que determina si una cadena de texto tiene un formato válido de correo
+
 
 }
 
@@ -83,7 +170,6 @@ function clearInput(inputID){
 }
 
 //Controles de slideshow
-/*
 var control=1;
 var contador = setInterval( cambiar, 4500);
 var cambio = 0;

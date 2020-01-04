@@ -10,7 +10,7 @@
     <title>Gastroworld: Inicio</title>
   </head>
 
-  <body>
+  <body onload="targetBrowser()">
   	<!--Menú esquina superior derecha -->
   	<div id="topbar">
 		<div id="aside1">
@@ -24,7 +24,7 @@
 				<li><a href="#piepagina">Pie de página</a></li>
 			</ul>
 		</div>
-		<img id="logo" src="../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD">
+		<img id="logo" src="../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD" >
   		<ul>
   			<li><a href="#"><span class=""><img alt="" src="../Media/español.png"></span>Idiomas</a>
 				<div id="idioma">
@@ -36,15 +36,15 @@
 				</div>
 			</li>
 
-  			<li><a href=""><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+  			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
 				<div id="perfil">
 					<ul>
 						<li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
 							<div>
 								<ul>
 									<li>
-											<input type="text" name="correo" id="correo" placeholder="E-MAIL"><br>
-											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"><br>
+											<input type="text" name="correo" id="correo" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
+											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
 											<p>Olvidé mi contraseña</p>
 											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
 									</li>
@@ -56,24 +56,24 @@
 				</div>
 			</li>
 
-  			<li><a href=""><span class=""><img alt="" src="../Media/logoajustes.png"></span>Ajustes</a>
+  			<li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>Ajustes</a>
 				<div id="ajustes">
 					<ul>
-						<li><a href="">Imagen</a></li>
-						<li><a href="">Sonido</a></li>
-						<li><a href="">Interfaz</a></li>
+						<li><a  style="cursor: not-allowed;" href="#">Imagen</a></li>
+						<li><a  style="cursor: not-allowed;" href="#">Sonido</a></li>
+						<li><a  style="cursor: not-allowed;" href="#">Interfaz</a></li>
 					</ul>
 				</div>
 			</li>
 
-  			<li><a href="FAQ.html"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
+  			<li><a id="faq" style="cursor: not-allowed;" href="#" onclick="noDisponible()"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
 
-			<li><a href=""><span clas=""><img alt="" src="../Media/buscar.png"></span>Buscar</a>
+			<li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Buscar</a>
 				<div id="buscador">
 					<ul>
 						<li>
 							<input type="text" id="barra" placeholder ="Buscar...">			
-							<button id="buscar" onclick="buscar2()">Buscar</button>
+							<button id="buscar" onclick="buscar3()">Buscar</button>
 							<script>//Script necesario para lanzar la búsqueda con el botón enter
 								var input = document.getElementById("barra");
 								input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
@@ -119,31 +119,31 @@
 	<header>
 	  <nav id="menucontinentes"><!--Menú de navegación-->
 	    <ul>
-	        <li><a id="asia" href="#">ASIA</a>
+	        <li><a id="asia" href="#menucontinentes">ASIA</a>
 				<div>
 					<ul>
-						<li class="titulosub rojo"><a href="">PAÍSES</a></li>
-						<li><a id="japon" href="">JAPÓN</a></li>
-						<li><a id="corea" href="">COREA</a></li>
-						<li><a id="tailandia" href="">TAILANDIA</a></li>
-						<li><a id="india" href="">INDIA</a></li>
-						<li><a id="vietnam" href="">VIETNAM</a></li>
+						<li class="titulosub rojo"><a href="#asia">PAÍSES</a></li>
+						<li><a id="japon" href="#asia">JAPÓN</a></li>
+						<li><a id="corea" href="#asia">COREA</a></li>
+						<li><a id="tailandia" href="#asia">TAILANDIA</a></li>
+						<li><a id="india" href="#asia">INDIA</a></li>
+						<li><a id="vietnam" href="#asia">VIETNAM</a></li>
 					</ul>
 					<ul>
-						<li class="titulosub verde"><a href="">LO + POPULAR</a></li>
-						<li><a href="">Categoria 1</a></li>
-						<li><a href="">Categoria 2</a></li>
-						<li><a href="">Categoria 3</a></li>
-						<li><a href="">Categoria 4</a></li>
-						<li><a href="">Categoria 5</a></li>
+						<li class="titulosub verde"><a href="#asia">LO + POPULAR</a></li>
+						<li><a href="#asia">Categoria 1</a></li>
+						<li><a href="#asia">Categoria 2</a></li>
+						<li><a href="#asia">Categoria 3</a></li>
+						<li><a href="#asia">Categoria 4</a></li>
+						<li><a href="#asia">Categoria 5</a></li>
 					</ul>
 					<ul>
-						<li class="titulosub azul"><a href="">FACÍL Y BARATO</a></li>
-						<li><a href="">Categoria 1</a></li>
-						<li><a href="">Categoria 2</a></li>
-						<li><a href="">Categoria 3</a></li>
-						<li><a href="">Categoria 4</a></li>
-						<li><a href="">Categoria 5</a></li>
+						<li class="titulosub azul"><a href="#asia">FACÍL Y BARATO</a></li>
+						<li><a href="#asia">Categoria 1</a></li>
+						<li><a href="#asia">Categoria 2</a></li>
+						<li><a href="#asia">Categoria 3</a></li>
+						<li><a href="#asia">Categoria 4</a></li>
+						<li><a href="#asia">Categoria 5</a></li>
 					</ul>
 				</div>
 			</li>
@@ -151,7 +151,7 @@
 				<div>
 					<ul>
 						<li class="titulosub rojo"><a href="Continentes/Europa_html.html#seccion2">PAÍSES</a></li>
-						<li><a id="españa" href="">ESPAÑA</a></li>
+						<li><a id="españa" href="Paises/españa_html.html">ESPAÑA</a></li>
 						<li><a id="francia" href="">REINO UNIDO</a></li>
 						<li><a id="italia" href="">ITALIA</a></li>
 						<li><a id="turquia" href="">ALEMANIA</a></li>
@@ -159,7 +159,7 @@
 					</ul>
 					<ul>
 						<li class="titulosub verde"><a href="Continentes/Europa_html.html#popular">LO + POPULAR</a></li>
-						<li><a href="">Categoria 1</a></li>
+						<li><a id="tortilla" href="receta.html">Tortilla de Patata</a></li>
 						<li><a href="">Categoria 2</a></li>
 						<li><a href="">Categoria 3</a></li>
 						<li><a href="">Categoria 4</a></li>
@@ -168,94 +168,94 @@
 					<ul>
 						<li class="titulosub azul"><a href="Continentes/Europa_html.html#barato">FACÍL Y BARATO</a></li>
 						<li><a href="">Categoria 1</a></li>
-						<li><a href="">Categoria 2</a></li>
+						<li><a href="receta.html">Tortilla de Patata</a></li>
 						<li><a href="">Categoria 3</a></li>
 						<li><a href="">Categoria 4</a></li>
 						<li><a href="">Categoria 5</a></li>
 					</ul>
 				</div>
 			</li>
-		    <li><a href="#">NORTE AMERICA</a>
+		    <li><a id="americanorte" href="#menucontinentes">NORTE AMERICA</a>
 				<div>
 					<ul>
 						<li class="titulosub rojo"><a href="#seccion2">PAÍSES</a></li>
-						<li><a id="canada" href="">CANADA</a></li>
-						<li><a id="mexico" href="">MEXICO</a></li>
-						<li><a id="costa oeste" href="">USA (COSTA-OESTE)</a></li>
-						<li><a id="costa este" href="">USA (COSTA-ESTE)</a></li>
-						<li><a id="resto usa" href="">RESTO USA</a></li>
+						<li><a id="canada" href="#americanorte">CANADA</a></li>
+						<li><a id="mexico" href="#americanorte">MEXICO</a></li>
+						<li><a id="costa oeste" href="#americanorte">USA (COSTA-OESTE)</a></li>
+						<li><a id="costa este" href="#americanorte">USA (COSTA-ESTE)</a></li>
+						<li><a id="resto usa" href="#americanorte">RESTO USA</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub verde"><a href="#popular">LO + POPULAR</a></li>
-						<li><a href="">Categoria 1</a></li>
-						<li><a href="">Categoria 2</a></li>
-						<li><a href="">Categoria 3</a></li>
-						<li><a href="">Categoria 4</a></li>
-						<li><a href="">Categoria 5</a></li>
+						<li><a href="#americanorte">Categoria 1</a></li>
+						<li><a href="#americanorte">Categoria 2</a></li>
+						<li><a href="#americanorte">Categoria 3</a></li>
+						<li><a href="#americanorte">Categoria 4</a></li>
+						<li><a href="#americanorte">Categoria 5</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub azul"><a href="#barato">FACÍL Y BARATO</a></li>
-						<li><a href="">Categoria 1</a></li>
-						<li><a href="">Categoria 2</a></li>
-						<li><a href="">Categoria 3</a></li>
-						<li><a href="">Categoria 4</a></li>
-						<li><a href="">Categoria 5</a></li>
+						<li><a href="#americanorte">Categoria 1</a></li>
+						<li><a href="#americanorte">Categoria 2</a></li>
+						<li><a href="#americanorte">Categoria 3</a></li>
+						<li><a href="#americanorte">Categoria 4</a></li>
+						<li><a href="#americanorte">Categoria 5</a></li>
 					</ul>
 				</div>
 			</li>
-		    <li><a href="#">AMERICA SUR/CENTRAL</a>
+		    <li><a id="americasur" href="#menucontinentes">AMERICA SUR/CENTRAL</a>
 				<div>
 					<ul>
 						<li class="titulosub rojo"><a href="#seccion2">PAÍSES</a></li>
-						<li><a id="brasil" href="">BRASIL</a></li>
-						<li><a id="chile" href="">CHILE</a></li>
-						<li><a id="colombia" href="">COLOMBIA</a></li>
-						<li><a id="peru" href="">PERU</a></li>
-						<li><a id="caribe" href="">CARIBE</a></li>
+						<li><a id="brasil" href="#americasur">BRASIL</a></li>
+						<li><a id="chile" href="#americasur">CHILE</a></li>
+						<li><a id="colombia" href="#americasur">COLOMBIA</a></li>
+						<li><a id="peru" href="#americasur">PERU</a></li>
+						<li><a id="caribe" href="#americasur">CARIBE</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub verde"><a href="#popular">LO + POPULAR</a></li>
-						<li><a href="">Categoria 1</a></li>
-						<li><a href="">Categoria 2</a></li>
-						<li><a href="">Categoria 3</a></li>
-						<li><a href="">Categoria 4</a></li>
-						<li><a href="">Categoria 5</a></li>
+						<li><a href="#americasur">Categoria 1</a></li>
+						<li><a href="#americasur">Categoria 2</a></li>
+						<li><a href="#americasur">Categoria 3</a></li>
+						<li><a href="#americasur">Categoria 4</a></li>
+						<li><a href="#americasur">Categoria 5</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub azul"><a href="#barato">FACÍL Y BARATO</a></li>
-						<li><a href="">Categoria 1</a></li>
-						<li><a href="">Categoria 2</a></li>
-						<li><a href="">Categoria 3</a></li>
-						<li><a href="">Categoria 4</a></li>
-						<li><a href="">Categoria 5</a></li>
+						<li><a href="#americasur">Categoria 1</a></li>
+						<li><a href="#americasur">Categoria 2</a></li>
+						<li><a href="#americasur">Categoria 3</a></li>
+						<li><a href="#americasur">Categoria 4</a></li>
+						<li><a href="#americasur">Categoria 5</a></li>
 					</ul>
 				</div>
 			</li>
-		    <li><a href="#">AFRICA</a>
+		    <li><a id="africa" href="#menucontinentes">AFRICA</a>
 				<div>
 					<ul>
 						<li class="titulosub rojo"><a href="#seccion2">PAÍSES</a></li>
-						<li><a id="marruecos" href="">MARRUECOS</a></li>
-						<li><a id="egipto" href="">EGIPTO</a></li>
-						<li><a id="sudafrica" href="">SUD-AFRICA</a></li>
-						<li><a id="sahara" href="">ZONA SAHARA</a></li>
-						<li><a id="islas y arabia" href="">ISLAS Y ARABIA</a></li>
+						<li><a id="marruecos" href="#africa">MARRUECOS</a></li>
+						<li><a id="egipto" href="#africa">EGIPTO</a></li>
+						<li><a id="sudafrica" href="#africa">SUD-AFRICA</a></li>
+						<li><a id="sahara" href="#africa">ZONA SAHARA</a></li>
+						<li><a id="islas y arabia" href="#africa">ISLAS Y ARABIA</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub verde"><a href="#popular">LO + POPULAR</a></li>
-						<li><a href="">Categoria 1</a></li>
-						<li><a href="">Categoria 2</a></li>
-						<li><a href="">Categoria 3</a></li>
-						<li><a href="">Categoria 4</a></li>
-						<li><a href="">Categoria 5</a></li>
+						<li><a href="#africa">Categoria 1</a></li>
+						<li><a href="#africa">Categoria 2</a></li>
+						<li><a href="#africa">Categoria 3</a></li>
+						<li><a href="#africa">Categoria 4</a></li>
+						<li><a href="#africa">Categoria 5</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub azul"><a href="#barato">FACÍL Y BARATO</a></li>
-						<li><a href="">Categoria 1</a></li>
-						<li><a href="">Categoria 2</a></li>
-						<li><a href="">Categoria 3</a></li>
-						<li><a href="">Categoria 4</a></li>
-						<li><a href="">Categoria 5</a></li>
+						<li><a href="#africa">Categoria 1</a></li>
+						<li><a href="#africa">Categoria 2</a></li>
+						<li><a href="#africa">Categoria 3</a></li>
+						<li><a href="#africa">Categoria 4</a></li>
+						<li><a href="#africa">Categoria 5</a></li>
 					</ul>
 				</div>
 			</li>
@@ -283,7 +283,7 @@
 					<li></li>
 					<li></li>
 					<li></li>
-					<li></li>
+					<li><a href="receta.html">Tortilla de patata</a></li>
 					<li></li>
 					<li></li>
 					<li></li>

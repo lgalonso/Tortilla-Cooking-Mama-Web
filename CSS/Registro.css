@@ -33,6 +33,11 @@ main section h4{
 	font-size:0.9em;
 	color:white;
 }
+
+#correo{
+	width: 50%;
+}
+
 main section p{
 	height:2em;
 	text-align:center;
@@ -41,7 +46,7 @@ main section p{
 	color: white;
 
 }
-#error{
+.error{
 	color:#ff0000;
 }
 

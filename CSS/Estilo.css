@@ -5,13 +5,15 @@
 	border:3px solid black;
 	padding:3px;
 	margin:3px;
-	background-color:none;
 	width:8.8%;
-	height:33%;
 	float:left;
 	text-align:center;
-	position:fixed;
+	position: absolute;
 	margin-top:5.2%;
+}
+#aside1 h3{
+color: white;
+text-decoration: underline;
 }
 
 /*FIN INDICE*/
@@ -66,7 +68,6 @@ header{
 }
 nav{
 	background-color:#1b1b1b;
-	position:relative;
 	margin-top:20px;
 }
 
@@ -157,6 +158,7 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 	justify-content:center;
 	justify-content:space-between;
 	flex-direction:row;
+
 }
 #listados section{
 	display:inline-block;
