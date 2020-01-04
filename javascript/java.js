@@ -1,3 +1,10 @@
+//Navegador es Edge o no
+function targetBrowser(){
+  if (!(/Edge/.test(navigator.userAgent))) {
+    alert('Este sitio web ha sido optimizado para su uso en Microsoft Edge. Si desea disfrutar de todas las funcionalidades abra esta página en Microsoft Edge. Disculpen las molestias.');
+  }
+}
+
 //Buscador
 var arrayLinks = ['españa', 'europa', 'italia'];
 function buscar(){
