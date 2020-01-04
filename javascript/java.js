@@ -105,24 +105,33 @@ function clearLogIn(){
 function registro(){
   var datos = ['nombre', 'apellidos', 'correo', 'direccion', 'contraseña'];
   var checkbox = document.getElementById('checkbox').checked;
-  var control = true;
+  var controlVacio = true;
+  var controlLong = true;
 
   for(var i=0; i < datos.length; i++){
     
     if(document.getElementById(datos[i]).value == ""){
-      control = false;
+      controlVacio = false;
       document.getElementById("error-"+datos[i]).innerHTML = "*Este campo es obligatorio.";
+    } else if(document.getElementById(datos[i]).value.length < 2) {
+      controlLong = false;
+      document.getElementById("error-"+datos[i]).innerHTML = "*Este campo no cumple los requisitos de longitud mínima.";
     } else document.getElementById("error-"+datos[i]).innerHTML = '';
 
   }
 
-  if(checkbox && control) {
+  if(checkbox && controlVacio && controlLong) {
     alert("Registro completado. Inicie sesión en perfil.");
     document.getElementById('inicio').click();
   }
   else if(!checkbox){
     document.getElementById('error').innerHTML = "*Acepta los términos y condiciones para completar tu registro.";
   }
+
+}
+
+function correoValido(){//Función que determina si una cadena de texto tiene un formato válido de correo
+
 
 }
 
