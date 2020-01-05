@@ -143,7 +143,7 @@ function correoValido(){//Función que determina si una cadena de texto tiene un
 //Funciones de contacto
 function contacto(){
   var asunto = document.getElementById('asunto');
-  var contenido = document.getElementById('contenido');
+  var contenido = document.getElementById('mensaje');
   var email = document.getElementById('email');
   var control = true;
 
@@ -163,7 +163,7 @@ function contacto(){
   if(control){
     confirm("Su mensaje con asunto: "+asunto.value+" ha sido envíado correctamente. En un plazo de 24 horas recibirá una respuesta a la dirección: "+email.value);
     clearInput('asunto');
-    clearInput('contenido');
+    clearInput('mensaje');
     clearInput('email');
   } 
   else alert("Existen campos incompletos en el formulario.");
