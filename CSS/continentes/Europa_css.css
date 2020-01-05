@@ -30,7 +30,7 @@
 	font-family:algerian;
 	margin:auto;
 	display:block;
-	
+
 }
 h2{
 	text-align:center;
@@ -58,7 +58,7 @@ h2{
 	display:flex;
 }
 #seccion1{
-	background-color:rgb(201,244,71);
+	background-color:rgb(223,240,159);
 	height:5%;
 	display:flex;
 	margin-top:1%;	
@@ -70,7 +70,7 @@ h2{
 	
 }
 body div {
-	background:rgba(25,19,71);
+	background:rgba(223,240,159);
 	
 	
 }
@@ -88,6 +88,7 @@ body div {
 #seccion3{
 	margin-top:3px;
 }
+
 #seccion3 > div article{
 	width:80%;
 	background:#8e8e8e;
@@ -125,7 +126,8 @@ body div {
 #seccion3 > div > a:hover{
 	color:#fff;
 }
+
 nav{
-	color:#fff;
+	color:#000000;
 	text-align:center;
-}
+
