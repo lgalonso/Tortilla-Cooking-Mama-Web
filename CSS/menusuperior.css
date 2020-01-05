@@ -123,12 +123,15 @@ body{
 #topbar ul li div ul a:hover{
 	background:#484848;
 }
-#botonbuscar{
+#barra{
+	width:98%;
+}
+#buscar{
 	width:100%;
 	background-color:#ccc;
 	color:#000;
 }
-#botonbuscar:hover{
+#buscar:hover{
 	background-color:#484848;
 	color:#fff;
 	border-color:#000;
