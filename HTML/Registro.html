@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <link href="../CSS/Registro.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../javascript/java.js"></script>
+  <meta charset="utf-8">
+
+    <title>Gastroworld: Registro</title>
+  </head>
+
+  <body>
+	<main>
+		<section>
+			<h4>Formulario de Registro</h4>
+			<p class="error" id="error-nombre"></p>
+			<input class="controles" type="text" name="nombres" id="nombre" placeholder="Introduzca su Nombre">
+			<p class="error" id="error-apellidos"></p>
+			<input class="controles" type="text" name="apellidos" id="apellidos" placeholder="Introduzca su Apellido">
+			<p class="error" id="error-correo"></p>
+			<input class="controles" type="email" name="correo" id="correo" placeholder="Introduzca su Correo">
+			<select required id="dominio" onclick="document.getElementById('dominio').style.background = '#24303c'">
+				<option>Seleciona un dominio</option>
+				<option>@gmail.com</option>
+				<option>@gmail.es</option>
+				<option>@hotmail.com</option>
+				<option>@yahoo.com</option>
+			</select>
+			<p class="error" id="error-contraseña"></p>
+			<input class="controles" type="password" name="password" id="contraseña" placeholder="Introduzca su Contraseña">
+			<p class="error" id="error-direccion"></p>
+			<input class="controles" type="text" name="dirección" id="direccion" placeholder="Introduzca su Dirección">
+			<input id="checkbox" type="checkbox" onclick="document.getElementById('error').innerHTML =''"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="terminos">Estoy de acuerdo con los <a href="#">Términos y Condiciones</a></p><br>
+			<p class="error" id="error"></p>
+			<input class="buttons" type="submit" value="Registrar" onclick="registro()">
+			<p><a id="inicio" href="Inicio.html">Ya tengo Cuenta</a></p>
+		</section>
+	</main>
+  </body>
+ </html>

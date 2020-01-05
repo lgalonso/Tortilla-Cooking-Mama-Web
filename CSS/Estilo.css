@@ -1,75 +1,20 @@
-body{
-	background:#FE642E;
-}
 
-/*BARRA SUPERIOR*/
+/*INDICE IZQUIERDA*/
 
-#topbar{
-	display:flex;
-	background-image:url("../Media/madera.jpg");
-}
-
-/*TITULO*/
-
-#topbar h1{/*Todos los h1 por debajo de topbar */
+#aside1{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:none;
+	width:8.8%;
+	float:left;
 	text-align:center;
-	color:green;
-	font-size:240%;
-	font-family:Courier,arial,helvetica,sans-serif;
-	display:inline-block;
-	justify-content:center;
-	margin-left:43%;
+	position: absolute;
+	margin-top:8.7%;
+	padding-bottom:0.6%;
 }
 
-/*MENU SUPERIOR DERECHO*/
-
-#topbar > ul{ 
-	display:inline-block;
-	display:flex;
-	margin-left: 18%;
-}
-#topbar > ul > li{  /* cada elemento del menu de superior derecho*/
-	flex-wrap:no-wrap;
-	padding:6px;
-	margin:6px;
-	font-size:1em;
-}
-#topbar ul li{
-	list-style:none;
-}
-#topbar ul li img{  /*logos menu superior derecha*/
-	width:1.4em;
-	height:1em;
-}
-#topbar ul li div ul{
-	margin:0;
-	padding:0;
-}
-#topbar ul li a{
-	text-decoration:none;
-	color:black;
-}
-#topbar ul li a:hover{
-	color:blue;
-}
-#topbar > ul > li:hover div{
-	display:table;
-}
-
-/*SUBMENUS SUPERIOR DERECHA*/
-
-#topbar ul li div{
-	position:absolute;
-	background:#ccc;
-	box-sizing:border-box;
-	display:none;
-}
-#topbar ul li div ul{
-	display:table-cell;
-	box-sizing:border-box;
-}
-
-/*FIN BARRA SUPERIOR*/
+/*FIN INDICE*/
 
 /*SLIDESHOW*/
 
@@ -85,7 +30,6 @@ body{
 	width:80%;
 	margin: 3px auto;
 	overflow:hidden;
-	border: 3px solid black;
 }
 #slideshow ul {
 	list-style:none;
@@ -121,7 +65,7 @@ header{
 	margin:auto;
 }
 nav{
-	background-color:#528fd5;
+	background-color:#1b1b1b;
 	position:relative;
 	margin-top:20px;
 }
@@ -138,7 +82,6 @@ nav > ul > li{
 	flex:1;
 	justify-content:center;
 	text-align:center;
-	font-size:18pt;
 }
 nav ul li a{
 	color:#fff;
@@ -147,10 +90,11 @@ nav ul li a{
 	padding:10px 20px;
 }
 nav ul li a:hover {
-	background:#3669a3;
+	background:#484848;
 }
 nav > ul > li:hover div{
 	display:table;
+
 }
 
 /*SUBMENU CONTINENTES*/
@@ -186,9 +130,9 @@ nav ul li div ul .titulosub a {/*Estilo de los títulos del submenu*/
 	padding:10px 20px;
 }
 
-.titulosub.azul {background:#3498db;}
-.titulosub.verde {background:#27ae60;}
-.titulosub.rojo {background:#c0392b;}
+.titulosub.azul {background:#8e8e8e;}
+.titulosub.verde {background:#8e8e8e;}
+.titulosub.rojo {background:#8e8e8e;}
 
 nav ul li div ul .titulosub a:hover {/*Referencia a los titulos de los diferentes submenus*/
 	background:none;
@@ -200,20 +144,10 @@ nav ul li div ul li a {/*Estilos de los links del contenido de los submenus,
 }
 nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 	color:#fff;
-	background-color: coral;
+	background-color: #484848;
 }
 
 /*FIN MENU CONTINENTES*/
-
-/*INTRODUCCIÓN A LA WEB*/
-
-#texto{
-	margin:3% 10%;
-	font-size:2em;
-	font-family:Georgia;
-}
-
-/*FIN INTRODUCCION*/
 
 /*NOVEDADES Y RANKING*/
 
@@ -231,28 +165,16 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 	width: 45%;
 	padding: 10px;
 	margin: 10px;
-	background-color: #04B486;
 }
 #ranking{
 	flex-wrap: wrap;
-	background-image:url("../Media/ranking.jpg");
 }
 #novedades{
-	background-image:url("../Media/novedades.jpg");
-	color:#088A08;
 }
 
 /*FIN NOVEDADES Y RANKING*/
 
-aside{
-	border:5px solid black;
-	padding:10px;
-	margin:10px;
-	background-color:#FF8000;
-	width:20%;
-	float:left;
-	text-align:center;
-}
+
 
 
 

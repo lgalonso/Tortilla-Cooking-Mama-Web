@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <link href="../CSS/receta.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../CSS/menusuperior.css">
+  <script type="text/javascript" src="../javascript/java.js"></script>
+  <meta charset="utf-8">
+
+    <title>Gastroworld: Receta</title>
+  </head>
+
+  <body>
+	<div id="topbar">
+		<div id="aside1">
+			<br>
+			<h3>INDICE</h3>
+			<ul>
+				<li><a id="titulo" href="#topbar">Titulo</a></li>
+				<li><a href="#imagenes">Imágenes</a></li>
+				<li><a href="#material">Material</a></li>
+				<li><a href="#preparacion">Modo de preparación</a></li>
+				<li><a href="#video">Video</a></li>
+				<li><a href="#piepagina">Pie de página</a></li>
+			</ul>
+		</div>
+		<a href="INICIO.html"><img id="logo" src="../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD"></a>
+  		<ul>
+  			<li><a href="#"><span class=""><img alt="" src="../Media/español.png"></span>Idiomas</a>
+				<div id="idioma">
+					<ul>
+						<li><a href=""><img alt="" src="../Media/español.png"></a></li>
+						<li><a href="#"><img alt="" src="../Media/ingles.jpg"></a></li>
+						<li><a href="#"><img alt="" src="../Media/japones.jpg"></a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+				<div id="perfil">
+					<ul>
+						<li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
+							<div>
+								<ul>
+									<li>
+											<input type="text" name="correo" id="correo" placeholder="E-MAIL"><br>
+											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"><br>
+											<p>Olvidé mi contraseña</p>
+											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a id="registro" href="Registro.html">Registrarse</a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>Ajustes</a>
+				<div id="ajustes">
+					<ul>
+						<li><a href="">Imagen</a></li>
+						<li><a href="">Sonido</a></li>
+						<li><a href="">Interfaz</a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="FAQ.html"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
+
+			<li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Buscar</a>
+				<div id="buscador">
+					<ul>
+						<li>
+							<input type="text" id="barra" placeholder ="Buscar...">			
+							<button id="buscar" onclick="buscar2()">Buscar</button>
+							<script>//Script necesario para lanzar la búsqueda con el botón enter
+								var input = document.getElementById("barra");
+								input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
+  									if (event.keyCode === 13) { //Si la tecla pulsada es enter activamos el botón de búsqueda
+   										document.getElementById("buscar").click();
+  									}
+								});
+							</script>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+  		</ul>
+		<!--<div id="aside2">
+			<h4>MÁS VISITADOS</h4>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>-->  		
+  	</div>
+	<main>
+		<div id="imagenes">
+			<img src="../Media/Continentes/Comidas/foto2.jpg" alt="Tortilla de patata">
+			<img src="../Media/Continentes/Comidas/foto2.jpg" alt="Tortilla de patata">
+			<img src="../Media/Continentes/Comidas/foto2.jpg" alt="Tortilla de patata">
+			<img src="../Media/Continentes/Comidas/foto2.jpg" alt="Tortilla de patata">
+		</div>
+		<div id="material">
+			<article id="ingredientes">
+				<h1>Ingredientes (4 personas)</h1>
+				<ul>
+					<li>6 huevos</li>
+					<li>1 cebolla pequeña (opcional)</li>
+					<li>2 vasos de aceite de oliva</li>
+					<li>Una hoja de perejil o un ramito de romero (opcional)</li>
+					<li>3 patatas (600 gramos)</li>
+					<li>Sal</li>
+					<li>Aceite de oliva</li>
+				</ul>
+			</article>
+			<article id="utensilios">
+				<h1>Utensilios</h1>
+				<ul>
+					<li>Pelador</li>
+					<li>Cuchillo</li>
+					<li>Sartén</li>
+					<li>Escurridor</li>
+					<li>Papel de cocina</li>
+					<li>Cuchara de madera</li>
+					<li>Plato de mayor diametro que sartén</li>
+					<li>2 recipientes para guardar mezclas/frituras</li>
+				</ul>
+			</article>
+		</div>
+		<div id="preparacion" href="#video">
+			<h1>Preparación</h1>
+			<p>Pela y pica la cebolla en dados medianos.<br>Si las patatas estuvieran sucias, pásalas por agua. Pélalas, córtalas por la mitad a lo largo y después corta cada trozo en medias lunas finas de 1/2 centímetros. 
+			   Introduce todo en la sartén, sazona a tu gusto y fríe a fuego suave durante 25-30 minutos.<br>
+				Retira la fritada y escúrrela. Pasa el aceite a un recipiente y resérvalo. Limpia la sartén con papel absorbente de cocina.
+				Casca los huevos, colócalos en un recipiente grande y bátelos. Sálalos a tu gusto, agrega la fritada de patatas, cebolla y mezcla bien.
+				Coloca la sartén nuevamente en el fuego, agrega un chorrito del aceite reservado y agrega la mezcla. Remueve un poco con una cuchara de madera y espera (20 segundos) a que empiece a cuajarse.<br> 
+				Separa los bordes, cubre la sartén con un plato de mayor diámetro que la sartén y dale la vuelta. 
+				Échala de nuevo para que cuaje por el otro lado.</p>
+		</div>
+		<div id="video">
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/fCe7IcBwNLI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>  
+		</div>
+	</main>
+	<footer id="piepagina">
+		<ul>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="quienes.html">Acerca de Gastroworld</a></li>
+			<li><a href="#piepagina">Que servicios ofrecemos</a></li>
+		</ul>
+		<ul>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="quienes.html">Quienes somos</a></li>
+			<li><a href="#piepagina">Que servicios ofrecemos</a></li>
+		</ul>
+		<ul>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="quienes.html">Quienes somos</a></li>
+			<li><a href="#piepagina">Que servicios ofrecemos</a></li>
+		</ul>
+		<ul id="redes">
+			<li><p>Síguenos:</p></li>
+			<li><a class="twitter" href="https://twitter.com/world_gastro" target="_blank"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
+			<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>
+			<li><a class ="facebook" href="https://www.facebook.com/Gastroworld.568" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_facebook3.png" alt="logo facebook"></a></li>
+			<li><a class ="youtube" href="https://www.facebook.com/Gastroworld.568" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_youtube3.png" alt="logo youtube"></a></li>
+		</ul>
+	</footer>
+  </body>
+</html>
