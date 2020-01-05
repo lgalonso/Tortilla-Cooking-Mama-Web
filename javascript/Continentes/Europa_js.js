@@ -96,7 +96,7 @@ function anterior(){
 }
 
 
-function bla(){
+/*function bla(){
 	var reemplazado = document.getElementById("Img1");
 	var elemento = document.createElement("p");
 	var	contenido = document.createTextNode("Vitoria-Gasteiz, en 2014, consigue el título a la mayor tortilla de patata del mundo con 1.600kg de patatas,
@@ -108,6 +108,6 @@ function bla(){
 	padre.replaceChild(elemento, reemplazado);
 	
 	
-}
+}*/
 	
 
