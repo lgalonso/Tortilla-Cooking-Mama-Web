@@ -207,6 +207,7 @@ body{
 	position:fixed;
 	margin-top:5.2%;
 	margin-right:3px;
+	right:0;
 }
 
 /*FIN BARRA SUPERIOR*/
@@ -232,16 +233,13 @@ footer ul{
 }
 #redes{
 	display:flex;
-	margin-left:40%;
+	margin-left:48%;
 }
 #redes li{
 	margin-left:5%;
 }
 #redes p{
 	color:white;
-}
-#redes a{
-	line-height:3em;
 }
 
 /*FIN PIE DE PÁGINA*/
