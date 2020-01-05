@@ -105,7 +105,7 @@ function clearLogIn(){
 function registro(){
   var datos = ['nombre', 'apellidos', 'correo', 'direccion', 'contraseña'];
   var checkbox = document.getElementById('checkbox').checked;
-  var dominio = document.getElementById('dominio').getAttribute("required");
+  var dominio = document.getElementById('dominio').value;
   var controlVacio = true;
   var controlLong = true;
 
@@ -121,9 +121,10 @@ function registro(){
 
   }
 
-  //if(!dominio) document.getElementById('dominio').style.background = 'red';
+  if(dominio[0] != '@') document.getElementById('dominio').style.background = 'red';
+  else document.getElementById('dominio').style.background = '#24303c';
 
-  if(checkbox && controlVacio && controlLong) {
+  if(checkbox && controlVacio && controlLong && dominio[0] == '@') {
     alert("Registro completado. Inicie sesión en perfil.");
     document.getElementById('inicio').click();
   }
