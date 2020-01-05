@@ -49,7 +49,6 @@ h2{
 	margin-left:10%;
 	overflow:hidden;
 	margin-top:1%;
-	position:sticky;
 }
 
 /* Animation*/
@@ -57,32 +56,40 @@ h2{
 @keyframes scroll {
 	0% { transform: translateX(0); }
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+	100% { transform: translateX(calc(-15.2em * 7))}
 }
 
 
 // Styling
 #slider {
-	background: none;
 	height: 100%;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 960px;
+	width: 58.37em;
 	display:flex;
 }
 
 #slide-track {
 	animation: scroll 40s linear infinite;
 	display: flex;
-	width: calc(250px * 14);
+	width: calc(15.2em * 14);
 }
 	
 .slide {
 	height: 100%;
-	width: 250px;
-	margin:0.1%;
+	width: 15em;
+	background:none;
+	padding:0;
+	margin:0.1em;
 }
+.slide img{
+	height:10em;
+	width:15em;
+}
+/*.slide > img:hover{
+	border:1px solid white;
+}*/
 
 /*FIN SLIDESHOW BANDERAS*/
 
