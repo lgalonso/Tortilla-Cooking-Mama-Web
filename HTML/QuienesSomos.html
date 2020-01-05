@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="../CSS/menusuperior.css" rel="stylesheet" type="text/css">
+  <link href="../CSS/contacto.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../javascript/java.js"></script>
+  <meta charset="utf-8">
+  <title>GastroContacto</title>
+</head>
+
+<body onload="targetBrowser()">
+  <!--Menú esquina superior derecha -->
+    <div id="topbar">
+    <div id="aside1">
+      <br>
+      <h3>INDICE</h3>
+      <ul>
+        <li><a id="titulo" href="#topbar">Titulo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#buzon">E-Mail</a></li>
+        <li><a href="#direccion">Dirección</a></li>
+        <li><a href="#piepagina">Pie de página</a></li>
+      </ul>
+    </div>
+    <a href="INICIO.html"><img id="logo" src="../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD"></a>
+      <ul>
+        <li><a href="#"><span class=""><img alt="" src="../Media/español.png"></span>Idiomas</a>
+        <div id="idioma">
+          <ul>
+            <li><a href=""><img alt="" src="../Media/español.png"></a></li>
+            <li><a href="#"><img alt="" src="../Media/ingles.jpg"></a></li>
+            <li><a href="#"><img alt="" src="../Media/japones.jpg"></a></li>
+          </ul>
+        </div>
+      </li>
+
+        <li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+        <div id="perfil">
+          <ul>
+            <li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
+              <div>
+                <ul>
+                  <li>
+                      <input type="text" name="correo" id="correo" placeholder="E-MAIL"
+                      onclick="document.getElementById('correo').style.background = 'white'"><br>
+                      <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"
+                      onclick="document.getElementById('contraseña').style.background = 'white'"><br>
+                      <p>Olvidé mi contraseña</p>
+                      <input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="registro" href="Registro.html">Registrarse</a></li>
+          </ul>
+        </div>
+      </li>
+
+        <li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>Ajustes</a>
+        <div id="ajustes">
+          <ul>
+            <li><a href="">Imagen</a></li>
+            <li><a href="">Sonido</a></li>
+            <li><a href="">Interfaz</a></li>
+          </ul>
+        </div>
+      </li>
+
+        <li><a href="FAQ.html"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
+
+      <li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Buscar</a>
+        <div id="buscador">
+          <ul>
+            <li>
+              <input type="text" id="barra" placeholder ="Buscar...">     
+              <button id="buscar" onclick="buscar2()">Buscar</button>
+              <script>//Script necesario para lanzar la búsqueda con el botón enter
+                var input = document.getElementById("barra");
+                input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
+                    if (event.keyCode === 13) { //Si la tecla pulsada es enter activamos el botón de búsqueda
+                      document.getElementById("buscar").click();
+                    }
+                });
+              </script>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      </ul>
+    <!--<div id="aside2">
+      <h4>MÁS VISITADOS</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>-->     
+    </div>
+
+    <div id="contacto">
+      <h1 id="nosotros">Quiénes somos</h1>
+
+      <p>Somos estudiantes de ingeniería y expertos gastronómicos, la redacción de GastroWorld la compone un equipo que trabaja coordinado con la redacción de GastroRecetas. Estamos pendientes de toda la información relacionada con el mundo gastronómico, trabajamos pegados a la actualidad del sector. Recetas, curiosidades y mucho más.</p>
+
+      <p>GastroWorld es un proyecto del Grupo Pincho de Tortilla, una empresa especializada en la restauración y la gastronomía.</p>
+
+      <p>Una empresa que se puso en marcha en el año 2019 como un geolocalizador de recetas a través de la plataforma online. Un usuario podría encontrar las recetas más populares y fáciles de preparar navengando por nuestro sitio web.</p>
+
+      <p>Poco a poco el grupo ha desarrollado una red en torno a la gastronomía, tratando de abarcar todos los sectores posibles y ofreciendo una visión 360º.</p>
+      <h1></h1>
+      <br>
+
+      <h1 id="servicios">Qué servicios ofrecemos</h1>
+      <p>Ponemos a tu disposición un amplio repertorio de recetas de todo el mundo. Te guíamos paso a paso en su preparación con intrucciones sencillas y videotutoriales.</p>
+      <p>Disponemos de un equipo de atención al cliente para cualquier duda que te surja, llama a nuestro número o escríbenos un correo eléctronico.</p>
+      <p>Regístrate o inicia sesión para guardar tus recetas favoritas.</p>
+      <h3></h3>
+      <br>
+
+      <h1 id="equipo">Nuestro equipo</h1>
+      <h3></h3>
+      <h3></h3>
+      <br>
+
+      <h1 id="trabaja">Trabaja con nosotros</h1>
+      <h3></h3>
+      <h3></h3>
+      <br>
+
+      <h2 id="paginaContacto">Contacto</h2>
+      <h3></h3>
+      <h3></h3>
+      <h3></h3>
+      <h3></h3>
+      
+      
+
+
+    </div>
+
+
+</body>
+<footer id="piepagina">
+    <ul>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="quienes.html">Acerca de Gastroworld</a></li>
+      <li><a href="#piepagina">Que servicios ofrecemos</a></li>
+    </ul>
+    <ul>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="quienes.html">Quienes somos</a></li>
+      <li><a href="#piepagina">Que servicios ofrecemos</a></li>
+    </ul>
+    <ul>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="quienes.html">Quienes somos</a></li>
+      <li><a href="#piepagina">Que servicios ofrecemos</a></li>
+    </ul>
+    <ul id="redes">
+      <li><p>Síguenos:</p></li>
+      <li><img class="twitter" src="../Media/redes_sociales/twitter.jpg" alt="logo twitter"></li>
+      <li><a class="twitter" href="https://twitter.com/world_gastro" target="_blank">Twitter</a></li>
+      <li><img class="instagram" src="../Media/redes_sociales/instagram.jpg" alt="logo Instagram"></li>
+        <li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank">Instagram</a></li>
+      <li><img class="facebook" src="../Media/redes_sociales/facebook.jpg" alt="logo facebook"></li>
+        <li><a class ="facebook" href="https://www.facebook.com/Gastroworld.568" target="_blank">Facebook</a></li>
+    </ul>
+  </footer>
+</html>
