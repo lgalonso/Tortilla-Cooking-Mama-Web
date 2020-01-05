@@ -70,12 +70,13 @@ body div {
 }
 #seccion3 > div article{
 	width:80%;
-	background:#484848;
+	background:#8e8e8e;
 	display:block;
 	margin:auto;
 }
 #seccion3 > div article:hover{
 	box-shadow: 3em 0em 6em #939393;
+	background:#484848;
 }
 #seccion3 > div article > h1{
 	padding:0.4em;

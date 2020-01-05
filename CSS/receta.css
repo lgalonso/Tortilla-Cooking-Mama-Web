@@ -38,13 +38,13 @@ main > div{
 }
 #material > article{
 	width:50%;
-	background:#484848;
+	background:#8e8e8e;
 }
 #ingredientes{
 	margin-right:0.5%;
 }
 #preparacion{
-	background:#484848;
+	background:#8e8e8e;
 }
 #preparacion *{
 	padding:1%;
