@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link href="../CSS/menusuperior.css" rel="stylesheet" type="text/css">
+		<link href="../CSS/perfil.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../javascript/java.js"></script>
+		<meta charset="utf-8">
+		<title>GastroWorld: Mi Perfil</title>
+	</head>
+
+	<body>
+		<div id="topbar">
+		 <div id="aside1">
+			<br>
+			<h3>MI PERFIL</h3>
+			<ul>
+				<li id="favoritos"><a href="#favoritos">Favoritos</a>
+					<ul class="subperfil">
+						<li><a href="#añadir">Añadir receta</a></li>
+						<li><a href="">Buscar recomend.</a></li>
+					</ul>
+				</li>
+				<li id="recientes"><a href="#recientes">Recientes</a></li>
+				<li id="suscr"><a href="#suscr">Suscripción</a>
+					<ul class="subperfil">
+						<li><a href="">Ver suscripciónes</a></li>
+						<li><a href="">Cancelar suscrip.</a></li>
+						<li><a href="">Privilegios</a></li>
+					</ul>
+				</li>
+				<li id="reg"><a href="#reg">Registrar receta</a></li>
+				<li id="reco"><a href="#reco">Recomendar</a>
+					<ul class="subperfil">
+						<li><a href="">Enviar receta</a></li>
+						<li><a href="">Añadir amigo</a></li>
+						<li><a href="">Recomendar web</a></li>
+					</ul>
+				</li>
+				<li><a href="#piepagina">Pie de página</a></li>
+			</ul>
+		 </div>
+		 <img id="logo" src="../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD" >
+  		 <ul>
+  			<li><a href="#"><span class=""><img alt="" src="../Media/español.png"></span>Idiomas</a>
+				<div id="idioma">
+					<ul>
+						<li><a href="#"><img alt="" src="../Media/español.png"></a></li>
+						<li><a href="#"><img alt="" src="../Media/ingles.jpg"></a></li>
+						<li><a href="#"><img alt="" src="../Media/japones.jpg"></a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+				<div id="perfil">
+					<ul>
+						<li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
+							<div>
+								<ul>
+									<li>
+											<input type="text" name="correo" id="correo" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
+											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
+											<p>Olvidé mi contraseña</p>
+											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a id="registro" href="Registro.html">Registrarse</a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>Ajustes</a>
+				<div id="ajustes">
+					<ul>
+						<li><a  style="cursor: not-allowed;" href="#">Imagen</a></li>
+						<li><a  style="cursor: not-allowed;" href="#">Sonido</a></li>
+						<li><a  style="cursor: not-allowed;" href="#">Interfaz</a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a id="faq" style="cursor: not-allowed;" href="#" onclick="noDisponible()"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
+
+			<li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Buscar</a>
+				<div id="buscador">
+					<ul>
+						<li>
+							<input type="text" id="barra" placeholder ="Buscar...">			
+							<button id="buscar" onclick="buscar3()">Buscar</button>
+							<script>//Script necesario para lanzar la búsqueda con el botón enter
+								var input = document.getElementById("barra");
+								input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
+  									if (event.keyCode === 13) { //Si la tecla pulsada es enter activamos el botón de búsqueda
+   										document.getElementById("buscar").click();
+  									}
+								});
+							</script>
+						</li>
+					</ul>
+				</div>
+			</li>
+  		 </ul> 		
+		</div>
+		<main>
+			<div id="defecto">
+				<h1>DATOS DEL PERFIL</h1>
+				<p>Nombre:</p>
+				<p>Correo:</p>
+				<p>Suscripción:</p>
+			</div>
+			<div id="añadir">
+				<p>Buscador de recetas</p>
+				<p>ultimos favoritos añadidos</p>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+		</main>
+		<footer id="piepagina">
+		 <ul>
+      		<li><a id="contacto" href="contacto.html">Contacto</a></li>
+      		<li><a id="quienesSomos" href="QuienesSomos.html">Acerca de Gastroworld</a></li>
+      		<li><a id="servicios" href="QuienesSomos.html#servicios">Que servicios ofrecemos</a></li>
+    	 </ul>
+    	 <ul>
+      		<li><a id="equipo" href="QuienesSomos.html#equipo">Nuestro Equipo</a></li>
+     		<li><a id="trabajo" href="QuienesSomos.html#trabaja">Trabaja con nosotros</a></li>
+      		<li><a href="#piepagina">TBD</a></li>
+    	 </ul>
+    	 <ul>
+      		<li><a href="contacto.html">TBD</a></li>
+      		<li><a href="quienes.html">TBD</a></li>
+      		<li><a href="#piepagina">TBD</a></li>
+		 </ul>
+		 <ul id="redes">
+			<li><p>Síguenos:</p></li>
+			<li><a class="twitter" href="https://twitter.com/world_gastro" target="_blank"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
+			<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>
+			<li><a class ="facebook" href="https://www.facebook.com/Gastroworld.568" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_facebook3.png" alt="logo facebook"></a></li>
+			<li><a class ="youtube" href="https://www.youtube.com" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_youtube3.png" alt="logo youtube"></a></li>
+		 </ul>
+		</footer>
+	</body>
+</html>
