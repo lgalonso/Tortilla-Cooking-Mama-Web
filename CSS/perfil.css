@@ -21,11 +21,16 @@
 }
 main{
 	margin-left:10%;
+	display:flex;
 }
-#añadir{
+main > div{
+	margin-left:10%;
 	display:none;
 }
-#añadir:target{
+#defecto{
+	display:table;
+}
+main > div:target{
 	display:table;
 }
 footer{
