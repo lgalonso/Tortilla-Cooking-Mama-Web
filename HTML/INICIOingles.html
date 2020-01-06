@@ -17,7 +17,7 @@
 			<br>
 			<h3>INDEX</h3>
 			<ul>
-				<li><a id="titulo" href="#topbar">Title</a></li>
+				<li><a id="title" href="#topbar">Title</a></li>
 				<li><a href="#slideshow">Slideshow</a></li>
 				<li><a href="#menucontinentes">Continent Menu</a></li>
 				<li><a href="#listados">Ranking y Novelties</a></li>
@@ -27,7 +27,7 @@
 		<img id="logo" src="../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD" >
   		<ul>
   			<li><a href="#"><span class=""><img alt="" src="../Media/ingles.jpg"></span>Languages</a>
-				<div id="idioma">
+				<div id="language">
 					<ul>
 						<li><a href="INICIO.html"><img alt="" src="../Media/español.png"></a></li>
 						<li><a href="#"><img alt="" src="../Media/ingles.jpg"></a></li>
@@ -37,27 +37,27 @@
 			</li>
 
   			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Profile</a>
-				<div id="perfil">
+				<div id="profile">
 					<ul>
-						<li id="iniciosesion"><a href="#iniciosesion">Log in</a>
+						<li id="logIn"><a href="#iniciosesion">Log in</a>
 							<div>
 								<ul>
 									<li>
-											<input type="text" name="correo" id="correo" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
+											<input type="text" name="correo" id="email" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
 											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
 											<p>Forgot my password</p>
-											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
+											<input id="logInButton" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li><a id="registro" href="Registro.html">Sign up</a></li>
+						<li><a id="signUp" href="Registro.html">Sign up</a></li>
 					</ul>
 				</div>
 			</li>
 
   			<li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>Settings</a>
-				<div id="ajustes">
+				<div id="settings">
 					<ul>
 						<li><a  style="cursor: not-allowed;" href="#">Image</a></li>
 						<li><a  style="cursor: not-allowed;" href="#">Sound</a></li>
@@ -69,11 +69,11 @@
   			<li><a id="faq" style="cursor: not-allowed;" href="#" onclick="noDisponible()"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
 
 			<li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Search</a>
-				<div id="buscador">
+				<div id="webBrowser">
 					<ul>
 						<li>
 							<input type="text" id="barra" placeholder ="Search...">			
-							<button id="buscar" onclick="buscar3()">Search</button>
+							<button id="search" onclick="buscar3()">Search</button>
 							<script>//Script necesario para lanzar la búsqueda con el botón enter
 								var input = document.getElementById("barra");
 								input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
@@ -109,117 +109,117 @@
 		</ul>
 	</div>
 	<header>
-	  <nav id="menucontinentes"><!--Menú de navegación-->
+	  <nav id="continentsMenu"><!--Menú de navegación-->
 	    <ul>
 	        <li><a id="asia" href="#menucontinentes">ASIA</a>
 				<div>
 					<ul>
 						<li class="titulosub rojo"><a href="#asia">COUNTRIES</a></li>
-						<li><a id="japon" href="#asia">JAPAN</a></li>
-						<li><a id="corea" href="#asia">KOREA</a></li>
-						<li><a id="tailandia" href="#asia">THAILAND</a></li>
+						<li><a id="japan" href="#asia">JAPAN</a></li>
+						<li><a id="korea" href="#asia">KOREA</a></li>
+						<li><a id="thailand" href="#asia">THAILAND</a></li>
 						<li><a id="india" href="#asia">INDIA</a></li>
 						<li><a id="vietnam" href="#asia">VIETNAM</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub verde"><a href="#asia">MOST POPULAR</a></li>
-						<li><a href="#asia">Category 1</a></li>
-						<li><a href="#asia">Category 2</a></li>
-						<li><a href="#asia">Category 3</a></li>
-						<li><a href="#asia">Category 4</a></li>
-						<li><a href="#asia">Category 5</a></li>
+						<li><a id="sushi" href="#asia">Sushi</a></li>
+						<li><a id="kimchi" href="#asia">kimchi</a></li>
+						<li><a id="ramen" href="#asia">Ramen</a></li>
+						<li><a id="padTai" href="#asia">Pad Tai</a></li>
+						<li><a id="tikkaMasalaChicken" href="#asia">Tikka Masala Chicken</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub azul"><a href="#asia">EASY AND CHEAP</a></li>
-						<li><a href="#asia">Category 1</a></li>
-						<li><a href="#asia">Category 2</a></li>
-						<li><a href="#asia">Category 3</a></li>
-						<li><a href="#asia">Category 4</a></li>
-						<li><a href="#asia">Category 5</a></li>
+						<li><a id="pho" href="#asia">Pho</a></li>
+						<li><a id="kimchi" href="#asia">Kimchi</a></li>
+						<li><a id="tikkaMasalaChicken" href="#asia">Tikka Masala Chicken</a></li>
+						<li><a id="goiCuon" href="#asia">Goi Cuon</a></li>
+						<li><a id="ramen" href="#asia">Ramen</a></li>
 					</ul>
 				</div>
 			</li>
-		    <li><a id="europa" href="Continentes/Europa_html.html">EUROPE</a>
+		    <li><a id="europe" href="Continentes/Europa_html.html">EUROPE</a>
 				<div>
 					<ul>
 						<li class="titulosub rojo"><a href="Continentes/Europa_html.html#seccion2">COUNTRIES</a></li>
-						<li><a id="españa" href="Paises/españa_html.html">SPAIN</a></li>
-						<li><a id="francia" href="">UNITED KINGDOM</a></li>
-						<li><a id="italia" href="">ITALY</a></li>
-						<li><a id="turquia" href="">GERMANY</a></li>
-						<li><a id="grecia" href="">GREECE</a></li>
+						<li><a id="spain" href="Paises/españa_html.html">SPAIN</a></li>
+						<li><a id="france" href="">UNITED KINGDOM</a></li>
+						<li><a id="italy" href="">ITALY</a></li>
+						<li><a id="germany" href="">GERMANY</a></li>
+						<li><a id="greece" href="">GREECE</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub verde"><a href="Continentes/Europa_html.html#popular">MOST POPULAR</a></li>
-						<li><a id="tortillaDePatatas" href="receta.html">Spanish Omelette</a></li>
-						<li><a id="ensaladaCesar" href="ensaladaCesar">Caesar Salad</a></li>
+						<li><a id="spanishOmelette" href="receta.html">Spanish Omelette</a></li>
+						<li><a id="caesarSalad" href="ensaladaCesar">Caesar Salad</a></li>
 						<li><a id="fishAndChips" href="fishAndChips">Fish And Chips</a></li>
 						<li><a id="currywurst" href="currywurst">Currywurst</a></li>
-						<li><a id="Pizza" href="pizza">Pizza</a></li>
+						<li><a id="napoliPizza" href="pizza">Napoli Pizza</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub azul"><a href="Continentes/Europa_html.html#barato">EASY AND CHEAP</a></li>
-						<li><a id="Pizza" href="">Pizza</a></li>
-						<li><a href="receta.html">Spanish Omelette</a></li>
+						<li><a id="napoliPizza" href="">Napoli Pizza</a></li>
+						<li><a id="spanishOmelette" href="receta.html">Spanish Omelette</a></li>
 						<li><a id="currywurst" href="">Currywurst</a></li>
 						<li><a id="fishAndChips" href="">Fish And Chips</a></li>
-						<li><a id="ensaladaCesar" href="">Caesar Salad</a></li>
+						<li><a id="CaesarSalad" href="">Caesar Salad</a></li>
 					</ul>
 				</div>
 			</li>
-		    <li><a id="americanorte" href="#menucontinentes">NORTH AMERICA</a>
+		    <li><a id="northAmerica" href="#menucontinentes">NORTH AMERICA</a>
 				<div>
 					<ul>
 						<li class="titulosub rojo"><a href="#seccion2">COUNTRIES</a></li>
 						<li><a id="canada" href="#americanorte">CANADA</a></li>
 						<li><a id="mexico" href="#americanorte">MEXICO</a></li>
-						<li><a id="costa oeste" href="#americanorte">USA (WEST-COAST)</a></li>
-						<li><a id="costa este" href="#americanorte">USA (EAST-COAST)</a></li>
-						<li><a id="resto usa" href="#americanorte">REST USA</a></li>
+						<li><a id="westCoast" href="#americanorte">USA (WEST-COAST)</a></li>
+						<li><a id="eastCoast" href="#americanorte">USA (EAST-COAST)</a></li>
+						<li><a id="restUsa" href="#americanorte">REST USA</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub verde"><a href="#popular">MOST POPULAR</a></li>
-						<li><a href="#americanorte">Category 1</a></li>
-						<li><a href="#americanorte">Category 2</a></li>
-						<li><a href="#americanorte">Category 3</a></li>
-						<li><a href="#americanorte">Category 4</a></li>
-						<li><a href="#americanorte">Category 5</a></li>
+						<li><a id="pepperoniPizza" href="#americanorte">Pepperoni Pizza</a></li>
+						<li><a id="macNCheese" href="#americanorte">Mac n' cheese</a></li>
+						<li><a id="enchilada" href="#americanorte">Enchilada</a></li>
+						<li><a id="mole" href="#americanorte">Mole</a></li>
+						<li><a id="tourtière" href="#americanorte">Tourtière</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub azul"><a href="#barato">EASY AND CHEAP</a></li>
-						<li><a href="#americanorte">Category 1</a></li>
-						<li><a href="#americanorte">Category 2</a></li>
-						<li><a href="#americanorte">Category 3</a></li>
-						<li><a href="#americanorte">Category 4</a></li>
-						<li><a href="#americanorte">Category 5</a></li>
+						<li><a id="hotDog" href="#americanorte">Hot Dog</a></li>
+						<li><a id="poutine" href="#americanorte">Poutine</a></li>
+						<li><a id="macNCheese" href="#americanorte">Mac n' cheese</a></li>
+						<li><a id="texasChilli" href="#americanorte">Texas Chilli</a></li>
+						<li><a id="tacos" href="#americanorte">Tacos</a></li>
 					</ul>
 				</div>
 			</li>
-		    <li><a id="americasur" href="#menucontinentes">SOUTH AND CENTRAL AMERICA</a>
+		    <li><a id="southAmerica" href="#menucontinentes">SOUTH AND CENTRAL AMERICA</a>
 				<div>
 					<ul>
 						<li class="titulosub rojo"><a href="#seccion2">COUNTRIES</a></li>
-						<li><a id="brasil" href="#americasur">BRAZIL</a></li>
+						<li><a id="brazil" href="#americasur">BRAZIL</a></li>
 						<li><a id="chile" href="#americasur">CHILE</a></li>
 						<li><a id="colombia" href="#americasur">COLOMBIA</a></li>
 						<li><a id="peru" href="#americasur">PERU</a></li>
-						<li><a id="caribe" href="#americasur">CARIBBEAN</a></li>
+						<li><a id="caribbean" href="#americasur">CARIBBEAN</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub verde"><a href="#popular">MOST POPULAR</a></li>
-						<li><a href="#americasur">Category 1</a></li>
-						<li><a href="#americasur">Category 2</a></li>
-						<li><a href="#americasur">Category 3</a></li>
-						<li><a href="#americasur">Category 4</a></li>
-						<li><a href="#americasur">Category 5</a></li>
+						<li><a id="feijoada" href="#americasur">Feijoada</a></li>
+						<li><a id="charquican" href="#americasur">Charquican</a></li>
+						<li><a id="paisaTray" href="#americasur">Paisa Tray</a></li>
+						<li><a id="ceviche" href="#americasur">Ceviche</a></li>
+						<li><a id="stew" href="#americasur">Stew</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub azul"><a href="#barato">EASY AND CHEAP</a></li>
-						<li><a href="#americasur">Category 1</a></li>
-						<li><a href="#americasur">Category 2</a></li>
-						<li><a href="#americasur">Category 3</a></li>
-						<li><a href="#americasur">Category 4</a></li>
-						<li><a href="#americasur">Category 5</a></li>
+						<li><a id="tamaleDough" href="#americasur">Tamale Dough</a></li>
+						<li><a id="chipa" href="#americasur">Chipa</a></li>
+						<li><a id="cornCake" href="#americasur">Corn Cake</a></li>
+						<li><a id="stuffedPotato" href="#americasur">Stuffed Potato</a></li>
+						<li><a id="sugarcaneWater" href="#americasur">Sugarcane-Water</a></li>
 					</ul>
 				</div>
 			</li>
@@ -227,27 +227,27 @@
 				<div>
 					<ul>
 						<li class="titulosub rojo"><a href="#seccion2">COUNTRIES</a></li>
-						<li><a id="marruecos" href="#africa">MOROCCO</a></li>
-						<li><a id="egipto" href="#africa">EGYPT</a></li>
-						<li><a id="sudafrica" href="#africa">SOUTH-AFRICA</a></li>
+						<li><a id="morocco" href="#africa">MOROCCO</a></li>
+						<li><a id="egypt" href="#africa">EGYPT</a></li>
+						<li><a id="southAfrica" href="#africa">SOUTH-AFRICA</a></li>
 						<li><a id="sahara" href="#africa">SAHARA</a></li>
-						<li><a id="islas y arabia" href="#africa">ISLANDS AND ARABIA</a></li>
+						<li><a id="islandAndArabia" href="#africa">ISLANDS AND ARABIA</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub verde"><a href="#popular">MOST POPULAR</a></li>
-						<li><a href="#africa">Category 1</a></li>
-						<li><a href="#africa">Category 2</a></li>
-						<li><a href="#africa">Category 3</a></li>
-						<li><a href="#africa">Category 4</a></li>
-						<li><a href="#africa">Category 5</a></li>
+						<li><a id="moroccanTagine" href="#africa">Moroccan Tagine</a></li>
+						<li><a id="babaGanoush" href="#africa">Baba Ganoush</a></li>
+						<li><a id="bobotie" href="#africa">Bobotie</a></li>
+						<li><a id="mreifisa" href="#africa">Mreifisa</a></li>
+						<li><a id="kabsa" href="#africa">Kabsa</a></li>
 					</ul>
 					<ul>
 						<li class="titulosub azul"><a href="#barato">EASY AND CHEAP</a></li>
-						<li><a href="#africa">Category 1</a></li>
-						<li><a href="#africa">Category 2</a></li>
-						<li><a href="#africa">Category 3</a></li>
-						<li><a href="#africa">Category 4</a></li>
-						<li><a href="#africa">Category 5</a></li>
+						<li><a id="couscous" href="#africa">Couscous</a></li>
+						<li><a id="okra" href="#africa">Okra</a></li>
+						<li><a id="frikadelle" href="#africa">Frikadelle</a></li>
+						<li><a id="aych" href="#africa">Aych</a></li>
+						<li><a id="ravitoto" href="#africa">Ravitoto</a></li>
 					</ul>
 				</div>
 			</li>
@@ -256,37 +256,37 @@
 	</header>
 	<main>
 
-		<div id="listados">
-			<section id="novedades">Novelties
+		<div id="ranked">
+			<section id="novelties">Novelties
 				<ul> Novelties list
-					<li><a href="receta.html">Spanish Omelette</a></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li><a id="spanishOmelette" href="receta.html">Spanish Omelette</a></li>
+					<li><a id="frikadelle" href="#africa">Frikadelle</a></li>
+					<li><a id="sancocho" href="#americasur">Sancocho</a></li>
+					<li><a id="poutine" href="#americanorte">Poutine</a></li>
+					<li><a id="tikkaMasalaChicken" href="#asia">Tikka Masala Chicken</a></li>
+					<li><a id="charquican" href="#americasur">Charquican</a></li>
+					<li><a id="goiCuon" href="#asia">Goi Cuon</a></li>
+					<li><a id="babaGanoush" href="#africa">Baba ganoush</a></li>
 				</ul>
 			</section>
 
 			<section id="ranking">Recipe Ranking
-				<ol> List Ranking
-					<li></li>
-					<li></li>
-					<li></li>
-					<li><a href="receta.html">Spanish Omelette</a></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+				<ol> Ranking List
+					<li><a id="Pizza" href="pizza">Napoli Pizza</a></li></li>
+					<li><a id="sushi" href="#asia">Sushi</a></li>
+					<li><a id="texasChilli" href="#americanorte">Texas Chilli</a></li>
+					<li><a id="spanishOmelette"href="receta.html">Spanish Omelette</a></li>
+					<li><a id="hotDog" href="#americanorte">Hot Dog</a></li>
+					<li><a id="currywurst" href="currywurst">Currywurst</a></li>
+					<li><a id="arepas" href="#americasur">Arepas</a></li>
+					<li><a id="couscous" href="#africa">Couscous</a></li>
 				</ol>
 
 			</section>
 
 		</div>
 	</main>
-	<footer id="piepagina">
+	<footer id="footer">
 		<ul>
 			<li><a href="contacto.html">Contact</a></li>
 			<li><a href="quienes.html">About Gastroworld</a></li>
@@ -302,7 +302,7 @@
 			<li><a href="quienes.html">who are we</a></li>
 			<li><a href="#piepagina">Services we offer</a></li>
 		</ul>
-		<ul id="redes">
+		<ul id="socialmedia">
 			<li><p>Follow us on:</p></li>
 			<li><a class="twitter" href="https://twitter.com/world_gastro" target="_blank"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
 			<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>

@@ -55,7 +55,7 @@ function buscar3(){//Buscador que admite espacios y los omite a la hora de busca
     i++;
   }
   
-  alert(clave.join(""));
+  //alert(clave.join(""));
 
   if(document.getElementById(clave.join("")) === null) alert("La página no existe en el sitio web o la búsqueda es errónea.");
     else
