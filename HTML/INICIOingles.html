@@ -17,7 +17,7 @@
 			<br>
 			<h3>INDEX</h3>
 			<ul>
-				<li><a id="title" href="#topbar">Title</a></li>
+				<li><a id="titulo" href="#topbar">Title</a></li>
 				<li><a href="#slideshow">Slideshow</a></li>
 				<li><a href="#menucontinentes">Continent Menu</a></li>
 				<li><a href="#listados">Ranking y Novelties</a></li>
@@ -27,7 +27,7 @@
 		<img id="logo" src="../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD" >
   		<ul>
   			<li><a href="#"><span class=""><img alt="" src="../Media/ingles.jpg"></span>Languages</a>
-				<div id="language">
+				<div id="idioma">
 					<ul>
 						<li><a href="INICIO.html"><img alt="" src="../Media/español.png"></a></li>
 						<li><a href="#"><img alt="" src="../Media/ingles.jpg"></a></li>
@@ -37,27 +37,27 @@
 			</li>
 
   			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Profile</a>
-				<div id="profile">
+				<div id="perfil">
 					<ul>
-						<li id="logIn"><a href="#iniciosesion">Log in</a>
+						<li id="iniciosesion"><a href="#iniciosesion">Log in</a>
 							<div>
 								<ul>
 									<li>
-											<input type="text" name="correo" id="email" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
+											<input type="text" name="correo" id="correo" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
 											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
 											<p>Forgot my password</p>
-											<input id="logInButton" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
+											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li><a id="signUp" href="Registro.html">Sign up</a></li>
+						<li><a id="registro" href="Registro.html">Sign up</a></li>
 					</ul>
 				</div>
 			</li>
 
   			<li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>Settings</a>
-				<div id="settings">
+				<div id="ajustes">
 					<ul>
 						<li><a  style="cursor: not-allowed;" href="#">Image</a></li>
 						<li><a  style="cursor: not-allowed;" href="#">Sound</a></li>
@@ -69,11 +69,11 @@
   			<li><a id="faq" style="cursor: not-allowed;" href="#" onclick="noDisponible()"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
 
 			<li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Search</a>
-				<div id="webBrowser">
+				<div id="buscador">
 					<ul>
 						<li>
 							<input type="text" id="barra" placeholder ="Search...">			
-							<button id="search" onclick="buscar3()">Search</button>
+							<button id="buscar" onclick="buscar3()">Search</button>
 							<script>//Script necesario para lanzar la búsqueda con el botón enter
 								var input = document.getElementById("barra");
 								input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
@@ -109,7 +109,7 @@
 		</ul>
 	</div>
 	<header>
-	  <nav id="continentsMenu"><!--Menú de navegación-->
+	  <nav id="menucontinentes"><!--Menú de navegación-->
 	    <ul>
 	        <li><a id="asia" href="#menucontinentes">ASIA</a>
 				<div>
@@ -256,8 +256,8 @@
 	</header>
 	<main>
 
-		<div id="ranked">
-			<section id="novelties">Novelties
+		<div id="listados">
+			<section id="novedades">Novelties
 				<ul> Novelties list
 					<li><a id="spanishOmelette" href="receta.html">Spanish Omelette</a></li>
 					<li><a id="frikadelle" href="#africa">Frikadelle</a></li>
@@ -286,7 +286,7 @@
 
 		</div>
 	</main>
-	<footer id="footer">
+	<footer id="piepagina">
 		<ul>
 			<li><a href="#piepagina">Contact</a></li>
 			<li><a href="#piepagina">About Gastroworld</a></li>
@@ -302,7 +302,7 @@
 			<li><a href="#piepagina">TBD</a></li>
 			<li><a href="#piepagina">TBD</a></li>
 		</ul>
-		<ul id="socialmedia">
+		<ul id="redes">
 			<li><p>Follow us on:</p></li>
 			<li><a class="twitter" href="https://twitter.com/world_gastro" target="_blank"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
 			<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>
