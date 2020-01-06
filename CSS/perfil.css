@@ -18,5 +18,13 @@
 }
 .subperfil a{
 	background:#8e8e8e;
-	
+}
+main{
+	margin-left:10%;
+}
+#añadir{
+	display:none;
+}
+#añadir:target{
+	display:table;
 }
