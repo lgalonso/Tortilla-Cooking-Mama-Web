@@ -146,6 +146,16 @@ body{
 #iniciosesion:target div{
 	display:table;
 }
+#botonsesion{
+	width:100%;
+	background-color:#ccc;
+	color:#000;
+}
+#botonsesion:hover{
+	background-color:#484848;
+	color:#fff;
+	border-color:#000;
+}
 
 /*INDICE IZQUIERDA*/
 
@@ -179,7 +189,6 @@ body{
 	font-family:tahoma;
 	display:block;
 	font-size:1em;
-	background-color:#ccc;
 	color:#000;
 	text-decoration:none;
 	padding-top:0.6em;
@@ -192,6 +201,9 @@ body{
 	-ms-transition: padding 0.6s;
 	-o-transition: padding 0.6s;
 	transition: padding 0.6s;
+}
+#aside1 > ul > li > a{
+	background-color:#ccc;
 }
 #aside1 ul li a:hover{
 	padding-left:1em;
