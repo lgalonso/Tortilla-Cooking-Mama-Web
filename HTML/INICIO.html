@@ -37,7 +37,7 @@
 				</div>
 			</li>
 
-  			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+  			<li><a id="linkPerfil" href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
 				<div id="perfil">
 					<ul>
 						<li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
@@ -46,7 +46,7 @@
 									<li>
 											<input type="text" name="correo" id="correo" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
 											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
-											<p>&nbsp;&nbsp;<a href="">Olvidé mi contraseña</a></p>
+											<p>&nbsp;&nbsp;<a href="" onclick="alert('Se ha enviado un enlace de recuperación a la dirección: '+document.getElementById('correo').value)">Olvidé mi contraseña</a></p>
 											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
 									</li>
 								</ul>

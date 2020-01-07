@@ -92,6 +92,8 @@ function inicioSesion(){
     clearLogIn();
 
     document.getElementById("titulo").click();
+
+    document.getElementById("linkPerfil").href = "Perfil.html";
   }
   else alert("Existen campos incompletos en el formulario");
 }
@@ -172,6 +174,13 @@ function contacto(){
 function clearInput(inputID){
   document.getElementById(inputID).value = "";
 
+}
+
+var datosPerfil = [];
+
+function loadPerfil(){
+  clearLogIn();
+  test();
 }
 
 //Controles de slideshow *NO IMPLEMENTADOS*
