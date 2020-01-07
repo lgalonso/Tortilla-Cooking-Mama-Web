@@ -61,7 +61,6 @@
 
 header{
 	width:90%;
-	
 	margin:auto;
 }
 nav{
@@ -102,7 +101,6 @@ nav > ul > li:hover div{
 
 nav ul li div{/*Cada uno de los submenus de continentes */
 	width:100%;
-	max-width:1600px;
 	position:absolute;
 	left:0;
 	background:#ccc;
@@ -173,6 +171,7 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 #listados a{
 	text-decoration:none;
 	color:#fff;
+	transition:all 0.6s ease;
 }
 #listados a:hover{
 	font-size:1.2em;
