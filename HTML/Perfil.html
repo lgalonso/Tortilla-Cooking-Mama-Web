@@ -9,7 +9,7 @@
 		<title>GastroWorld: Mi Perfil</title>
 	</head>
 
-	<body>
+	<body onload="loadPerfil()">
 		<div id="topbar">
 		 <div id="aside1">
 			<br>
@@ -52,7 +52,7 @@
 				</div>
 			</li>
 
-  			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+  			<li><a id="linkPerfil" href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
 				<div id="perfil">
 					<ul>
 						<li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
@@ -116,63 +116,69 @@
 				<br>
 				<p>Suscripción: xxxxxxx</p>
 				<br>
-				<input id="reset" type="submit" value="Restablecer Contraseña">
+				<input id="reset" type="submit" value="Restablecer Contraseña" onclick="document.getElementById('target').click();">
 			</div>
-			<div id="añadir">
+			<div id="añadir"><br><br>
 				<p>Buscador de recetas</p>
 				<p>ultimos favoritos añadidos</p>
 			</div>
-			<div id="sug">
+			<div id="sug"><br><br>
 				<p>Recetas sugeridas según tus busquedas</p>
 			</div>
-			<div id="reci">
+			<div id="reci"><br><br>
 				<p>Entradas visitadas recientemente</p>
 			</div>
-			<div id="sus">
+			<div id="sus"><br><br>
 				<p>Diferentes tipos de suscripciones</p>
 			</div>
-			<div id="cancel">
+			<div id="cancel"><br><br>
 				<p>motivo etc de cancelar suscripción</p>
 			</div>
-			<div id="privi">
+			<div id="privi"><br><br>
 				<p>privilegios de las suscripciones</p>
 			</div>
-			<div id="rece">
+			<div id="rece"><br><br>
 				<p>parametros para registrar receta</p>
 			</div>
-			<div id="envi">
+			<div id="envi"><br><br>
 				<p>elegir que receta a quien se le envia y el metodo</p>
 			</div>
-			<div id="amig">
+			<div id="amig"><br><br>
 				<p>buscar amigos en la web</p>
 			</div>
-			<div id="web">
+			<div id="web"><br><br>
 				<p>a quien le quieres recomendar la web</p>
+			</div>
+			<a id="target" href="#contraseña"></a>
+			<div id="contraseña"><br><br>
+				Contraseña nueva:<input id="nueva" type="password"><br><br>
+				Repetir contraseña:<input id="repetida" type="password"><br><br>
+				<input type="submit" value="Restablecer" onclick="restablecerContraseña();">
 			</div>
 		</main>
 		<footer id="piepagina">
-		 <ul>
-      		<li><a id="contacto" href="contacto.html">Contacto</a></li>
-      		<li><a id="quienesSomos" href="QuienesSomos.html">Acerca de Gastroworld</a></li>
-      		<li><a id="servicios" href="QuienesSomos.html#servicios">Que servicios ofrecemos</a></li>
-    	 </ul>
-    	 <ul>
-      		<li><a id="equipo" href="QuienesSomos.html#equipo">Nuestro Equipo</a></li>
-     		<li><a id="trabajo" href="QuienesSomos.html#trabaja">Trabaja con nosotros</a></li>
-      		<li><a href="FAQ.html">FAQ</a></li>
-    	 </ul>
-    	 <ul>
-      		<li><a href="contacto.html">TBD</a></li>
-      		<li><a href="quienes.html">TBD</a></li>
-      		<li><a href="#piepagina">TBD</a></li>
-		 </ul>
-		 <ul id="redes">
-			<li><p>Síguenos:</p></li>
-			<li><a class="twitter" href="https://twitter.com/world_gastro" target="_blank"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
-			<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>
-			<li><a class ="facebook" href="https://www.facebook.com/Gastroworld.568" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_facebook3.png" alt="logo facebook"></a></li>
-			<li><a class ="youtube" href="https://www.youtube.com" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_youtube3.png" alt="logo youtube"></a></li>
-		 </ul>
-		</footer>
+      <ul>
+          <li><a id="contacto" href="contacto.html">Contacto</a></li>
+          <li><a id="quienesSomos" href="FAQ.html">FAQ</a></li>
+          <li><a id="servicios" href="Registro.html">Registro</a></li>
+      </ul>
+      <ul>
+          <li><a id="equipo" href="#piepagina">Politica de cookies</a></li>
+        <li><a id="trabajo" href="QuienesSomos.html">Acerca de Gastroworld</a></li>
+          <li><a href="#piepagina">Condiciones Promocionales</a></li>
+      </ul>
+      <ul>
+          <li><a href="#piepagina">Aviso legal</a></li>
+          <li><a href="#piepagina">Condiciones Generales</a></li>
+          <li><a href="#piepagina">Politica de privacidad</a></li>
+	  </ul>
+      <ul id="redes">
+		<li><p>Síguenos:</p></li>
+		<li><a class="twitter" href="https://twitter.com/world_gastro" target="_blank"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
+		<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>
+		<li><a class ="facebook" href="https://www.facebook.com/Gastroworld.568" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_facebook3.png" alt="logo facebook"></a></li>
+		<li><a class ="youtube" href="https://www.youtube.com" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_youtube3.png" alt="logo youtube"></a></li>
+	  </ul>
+	</footer>
 	</body>
 </html>

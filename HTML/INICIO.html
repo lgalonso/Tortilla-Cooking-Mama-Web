@@ -37,7 +37,7 @@
 				</div>
 			</li>
 
-  			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+  			<li><a id="linkPerfil" href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
 				<div id="perfil">
 					<ul>
 						<li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
@@ -46,7 +46,7 @@
 									<li>
 											<input type="text" name="correo" id="correo" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
 											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
-											<p>&nbsp;&nbsp;<a href="">Olvidé mi contraseña</a></p>
+											<p>&nbsp;&nbsp;<a href="" onclick="alert('Se ha enviado un enlace de recuperación a la dirección: '+document.getElementById('correo').value)">Olvidé mi contraseña</a></p>
 											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
 									</li>
 								</ul>
@@ -60,9 +60,9 @@
   			<li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>Ajustes</a>
 				<div id="ajustes">
 					<ul>
-						<li><a  style="cursor: not-allowed;" href="#">Imagen</a></li>
-						<li><a  style="cursor: not-allowed;" href="#">Sonido</a></li>
-						<li><a  style="cursor: not-allowed;" href="#">Interfaz</a></li>
+						<li><a style="cursor: not-allowed;" href="#">Imagen</a></li>
+						<li><a style="cursor: not-allowed;" href="#">Sonido</a></li>
+						<li><a style="cursor: not-allowed;" href="#">Interfaz</a></li>
 					</ul>
 				</div>
 			</li>
@@ -259,7 +259,7 @@
 
 		<div id="listados">
 			<section id="novedades"><h2>Novedades</h2>
-				<ul><h3>Lista Novedades</h3>
+				<ul>
 					<li><a href="receta.html">Tortilla de patata</a></li>
 					<li><a id="frikadelle" href="#africa">Frikadelle</a></li>
 					<li><a id="sancocho" href="#americasur">Sancocho</a></li>
@@ -272,7 +272,7 @@
 			</section>
 
 			<section id="ranking"><h2>Ranking Recetas</h2>
-				<ol><h3>Lista Ranking</h3>
+				<ol>
 					<li><a id="Pizza" href="pizza">Pizza Napolitana</a></li></li>
 					<li><a id="sushi" href="#asia">Sushi</a></li>
 					<li><a id="chiliTexas" href="#americanorte">Chili de Texas</a></li>
@@ -299,7 +299,7 @@
           <li><a href="#piepagina">Condiciones Promocionales</a></li>
       </ul>
       <ul>
-          <li><a href="#piepagina">Aviso legal</a></li>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">Aviso legal</a></li>
           <li><a href="#piepagina">Condiciones Generales</a></li>
           <li><a href="#piepagina">Politica de privacidad</a></li>
 	  </ul>
