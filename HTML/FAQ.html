@@ -27,25 +27,23 @@
         <li><a href="#"><span class=""><img alt="" src="../Media/español.png"></span>Idiomas</a>
         <div id="idioma">
           <ul>
-            <li><a href=""><img alt="" src="../Media/español.png"></a></li>
-            <li><a href="#"><img alt="" src="../Media/ingles.jpg"></a></li>
-            <li><a href="#"><img alt="" src="../Media/japones.jpg"></a></li>
+            <li><a href="#"><img alt="" src="../Media/español.png"></a></li>
+            <li><a href="INICIOingles.html"><img alt="" src="../Media/ingles.jpg"></a></li>
+            <li><a href="INICIOjapones.html"><img alt="" src="../Media/japones.jpg"></a></li>
           </ul>
         </div>
       </li>
 
-        <li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+        <li><a id="linkPerfil" href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
         <div id="perfil">
           <ul>
             <li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
               <div>
                 <ul>
                   <li>
-                      <input type="text" name="correo" id="correo" placeholder="E-MAIL"
-                      onclick="document.getElementById('correo').style.background = 'white'"><br>
-                      <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"
-                      onclick="document.getElementById('contraseña').style.background = 'white'"><br>
-                      <p>Olvidé mi contraseña</p>
+                      <input type="text" name="correo" id="correo" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
+                      <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
+                      <p>&nbsp;&nbsp;<a href="" onclick="alert('Se ha enviado un enlace de recuperación a la dirección: '+document.getElementById('correo').value)">Olvidé mi contraseña</a></p>
                       <input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
                   </li>
                 </ul>
@@ -59,21 +57,21 @@
         <li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>Ajustes</a>
         <div id="ajustes">
           <ul>
-            <li><a href="">Imagen</a></li>
-            <li><a href="">Sonido</a></li>
-            <li><a href="">Interfaz</a></li>
+            <li><a style="cursor: not-allowed;" href="#">Imagen</a></li>
+            <li><a style="cursor: not-allowed;" href="#">Sonido</a></li>
+            <li><a style="cursor: not-allowed;" href="#">Interfaz</a></li>
           </ul>
         </div>
       </li>
 
-        <li><a href="FAQ.html"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
+        <li><a id="faq" href="FAQ.html"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
 
       <li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Buscar</a>
         <div id="buscador">
           <ul>
             <li>
               <input type="text" id="barra" placeholder ="Buscar...">     
-              <button id="buscar" onclick="buscar2()">Buscar</button>
+              <button id="buscar" onclick="buscar3()">Buscar</button>
               <script>//Script necesario para lanzar la búsqueda con el botón enter
                 var input = document.getElementById("barra");
                 input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
