@@ -37,6 +37,7 @@ body div {
 	margin-top:1%;
 }
 
+//Styling
 #slider {
 	height: 100%;
 	margin: auto;
@@ -51,6 +52,7 @@ body div {
 	display: flex;
 	width: calc(15.2em * 14);
 }
+
 @keyframes scroll {
 	0% { transform: translateX(0); }
 	0% { transform: translateX(0); }
