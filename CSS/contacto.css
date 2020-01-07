@@ -57,6 +57,25 @@ h2{
 article p{
 	padding:0.6%;
 }
+#equipo1{
+	display:flex;
+}
+#equipo1 div{
+	width:16em;
+	height:24em;
+	margin-left:-20%;
+	margin-top:0.1%;
+	background:rgba(127,127,127,0.8);
+	border-radius:50%;
+	color:#fff;
+}
+#equipo1 img{
+	width:16em;
+	height:24em;
+	border-radius:50%;
+	border:2px solid black;
+	margin:auto;
+}
 p {
   text-indent: 2%;
   text-align: center;
