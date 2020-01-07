@@ -1,88 +1,127 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset=utf-8>
-	  <title>España</title>
-     <link rel="stylesheet" type="text/css" href="../../CSS/Paises/españa_css.css"> <!--enlazado con css-->
-     <script src="../../JAVASCRIPT/Paises/españa_js.js"></script>   <!--enlazado con javaScript-->
-     <link rel="shortcut icon" type="image/x-icon" href="../../Media/Continentes/Logo_proyecto.jpg">
-  </head>
-    <body>
-	<div id="cabecera"> <header><h1>GastroWorld</h1></header></div>
-     	 <!--a href="enlace de la pag web del otro grupo"> < atrás</a>--><!-- volver a la pagina anterior-->
-		  <!-- <div id="navegacion"> <nav>Menú de navegación</nav></div>debatir sobre si el nav debe de ir antes del header-->
-                   <!--Menu de navegacion de la parte de jaime, lucas y hugo-->
-		
-  <main>
-	   <div id="slidebar">
-	   
-	      <section id="slidebar"><!--Aqui iria el slidebar de torres-->
-		    
-	      </section>
-	   </div>
-	   
-     <div id="recetas"><!--Este id abarca todo la tabla de recetas tanto la receta como tal como la foto-->	   
-	    <div class="1rec"><!--este div encierra tanto al section y a sus dos respectivos articles de la prmer receta-->
-		 
-	        <section class="1rec"><!--seccion donde va a ir la primera receta-->
-		           <div class="f1rec">
-		              <article class="f1rec"><!--Divido la seccion en dos articulos, este primero para la foto de ahi la f del id-->
-					     <img src="../../Media/Paises/Comidas/tortpat.jpg" alt="Imagen del típico plato español tortilla de patata">
-			          </article>
-				   </div>
-			
-		  
-			       <div class="1rec">
-			          <article class="r1rec"><!--Este segundo articulo iria la receta respecto de la imagen de arriba, de ahi la r en el id-->
-					  <p>
-					  </p>
-	                  </article>
-			       </div>
-	       </section>
-	      </div>
-		  
-	 
-	     <div class="2rec">
-		  
-	        <section class="2rec"><!--seccion donde va a ir la primera receta-->
-		           <div class="f2rec">
-		              <article class="f2rec"><!--Divido la seccion en dos articulos, este primero para la foto de ahi la f del id-->
-			          </article>
-			       </div>
-				   
-			
-			       <div class="r2rec">
-			          <article class="r2rec"><!--Este segundo articulo iria la receta respecto de la imagen de arriba, de ahi la r en el id-->
-	                  </article>
-		           </div>
-	       </section>
-		 </div>
-	</div>
-		  
-		
-  </main>
-	 <!-- debatir sobre si meter un aside donde vaya publicidad y eso...-->
-	 
-	 <div id="footer">
-	   <footer>
-	   <p>Síguenos en:</p>
-	     <img class="twitter" src="../../Media/redes_sociales/twitter.jpg" alt="logo twitter">
-		    <a class="twitter" href="https://twitter.com/world_gastro" target="_blank">Twitter</a>
-			
-		<img class="instagram" src="../../Media/redes_sociales/instagram.jpg" alt="logo Instagram">
-		    <a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank">Instagram</a>
-			
-		<img class="facebook" src="../../Media/redes_sociales/facebook.jpg" alt="logo facebook">
-		    <a class ="facebook" href="https://www.facebook.com/Gastroworld.568" target="_blank">Facebook</a>
-			
-		 
-	 
-	 
-	   </footer>
-	
-	
-	
-  
+ <head>
+ <!--Esta esla pagina web unicamente del continente de europa-->
+     <meta charset=utf-8>
+     <title>Gatroworld: Europa</title>
+     <link rel="stylesheet" type="text/css" href="../../CSS/Continentes/Europa_css.css">
+	 <link rel="stylesheet" type="text/css" href="../../CSS/menusuperior.css">	 <!--enlazado con css-->
+     <script type="text/javascript" src="../../javascript/Continentes/Europa_js.js"></script>   <!--enlazado con javaScript-->
+     <script type="text/javascript" src="../../javascript/java.js"></script>
+     <link rel="shortcut icon" type="image/x-icon" href="../../Media/GastroLogo/Gastro-Avioneta-Fondo.png"> <!-- al laod del title continentes aparece nuestro logo-->
+ </head>
+ <body>
+
+      
+  <div id="topbar">
+		<div id="aside1">
+			<br>
+			<h3>INDICE</h3>
+			<ul>
+				<li><a id="titulo" href="#topbar">Titulo</a></li>
+				<li><a href="#seccion1">Slideshow</a></li>
+				<li><a href="#popular">Lo mas típico</a></li>
+				<li><a href="#barato">Por Regiones</a></li>
+				<li><a href="#barato">Todas las recetas</a></li>
+				<li><a href="#piepagina">Pie de página</a></li>
+			</ul>
+		</div>
+		<a href="../INICIO.html"><img id="logo" src="../../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD"></a>
+  		<ul>
+  			<li><a href="#"><span class=""><img alt="" src="../../Media/español.png"></span>Idiomas</a>
+				<div id="idioma">
+					<ul>
+						<li><a href=""><img alt="" src="../../Media/español.png"></a></li>
+						<li><a href="#"><img alt="" src="../../Media/ingles.jpg"></a></li>
+						<li><a href="#"><img alt="" src="../../Media/japones.jpg"></a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="#"><span class=""><img alt="" src="../../Media/logoperfil.png"></span>Perfil</a>
+				<div id="perfil">
+					<ul>
+						<li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
+							<div>
+								<ul>
+									<li>
+											<input type="text" name="correo" id="correo" placeholder="E-MAIL"><br>
+											<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"><br>
+											<p>&nbsp;&nbsp;<a href="">Olvidé mi contraseña</a></p>
+											<input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a id="registro" href="../Registro.html">Registrarse</a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="#"><span class=""><img alt="" src="../../Media/logoajustes.png"></span>Ajustes</a>
+				<div id="ajustes">
+					<ul>
+						<li><a href="">Imagen</a></li>
+						<li><a href="">Sonido</a></li>
+						<li><a href="">Interfaz</a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="../FAQ.html"><span class=""><img alt="" src="../../Media/interrogacion.png"></span>FAQ</a></li>
+
+			<li><a href="#"><span clas=""><img alt="" src="../../Media/buscar.png"></span>Buscar</a>
+				<div id="buscador">
+					<ul>
+						<li>
+							<input type="text" id="barra" placeholder ="Buscar...">			
+							<button id="buscar" onclick="buscar2()">Buscar</button>
+							<script>//Script necesario para lanzar la búsqueda con el botón enter
+								var input = document.getElementById("barra");
+								input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
+  									if (event.keyCode === 13) { //Si la tecla pulsada es enter activamos el botón de búsqueda
+   										document.getElementById("buscar").click();
+  									}
+								});
+							</script>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+  		</ul>
+		<!--<div id="aside2">
+			<h4>MÁS VISITADOS</h4>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>-->
+  	</div>
+	<footer id="piepagina">
+      <ul>
+          <li><a id="contacto" href="contacto.html">Contacto</a></li>
+          <li><a id="quienesSomos" href="FAQ.html">FAQ</a></li>
+          <li><a id="servicios" href="Registro.html">Registro</a></li>
+      </ul>
+      <ul>
+          <li><a style="cursor: not-allowed;" id="equipo" href="#piepagina" onclick="noDisponible()">Politica de cookies</a></li>
+        <li><a id="trabajo" href="QuienesSomos.html">Acerca de Gastroworld</a></li>
+          <li><a href="Comentarios.html">Valoraciones</a></li>
+      </ul>
+      <ul>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">Aviso legal</a></li>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">Condiciones Generales</a></li>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">Politica de privacidad</a></li>
+	  </ul>
+      <ul id="redes">
+		<li><p>Síguenos:</p></li>
+		<li><a style="cursor: not-allowed;" class="twitter" href="#piepagina" onclick="noDisponible()"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
+		<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>
+		<li><a class ="facebook" href="https://m.facebook.com/PinxoTortilla/" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_facebook3.png" alt="logo facebook"></a></li>
+		<li><a class ="youtube" href="https://www.youtube.com" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_youtube3.png" alt="logo youtube"></a></li>
+	  </ul>
+	</footer>
   </body>
- 
 </html>

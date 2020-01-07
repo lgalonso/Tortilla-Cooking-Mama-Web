@@ -1,3 +1,6 @@
+
+/*INDICE IZQUIERDA*/
+
 #aside1{
 	border:3px solid black;
 	padding:3px;
@@ -10,32 +13,45 @@
 	margin-top:5%;
 	padding-bottom:0.6%;
 }
+/*fin indice izquierda*/
 
 div{
 	text-align: center;
 
 }
-
+/*CONTACTO:info horario,buzón, sede. FAQ:respuestas QuienesSomos:nombres miembros de grupo*/
 div > h3{
 	text-align: center;
 }
+/*fin*/
 
-
+/*QuienesSomos:div*/
 #contenido{
 	margin-left: 10%;
 	border: black;
   	border:;
   	padding: 2%;
 }
+/*fin*/
 
+
+/*CONTACTO: contacto & tlf FAQ:preguntas frecuentes QuienesSomos:titulos; */
 h1 {
   text-align: center;
   text-transform: uppercase;
   color: 484848;
 }
+/*fin*/
+
+
+/*CONTACTO:titulos FAQ:contacto COMENTARIOS:titulo valoraciones QuinesSomos:contacto*/
 h2{
 	text-align:center;
 }
+/*fin*/
+
+
+/*COMENTARIOS: valoraciones*/
 #valoraciones article{
 	width:80%;
 	background:#8e8e8e;
@@ -48,6 +64,10 @@ h2{
 .name{
 	text-align:right;
 }
+/*fin*/
+
+
+/*COMENTARIOS:añadir valoraciones*/
 #añadir{
 	width:16.3%;
 }
@@ -57,6 +77,10 @@ h2{
 article p{
 	padding:0.6%;
 }
+/*fin*/
+
+
+/*QUIENES SOMOS: nuestro equipo*/
 #equipo1{
 	display:flex;
 }
@@ -85,18 +109,27 @@ article p{
 	border:2px solid black;
 	margin:1% 2.4%;
 }
+/*fin*/
+
+
+/*COMENTARIOS:valoraciones  QuienesSomos: quienes somos, que servicios ofrecemos nuestro equipo*/
 p {
   text-indent: 2%;
   text-align: center;
   white-space: pre-wrap;
 }
+/*fin*/
 
+
+/*todos los enalces de las páginas:CONTACTO, COMENTARIOS,FAQ & QuienesSomos*/
 a {
   text-decoration: none;
   color: #008CBA;
 }
+/*fin*/
 
-/*Estilos de FAQ*/
+
+/*FAQ*/
 .pregunta {
   background-color: #eee;
   color: #444;
@@ -133,3 +166,4 @@ a {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+/*fin*/
