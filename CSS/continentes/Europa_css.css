@@ -20,9 +20,6 @@ h2{
 	
 }
 
-body div {
-	background:rgba(223,240,159);/*Background pagina europa*/
-}
 
 
 /*SlideShow Banderas*/
@@ -83,7 +80,7 @@ body div {
 
 /*slideshow comida*/
 #seccion1{
-	background-color:rgba(223,240,159,0.8);
+	background-color:rgba(124,131,181,0.8);
 	height:5%;
 	display:flex;
 	margin-top:1%;	
@@ -94,10 +91,14 @@ body div {
 	height:5%;
 	
 }
+
+/*botones anterior y siguiente*/
+
 #seccion1 button{
 	display:block;
-	height:10em;
+	height:3em;
 	margin-top:12%;
+	border-radius:10%;
 }
 #ant{
 	margin-left:15%;
@@ -105,6 +106,65 @@ body div {
 #sig{
 	margin-right:15%;
 }
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background: #484848;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  opacity:0.6;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button:hover{
+	opacity:1;
+}
+
+#sig span:after {
+  content: '\226B';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#ant span:after {
+  content: '\226A';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+#sig:hover span {
+  padding-right: 25px;
+}
+#ant:hover span {
+  padding-left: 25px;
+}
+
+#sig:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#ant:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
 /*fin slideshow comida*/
 
 /*seccion 3(lo + popular   facil y barato */
