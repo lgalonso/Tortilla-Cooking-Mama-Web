@@ -181,7 +181,6 @@ var datosPerfil = [];
 
 function loadPerfil(){
   clearLogIn();
-  test();
 }
 
 function restablecerContraseña(){
@@ -227,13 +226,17 @@ function nuevoComentario(){
     }
 
 function formatoNombre(nombre){
-  var formato = [];
+  var formato = [''];
   var control = false;
-  for (var i = 0; i < nombre.length && control; i--) {
-    formato[i] = nombre[i];
+
+  formato[0] = nombre[0].toUpperCase();
+
+  for (var i = 1; i < nombre.length && !control; i++) {
+    formato[i] = nombre[i].toLowerCase();
     if(nombre[i] == " "){
       control = true;
-      formato[i+1] = nombre[i+1];
+      i++;
+      formato[i] = nombre[i].toUpperCase();
     }
   }
 
