@@ -176,11 +176,25 @@ function clearInput(inputID){
 
 }
 
+//Funciones de perfil
 var datosPerfil = [];
 
 function loadPerfil(){
   clearLogIn();
   test();
+}
+
+function restablecerContraseña(){
+  var nueva = document.getElementById('nueva').value;
+  var repetida = document.getElementById('repetida').value;
+
+  if(nueva == repetida) {
+    alert('Contraseña restablecida con éxito.');
+    document.getElementById('linkPerfil').click();
+    clearInput('nueva');
+    clearInput('repetida');
+  }
+  else alert('Las contraseñas no coinciden. Vuelva a intentarlo.');
 }
 
 //Controles de slideshow *NO IMPLEMENTADOS*
