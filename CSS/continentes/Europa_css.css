@@ -104,8 +104,9 @@ h2{
 }
 body div {
 	background:rgba(223,240,159);
-	
-	
+}
+#info div{
+	margin-top:5%;
 }
 #seccion1 button{
 	display:block;
