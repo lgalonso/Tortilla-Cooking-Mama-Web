@@ -52,7 +52,7 @@
 				</div>
 			</li>
 
-  			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+  			<li><a id="linkPerfil" href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
 				<div id="perfil">
 					<ul>
 						<li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
@@ -116,38 +116,44 @@
 				<br>
 				<p>Suscripción: xxxxxxx</p>
 				<br>
-				<input id="reset" type="submit" value="Restablecer Contraseña">
+				<input id="reset" type="submit" value="Restablecer Contraseña" onclick="document.getElementById('target').click();">
 			</div>
-			<div id="añadir">
+			<div id="añadir"><br><br>
 				<p>Buscador de recetas</p>
 				<p>ultimos favoritos añadidos</p>
 			</div>
-			<div id="sug">
+			<div id="sug"><br><br>
 				<p>Recetas sugeridas según tus busquedas</p>
 			</div>
-			<div id="reci">
+			<div id="reci"><br><br>
 				<p>Entradas visitadas recientemente</p>
 			</div>
-			<div id="sus">
+			<div id="sus"><br><br>
 				<p>Diferentes tipos de suscripciones</p>
 			</div>
-			<div id="cancel">
+			<div id="cancel"><br><br>
 				<p>motivo etc de cancelar suscripción</p>
 			</div>
-			<div id="privi">
+			<div id="privi"><br><br>
 				<p>privilegios de las suscripciones</p>
 			</div>
-			<div id="rece">
+			<div id="rece"><br><br>
 				<p>parametros para registrar receta</p>
 			</div>
-			<div id="envi">
+			<div id="envi"><br><br>
 				<p>elegir que receta a quien se le envia y el metodo</p>
 			</div>
-			<div id="amig">
+			<div id="amig"><br><br>
 				<p>buscar amigos en la web</p>
 			</div>
-			<div id="web">
+			<div id="web"><br><br>
 				<p>a quien le quieres recomendar la web</p>
+			</div>
+			<a id="target" href="#contraseña"></a>
+			<div id="contraseña"><br><br>
+				Contraseña nueva:<input id="nueva" type="password"><br><br>
+				Repetir contraseña:<input id="repetida" type="password"><br><br>
+				<input type="submit" value="Restablecer" onclick="restablecerContraseña();">
 			</div>
 		</main>
 		<footer id="piepagina">
