@@ -1,0 +1,24 @@
+=======
+		<ul>
+      		<li><a id="contacto" href="#contacto">お問い合わせ</a></li>
+      		<li><a id="quienesSomos" href="#quienesSomos">Gastroworld　に　ついて</a></li>
+      		<li><a id="servicios" href="QuienesSomos.html#servicios">サービス一覧</a></li>
+    	</ul>
+    	<ul>
+      		<li><a id="equipo" href="#equipo">チーム　に　ついて</a></li>
+     		<li><a id="trabajo" href="#trabaja">一緒に働きませんか</a></li>
+      		<li><a href="#piepagina">質問コーナー</a></li>
+    	</ul>
+    	<ul>
+      		<li><a href="#piepagina">TBD</a></li>
+      		<li><a href="#piepagina">TBD</a></li>
+      		<li><a href="#piepagina">TBD</a></li>
+		</ul>
+		<ul id="redes">
+			<li><p>SNS</p></li>
+			<li><a class="twitter" href="https://twitter.com/world_gastro" target="_blank"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
+			<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>
+			<li><a class ="facebook" href="https://www.facebook.com/Gastroworld.568" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_facebook3.png" alt="logo facebook"></a></li>
+			<li><a class ="youtube" href="https://www.youtube.com" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_youtube3.png" alt="logo youtube"></a></li>
+		</ul>
+>>>>>>> ec60a37816b6636d63bf0c97b3bfd9c9ec175fb0
