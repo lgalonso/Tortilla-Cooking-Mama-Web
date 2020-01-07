@@ -18,7 +18,6 @@ div{
 
 div > h3{
 	text-align: center;
-
 }
 
 
@@ -34,7 +33,30 @@ h1 {
   text-transform: uppercase;
   color: 484848;
 }
-
+h2{
+	text-align:center;
+}
+#valoraciones article{
+	width:80%;
+	background:#8e8e8e;
+	display:block;
+	margin:auto;
+}
+#valoraciones article:last-child{
+	display:none;*
+}
+.name{
+	text-align:right;
+}
+#añadir{
+	width:16.3%;
+}
+#nombre{
+	width:16.1%;
+}
+article p{
+	padding:0.6%;
+}
 p {
   text-indent: 2%;
   text-align: center;
