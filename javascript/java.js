@@ -7,7 +7,7 @@ function targetBrowser(){
 
 //Buscador
 var arrayLinks = ['españa', 'europa', 'italia'];
-function buscar(){
+function buscar(){//NO IMPLEMENTADA
   var clave = document.getElementById('barra').value.toLowerCase();
 
   var control = false;
@@ -28,7 +28,7 @@ function buscar(){
 
 }
 
-function buscar2(){
+function buscar2(){//NO IMPLEMENTADA
     var clave = document.getElementById('barra').value.toLowerCase();
     //alert("la búsqueda es: "+ clave);
     if(document.getElementById(clave) === null) alert("La página no existe.");
@@ -137,11 +137,6 @@ function registro(){
 
 }
 
-function correoValido(){//Función que determina si una cadena de texto tiene un formato válido de correo
-
-
-}
-
 //Funciones de contacto
 function contacto(){
   var asunto = document.getElementById('asunto');
@@ -177,8 +172,6 @@ function clearInput(inputID){
 }
 
 //Funciones de perfil
-var datosPerfil = [];
-
 function loadPerfil(){
   clearLogIn();
 }
@@ -244,6 +237,20 @@ function formatoNombre(nombre){
 
 }
 
+//Funciones extra
+function noDisponible(){
+  alert('Esta funcionalidad se encuentra temporalmente fuera de servicio. Disculpen las molestias.');
+}
+
+//Funciones de prueba
+function test(){
+  alert("Test");
+}
+
+function test2(){
+  alert("Test2");
+}
+
 //Controles de slideshow *NO IMPLEMENTADOS*
 /*
 var control=1;
@@ -286,15 +293,4 @@ function reset2(){//Esta función resetea el intervalo
 }//Fin de controles de slideshow */
 
 
-function noDisponible(){
-  alert('Esta funcionalidad se encuentra temporalmente fuera de servicio. Disculpen las molestias.');
-}
 
-//Funciones de prueba
-function test(){
-  alert("Test");
-}
-
-function test2(){
-  alert("Test2");
-}
