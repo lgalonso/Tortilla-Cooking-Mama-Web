@@ -197,6 +197,50 @@ function restablecerContraseña(){
   else alert('Las contraseñas no coinciden. Vuelva a intentarlo.');
 }
 
+//Funciones de comentarios
+function nuevoComentario(){
+        var comentario = document.createElement("P");
+        var nombre = document.createElement("P");
+        var siguiente;
+        nombre.className = 'name';
+        var comentarioValor = document.getElementById('comentario').value;
+        var nombreValor = document.getElementById('nombre').value;
+
+        if(comentarioValor == "" || nombreValor == "") alert("Existen campos incompletos en el formulario.");
+        else{
+          comentario.innerText = '"'+comentarioValor+'"';
+          nombre.innerText = '-'+formatoNombre(nombreValor);
+
+          document.getElementById('ultimo').appendChild(comentario);
+          document.getElementById('ultimo').appendChild(nombre);
+          document.getElementById('ultimo').id = "";
+
+          siguiente = document.createElement("ARTICLE");
+          siguiente.id  = 'ultimo';
+          document.getElementById('valoraciones').appendChild(siguiente);
+
+          clearInput('comentario');
+          clearInput('nombre');
+
+          alert("Gracias por tu valoración "+nombreValor+".");
+        }
+    }
+
+function formatoNombre(nombre){
+  var formato = [];
+  var control = false;
+  for (var i = 0; i < nombre.length && control; i--) {
+    formato[i] = nombre[i];
+    if(nombre[i] == " "){
+      control = true;
+      formato[i+1] = nombre[i+1];
+    }
+  }
+
+  return formato.join("");
+
+}
+
 //Controles de slideshow *NO IMPLEMENTADOS*
 /*
 var control=1;
