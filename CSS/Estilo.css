@@ -157,6 +157,9 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 	justify-content:center;
 	justify-content:space-between;
 	flex-direction:row;
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:3%;
 }
 #listados section{
 	display:inline-block;
@@ -165,11 +168,20 @@ nav ul li div ul li a:hover {/*Estilo del hover del contenido de los submenus.*/
 	width: 45%;
 	padding: 10px;
 	margin: 10px;
+	background-image:url("../Media/ranking.jpg");
+}
+#listados a{
+	text-decoration:none;
+	color:#fff;
+}
+#listados li{
+	color:#fff;
 }
 #ranking{
 	flex-wrap: wrap;
 }
-#novedades{
+#novedades ul{
+	list-style:none;
 }
 
 /*FIN NOVEDADES Y RANKING*/
