@@ -14,32 +14,18 @@
 }
 
 /*FIN INDICE*/
-
-#img1{
-    width:50%;
-	padding:0px,10px,10px;
-	height:520px;
-	margin:30px auto;
-	display:block;
-    
-	
-}
-#cabecera img{
-	text-align:center;
-	height:9em;
-	font-family:algerian;
-	margin:auto;
-	display:block;
-
-}
 h2{
 	text-align:center;
 	font-weight:900;
 	
 }
 
-/*SLIDESHOW BANDERAS*/
+body div {
+	background:rgba(223,240,159);/*Background pagina europa*/
+}
 
+
+/*SlideShow Banderas*/
 #slideshow{
 	align-items: center;
 	background: #000;
@@ -51,16 +37,6 @@ h2{
 	margin-top:1%;
 }
 
-/* Animation*/
-
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-15.2em * 7))}
-}
-
-
-// Styling
 #slider {
 	height: 100%;
 	margin: auto;
@@ -74,6 +50,11 @@ h2{
 	animation: scroll 40s linear infinite;
 	display: flex;
 	width: calc(15.2em * 14);
+}
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-15.2em * 7))}
 }
 	
 .slide {
@@ -90,6 +71,15 @@ h2{
 
 /*FIN SLIDESHOW BANDERAS*/
 
+
+
+
+
+/* Animation*/
+
+
+
+/*slideshow comida*/
 #seccion1{
 	background-color:rgba(223,240,159,0.8);
 	height:5%;
@@ -102,12 +92,6 @@ h2{
 	height:5%;
 	
 }
-body div {
-	background:rgba(223,240,159);
-}
-#info div{
-	margin-top:5%;
-}
 #seccion1 button{
 	display:block;
 	height:10em;
@@ -119,6 +103,13 @@ body div {
 #sig{
 	margin-right:15%;
 }
+/*fin slideshow comida*/
+
+/*seccion 3(lo + popular   facil y barato */
+#info div{
+	margin-top:5%;
+}
+
 #seccion3{
 	margin-top:3px;
 }
@@ -160,8 +151,6 @@ body div {
 #seccion3 > div > a:hover{
 	color:#fff;
 }
+/*fin seccion 3*/
 
-nav{
-	color:#000000;
-	text-align:center;
 
