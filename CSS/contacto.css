@@ -63,18 +63,27 @@ article p{
 #equipo1 div{
 	width:16em;
 	height:24em;
-	margin-left:-20%;
-	margin-top:0.1%;
+	margin-left:-18.24%;
+	margin-right:2.45%;
+	margin-top:1.1%;
 	background:rgba(127,127,127,0.8);
 	border-radius:50%;
 	color:#fff;
+	display:none;
+}
+#equipo1 > img:first-child{
+	margin-left:0;
+}
+#equipo1 img:hover + div{
+	display:table;
 }
 #equipo1 img{
 	width:16em;
 	height:24em;
 	border-radius:50%;
 	border:2px solid black;
-	margin:auto;
+	margin:1% 2.4%;
+	position:static;
 }
 p {
   text-indent: 2%;
