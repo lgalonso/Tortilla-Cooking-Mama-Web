@@ -174,7 +174,8 @@ function clearInput(inputID){
 
 }
 
-//Controles de slideshow
+//Controles de slideshow *NO IMPLEMENTADOS*
+/*
 var control=1;
 var contador = setInterval( cambiar, 4500);
 var cambio = 0;
