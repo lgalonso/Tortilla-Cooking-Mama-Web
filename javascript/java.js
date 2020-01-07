@@ -209,7 +209,7 @@ function nuevoComentario(){
         if(comentarioValor == "" || nombreValor == "") alert("Existen campos incompletos en el formulario.");
         else{
           comentario.innerText = '"'+comentarioValor+'"';
-          nombre.innerText = '-'+formatoNombre(nombreValor);
+          nombre.innerText = '-'+formatoNombre(nombreValor)+'.';
 
           document.getElementById('ultimo').appendChild(comentario);
           document.getElementById('ultimo').appendChild(nombre);
