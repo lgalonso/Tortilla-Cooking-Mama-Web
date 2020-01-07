@@ -43,7 +43,7 @@ h2{
 	margin:auto;
 }
 #valoraciones article:last-child{
-	display:none;*
+	display:block;
 }
 .name{
 	text-align:right;
