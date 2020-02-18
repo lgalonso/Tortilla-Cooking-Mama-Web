@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="../CSS/menusuperior.css" rel="stylesheet" type="text/css">
+  <link href="../CSS/contacto.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../javascript/java.js"></script>
+  <meta charset="utf-8">
+  <title>GastroFAQ</title>
+</head>
+
+<body onload="targetBrowser()">
+  <!--Menú esquina superior derecha -->
+    <div id="topbar">
+    <div id="aside1">
+      <br>
+      <h3>INDICE</h3>
+      <ul>
+        <li><a id="titulo" href="#topbar">Titulo</a></li>
+        <li><a href="#contenido">FAQ</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#piepagina">Pie de página</a></li>
+      </ul>
+    </div>
+    <a href="INICIO.html"><img id="logo" src="../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD"></a>
+      <ul>
+        <li><a href="#"><span class=""><img alt="" src="../Media/español.png"></span>Idiomas</a>
+        <div id="idioma">
+          <ul>
+            <li><a href="#"><img alt="" src="../Media/español.png"></a></li>
+            <li><a href="INICIOingles.html"><img alt="" src="../Media/ingles.jpg"></a></li>
+            <li><a href="INICIOjapones.html"><img alt="" src="../Media/japones.jpg"></a></li>
+          </ul>
+        </div>
+      </li>
+
+        <li><a id="linkPerfil" href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>Perfil</a>
+        <div id="perfil">
+          <ul>
+            <li id="iniciosesion"><a href="#iniciosesion">Iniciar sesión</a>
+              <div>
+                <ul>
+                  <li>
+                      <input type="text" name="correo" id="correo" placeholder="E-MAIL" onclick="document.getElementById('correo').style.background = 'white'"><br>
+                      <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
+                      <p>&nbsp;&nbsp;<a href="" onclick="alert('Se ha enviado un enlace de recuperación a la dirección: '+document.getElementById('correo').value)">Olvidé mi contraseña</a></p>
+                      <input id="botonsesion" type="submit" value="Iniciar Sesión" onclick="inicioSesion()">
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a id="registro" href="Registro.html">Registrarse</a></li>
+          </ul>
+        </div>
+      </li>
+
+        <li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>Ajustes</a>
+        <div id="ajustes">
+          <ul>
+            <li><a style="cursor: not-allowed;" href="#">Imagen</a></li>
+            <li><a style="cursor: not-allowed;" href="#">Sonido</a></li>
+            <li><a style="cursor: not-allowed;" href="#">Interfaz</a></li>
+          </ul>
+        </div>
+      </li>
+
+        <li><a id="faq" href="FAQ.html"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
+
+      <li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>Buscar</a>
+        <div id="buscador">
+          <ul>
+            <li>
+              <input type="text" id="barra" placeholder ="Buscar...">     
+              <button id="buscar" onclick="buscar3()">Buscar</button>
+              <script>//Script necesario para lanzar la búsqueda con el botón enter
+                var input = document.getElementById("barra");
+                input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
+                    if (event.keyCode === 13) { //Si la tecla pulsada es enter activamos el botón de búsqueda
+                      document.getElementById("buscar").click();
+                    }
+                });
+              </script>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      </ul>
+    <!--<div id="aside2">
+      <h4>MÁS VISITADOS</h4>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>-->     
+    </div>
+
+    <div id="contenido">
+      <h1>Preguntas Frecuentes (FAQ)</h1>
+
+      <button class="pregunta">¿Cómo puedo iniciar sesión en mi cuenta?</button>
+      <div class="respuesta">
+        <h3>Usando el menú superior en la pestaña de perfil, inciar sesión y rellenando los campos necesarios.</h3>
+      </div>
+
+      <button class="pregunta">Se me ha olvidado mi contraseña. ¿Cómo puedo recuperarla?</button>
+      <div class="respuesta">
+        <h3>Usando el menú superior en la pestaña de perfil, inciar sesión y pulsando la opción de <i>"Olvidé mi contrasña".</i><br>Si esto no soluciona el problema <a href="Contacto.html#buzon">escríbenos un correo</a> con asunto <i>"Olvidé mi contraseña"</i> utilizando nuestra página de contacto.
+        </h3>
+      </div>
+
+      <button class="pregunta">¿Cómo puedo cambiar a modo oscuro?</button>
+      <div class="respuesta">
+        <h3>Actualmente estamos trabajando en habilitar esta funcionalidad.</h3>
+      </div>
+
+      <button class="pregunta">¿Dónde está la página de país?</button>
+      <div class="respuesta">
+        <h3>Debido a problemas técnicos todas las páginas de países se han visto comprometidas y están temporalmente deshabilitadas. Rogamos disculpen las molestias.</h3>
+      </div>
+
+      <button class="pregunta">¿Tenéis redes sociales?</button>
+      <div class="respuesta">
+        <h3>Sí. Actualmente tenemos presencia en Facebook, Instagram, Twitter y Youtube. Puedes seguirnos pinchando en los enlaces del <a href="#piepagina">pie de página</a></li>.</h3>
+      </div>
+
+      <button class="pregunta">¿Creéis de verdad que este proyecto se merece el aprobado?</button>
+      <div class="respuesta">
+        <h3>No seremos la página más vistosa o elegante, ni la que tenga mejores funcionalidades seguro. <br>El duro trabajo de nuestro equipo de desarrollo no pasa desapercibido y destaca en las <a href="Comentarios.html">valoraciones de usuarios</a> de todo el mundo.</h3>
+      </div>
+
+      <button class="pregunta">¿Son originales las recetas?</button>
+      <div class="respuesta">
+        <h3>No. <br>Nuestro <a href="QuienesSomos.html#equipo">equipo</a> gastronómico está especializado en seleccionar las mejores recetas de diversas fuentes y redactarlas de manera que sean sencillas e intuitivas hasta para el cocinero menos experimentado.</h3>
+      </div>
+
+      <button class="pregunta">Mi primo es japonés y no sabe español o inglés. ¿Qué puede hacer?</button>
+      <div class="respuesta">
+        <h3>Tu primo puede cambiar el idioma a japonés  en la pestaña idiomas del menú superior.</h3>
+      </div>
+
+      <button class="pregunta">¿Cómo puedo darme de baja y borrar mi cuenta?</button>
+      <div class="respuesta">
+        <h3>Actualmente nuestro sitio web no dispone de está funcionalidad. <br><a href="Contacto.html#buzon">Escríbenos un correo</a> con el asunto <i>"Darme de baja"</i> y nosotros lo haremos por tí.</h3>
+      </div>
+
+      <button class="pregunta">Una de vuestras recetas hizo que mi casa se incendiara.</button>
+      <div class="respuesta">
+        <h3>GastroWorld no se hace responsable de las imprundecias de los usuarios o de los daños que estos puedan causar a su inmueble. <br>Para más información consulte nuestra página de <a href="#piepagina">Aviso Legal</a>.</h3>
+      </div>
+
+      <button class="pregunta">¿Esto es todo?</button>
+      <div class="respuesta">
+        <h3>GastroWorld es un sitio web en constante cambio y nuestros desarrolladores trabajan día y noche para mejorarla. <br>Para más información consulte nuestra <a href="https://trello.com/b/1Iatxosq" target="_blank">plantilla</a> de trabajo.</h3>
+      </div>
+      
+      <h3>Si todavía tienes una pregunta o alguna incidencia utiliza nuestro formulario de contacto</h3>
+      <h2 id="paginaContacto"><a id="contacto" href="contacto.html">Contacto</a></h2>
+       
+    </div>
+
+    <script>
+      var preguntas = document.getElementsByClassName("pregunta");
+      var i;
+
+      for (i = 0; i < preguntas.length; i++) {
+          preguntas[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var respuesta = this.nextElementSibling;
+
+          if (respuesta.style.maxHeight)respuesta.style.maxHeight = null;
+          else respuesta.style.maxHeight = respuesta.scrollHeight + "px"; 
+          });
+}
+</script>
+
+	<footer id="piepagina">
+      <ul>
+          <li><a id="contacto" href="contacto.html">Contacto</a></li>
+          <li><a id="quienesSomos" href="FAQ.html">FAQ</a></li>
+          <li><a id="servicios" href="Registro.html">Registro</a></li>
+      </ul>
+      <ul>
+          <li><a style="cursor: not-allowed;" id="equipo" href="#piepagina" onclick="noDisponible()">Politica de cookies</a></li>
+        <li><a id="trabajo" href="QuienesSomos.html">Acerca de Gastroworld</a></li>
+          <li><a href="Comentarios.html">Valoraciones</a></li>
+      </ul>
+      <ul>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">Aviso legal</a></li>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">Condiciones Generales</a></li>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">Politica de privacidad</a></li>
+	  </ul>
+      <ul id="redes">
+		<li><p>Síguenos:</p></li>
+		<li><a style="cursor: not-allowed;" class="twitter" href="#piepagina" onclick="noDisponible()"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
+		<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>
+		<li><a class ="facebook" href="https://m.facebook.com/PinxoTortilla/" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_facebook3.png" alt="logo facebook"></a></li>
+		<li><a class ="youtube" href="https://www.youtube.com" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_youtube3.png" alt="logo youtube"></a></li>
+	  </ul>
+	</footer>
+  </body>
+</html>

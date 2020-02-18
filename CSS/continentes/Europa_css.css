@@ -1,0 +1,220 @@
+/*INDICE IZQUIERDA*/
+
+#aside1{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:none;
+	width:8.8%;
+	float:left;
+	text-align:center;
+	position:fixed;
+	margin-top:5%;
+	padding-bottom:0.6%;
+}
+
+/*FIN INDICE*/
+h2{
+	text-align:center;
+	font-family:ink free;
+	color:rgba(124,131,181,1);
+	font-size:3em;
+	margin-top:0.56%;
+}
+
+
+
+/*SlideShow Banderas*/
+#slideshow{
+	align-items: center;
+	background: #000;
+	display: flex;
+	height: 10%;
+	justify-content: center;
+	margin-left:10%;
+	overflow:hidden;
+	margin-top:1%;
+}
+
+//Styling
+#slider {
+	height: 100%;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 58.37em;
+	display:flex;
+}
+
+#slide-track {
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(15.2em * 14);
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-15.2em * 7))}
+}
+	
+.slide {
+	height: 100%;
+	width: 15em;
+	background:none;
+	padding:0;
+	margin:0.1em;
+}
+.slide img{
+	height:10em;
+	width:15em;
+}
+
+/*FIN SLIDESHOW BANDERAS*/
+
+
+
+
+
+/* Animation*/
+
+
+
+/*slideshow comida*/
+#seccion1{
+	background-color:rgba(124,131,181,0.6);
+	height:5%;
+	display:flex;
+	margin-top:1%;	
+}
+#slidebar{
+	width:60%;
+	margin:auto;
+	height:5%;
+	
+}
+
+/*botones anterior y siguiente*/
+
+#seccion1 button{
+	display:block;
+	height:3em;
+	margin-top:12%;
+	border-radius:10%;
+}
+#ant{
+	margin-left:15%;
+}
+#sig{
+	margin-right:15%;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background: #484848;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  opacity:0.6;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button:hover{
+	opacity:1;
+}
+
+#sig span:after {
+  content: '\226B';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#ant span:after {
+  content: '\226A';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+#sig:hover span {
+  padding-right: 25px;
+}
+#ant:hover span {
+  padding-left: 25px;
+}
+
+#sig:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#ant:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+/*fin slideshow comida*/
+
+/*seccion 3(lo + popular   facil y barato */
+#info div{
+	margin-top:5%;
+}
+
+#seccion3{
+	margin-top:3px;
+}
+
+#seccion3 > div article{
+	width:80%;
+	background:#8e8e8e;
+	display:block;
+	margin:auto;
+}
+#seccion3 > div article:hover{
+	box-shadow: 3em 0em 6em #939393;
+	background:#484848;
+}
+#seccion3 > div article > h1{
+	padding:0.4em;
+	padding-bottom:0;
+}
+#seccion3 > div article img{
+	width:25%;
+	height:25%;
+	padding-left:1%;
+}
+#seccion3 > div article ul{
+	display:inline-block;
+	line-height:180%;
+	border:1px solid black;
+	margin-left:1%;
+	padding:1.3%;
+	margin-top:0;
+}
+#seccion3 > div > h1{
+	text-align:center;
+}
+#seccion3 > div > a{
+	color:#000;
+	text-decoration:none;
+}
+#seccion3 > div > a:hover{
+	color:#fff;
+}
+/*fin seccion 3*/
+
+

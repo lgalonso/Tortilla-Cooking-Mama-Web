@@ -1,0 +1,60 @@
+/*INDICE IZQUIERDA*/
+
+#aside1{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:none;
+	width:8.8%;
+	float:left;
+	text-align:center;
+	position:fixed;
+	margin-top:5%;
+	padding-bottom:0.6%;
+}
+
+/*FIN INDICE*/
+
+main > div{
+	margin-left:10%;
+	margin-top:0.6%;
+}
+#imagenes{
+	display:flex;
+}
+#material{
+	display:flex;
+}
+#material h1{
+	font-size:2.1em;
+	text-align:center;
+}
+#material ul{
+	font-size:1.6em;
+}
+#imagenes img{
+	display:block;
+	width:25%;
+}
+#material > article{
+	width:50%;
+	background:#8e8e8e;
+}
+#ingredientes{
+	margin-right:0.5%;
+}
+#preparacion{
+	background:#8e8e8e;
+}
+#preparacion *{
+	padding:1%;
+}
+#preparacion h1{
+	font-size:3em;
+}
+#preparacion p{
+	font-size:2em;
+}
+#video{
+	margin-left:20%;
+}

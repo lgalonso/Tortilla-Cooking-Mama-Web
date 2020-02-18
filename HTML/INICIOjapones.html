@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <link href="../CSS/Estilo.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../CSS/menusuperior.css">
+  <script type="text/javascript" src="../javascript/java.js"></script>
+  <meta charset="utf-8">
+
+    <title>Gastroworld: 了解！</title>
+  </head>
+
+  <body onload="targetBrowser()">
+  	<!--Menú esquina superior derecha -->
+  	<div id="topbar">
+		<div id="aside1">
+			<br>
+			<h3>目次</h3>
+			<ul>
+				<li><a id="titulo" href="#topbar">メイン</a></li>
+				<li><a href="#slideshow">スライドショー</a></li>
+				<li><a href="#menucontinentes">大陸メニュー</a></li>
+				<li><a href="#listados">ランキングや最近追加</a></li>
+				<li><a href="#piepagina">ページフッター</a></li>
+			</ul>
+		</div>
+		<img id="logo" src="../Media/GastroLogo/avionfinal.png" alt="GASTROWORLD" >
+  		<ul>
+  			<li><a href="#"><span class=""><img alt="" src="../Media/japones.jpg"></span>言語</a>
+				<div id="idioma">
+					<ul>
+						<li><a href="INICIO.html"><img alt="" src="../Media/español.png"></a></li>
+						<li><a href="INICIOingles.html"><img alt="" src="../Media/ingles.jpg"></a></li>
+						<li><a href="#"><img alt="" src="../Media/japones.jpg"></a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="#"><span class=""><img alt="" src="../Media/logoperfil.png"></span>プロフィール</a>
+				<div id="perfil">
+					<ul>
+						<li id="iniciosesion"><a href="#iniciosesion">ログイン</a>
+							<div>
+								<ul>
+									<li>
+											<input type="text" name="correo" id="correo" placeholder="メールアドレス" onclick="document.getElementById('correo').style.background = 'white'"><br>
+											<input type="password" name="contraseña" id="contraseña" placeholder="パスワード" onclick="document.getElementById('contraseña').style.background = 'white'"><br>
+											<p>パスワードを忘れた</p>
+											<input id="botonsesion" type="submit" value="ログイン" onclick="inicioSesion()">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a id="registro" href="Registro.html">登録</a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a href="#"><span class=""><img alt="" src="../Media/logoajustes.png"></span>設定</a>
+				<div id="ajustes">
+					<ul>
+						<li><a  style="cursor: not-allowed;" href="#">画像</a></li>
+						<li><a  style="cursor: not-allowed;" href="#">音</a></li>
+						<li><a  style="cursor: not-allowed;" href="#">インターフェース</a></li>
+					</ul>
+				</div>
+			</li>
+
+  			<li><a id="faq" style="cursor: not-allowed;" href="#" onclick="noDisponible()"><span class=""><img alt="" src="../Media/interrogacion.png"></span>FAQ</a></li>
+
+			<li><a href="#"><span clas=""><img alt="" src="../Media/buscar.png"></span>検索</a>
+				<div id="buscador">
+					<ul>
+						<li>
+							<input type="text" id="barra" placeholder ="検索...">			
+							<button id="buscar" onclick="buscar3()">検索</button>
+							<script>//Script necesario para lanzar la búsqueda con el botón enter
+								var input = document.getElementById("barra");
+								input.addEventListener("keyup", function(event) {//Escuchamos evento de keyup sobre el input del buscador
+  									if (event.keyCode === 13) { //Si la tecla pulsada es enter activamos el botón de búsqueda
+   										document.getElementById("buscar").click();
+  									}
+								});
+							</script>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+  		</ul>
+		<!--<div id="aside2">
+			<h4>MÁS VISITADOS</h4>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>-->  		
+  	</div>
+
+  	<!--Pase de diapositivas-->
+	<div id="slideshow">
+		<ul>
+			<li><img src="../media/sample1.jpg" alt="imagen no disponible"/></li>
+			<li><img src="../media/sample2.jpg" alt="imagen no disponible"/></li>
+			<li><img src="../media/sample3.jpg" alt="imagen no disponible"/></li>
+			<li><img src="../media/sample4.jpg" alt="imagen no disponible"/></li>
+			<li><img src="../media/sample5.jpg" alt="imagen no disponible"/></li>
+		</ul>
+	</div>
+	<header>
+	  <nav id="menucontinentes"><!--Menú de navegación-->
+	    <ul>
+	        <li><a id="asia" href="#menucontinentes">アジア</a>
+				<div>
+					<ul>
+						<li class="titulosub rojo"><a href="#asia">国</a></li>
+						<li><a id="japon" href="#asia">日本</a></li>
+						<li><a id="corea" href="#asia">韓国</a></li>
+						<li><a id="tailandia" href="#asia">タイ</a></li>
+						<li><a id="india" href="#asia">インド</a></li>
+						<li><a id="vietnam" href="#asia">ベトナム</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub verde"><a href="#asia">流行り</a></li>
+						<li><a id="sushi" href="#asia">寿司</a></li>
+						<li><a id="kimchi" href="#asia">キムチ</a></li>
+						<li><a id="ramen" href="#asia">ラーメン</a></li>
+						<li><a id="padTai" href="#asia">パッドタイ</a></li>
+						<li><a id="polloTikkaMasala" href="#asia">ティッカマサラ鶏肉</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub azul"><a href="#asia">安くて作りやすい</a></li>
+						<li><a id="pho" href="#asia">フォー</a></li>
+						<li><a id="kimchi" href="#asia">キムチ</a></li>
+						<li><a id="polloTikkaMasala" href="#asia">ティッカマサラ鶏肉</a></li>
+						<li><a id="goiCuon" href="#asia">生春巻き</a></li>
+						<li><a id="ramen" href="#asia">ラーメン</a></li>
+					</ul>
+				</div>
+			</li>
+		    <li><a id="europa" href="Continentes/Europa_html.html">ヨーロッパ</a>
+				<div>
+					<ul>
+						<li class="titulosub rojo"><a href="Continentes/Europa_html.html#seccion2">国</a></li>
+						<li><a id="españa" href="Paises/españa_html.html">スペイン</a></li>
+						<li><a id="francia" href="">イギリス</a></li>
+						<li><a id="italia" href="">イタリア</a></li>
+						<li><a id="turquia" href="">ドイツ</a></li>
+						<li><a id="grecia" href="">ギリシャ</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub verde"><a href="Continentes/Europa_html.html#popular">流行り</a></li>
+						<li><a id="tortillaDePatatas" href="receta.html">トルティージャ　デ　パタタ</a></li>
+						<li><a id="ensaladaCesar" href="ensaladaCesar">シーサーサラダ</a></li>
+						<li><a id="fishAndChips" href="fishAndChips">フィシュ　アンド　チップス</a></li>
+						<li><a id="currywurst" href="currywurst">カリーヴルスト</a></li>
+						<li><a id="pizza" href="pizza">ナポリピザ</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub azul"><a href="Continentes/Europa_html.html#barato">安くて作りやすい</a></li>
+						<li><a id="pizza" href="">ナポリピザ</a></li>
+						<li><a href="receta.html">トルティージャ　デ　パタタ</a></li>
+						<li><a id="currywurst" href="">ドカリーヴルスト</a></li>
+						<li><a id="fishAndChips" href="">フィシュ　アンド　チップス</a></li>
+						<li><a id="ensaladaCesar" href="">シーサーサラダ</a></li>
+					</ul>
+				</div>
+			</li>
+		    <li><a id="americanorte" href="#menucontinentes">北米</a>
+				<div>
+					<ul>
+						<li class="titulosub rojo"><a href="#seccion2">国</a></li>
+						<li><a id="canada" href="#americanorte">カナダ</a></li>
+						<li><a id="mexico" href="#americanorte">メキシコ</a></li>
+						<li><a id="costa oeste" href="#americanorte">米国 (西海岸)</a></li>
+						<li><a id="costa este" href="#americanorte">米国 (東海岸)</a></li>
+						<li><a id="resto usa" href="#americanorte">米国</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub verde"><a href="#popular">流行り</a></li>
+						<li><a id="pizzaPepperoni" href="#americanorte">ペペロニ　ピザ</a></li>
+						<li><a id="macNCheese" href="#americanorte">マカロニ・アンド・チーズ</a></li>
+						<li><a id="enchilada" href="#americanorte">エンチラーダ</a></li>
+						<li><a id="mole" href="#americanorte">モレ</a></li>
+						<li><a id="tourtière" href="#americanorte">トゥルティエール</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub azul"><a href="#barato">安くて作りやすい</a></li>
+						<li><a id="hotDog" href="#americanorte">ホットドッグ</a></li>
+						<li><a id="poutine" href="#americanorte">プティン</a></li>
+						<li><a id="macNCheese" href="#americanorte">マカロニ・アンド・チーズ</a></li>
+						<li><a id="chiliTexas" href="#americanorte">テキサスチリ</a></li>
+						<li><a id="tacos" href="#americanorte">タコス</a></li>
+					</ul>
+				</div>
+			</li>
+		    <li><a id="americasur" href="#menucontinentes">南米と中米</a>
+				<div>
+					<ul>
+						<li class="titulosub rojo"><a href="#seccion2">国</a></li>
+						<li><a id="brasil" href="#americasur">ブラジル</a></li>
+						<li><a id="chile" href="#americasur">チリ</a></li>
+						<li><a id="colombia" href="#americasur">コロンビア</a></li>
+						<li><a id="peru" href="#americasur">ペル</a></li>
+						<li><a id="caribe" href="#americasur">カリブ</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub verde"><a href="#popular">流行り</a></li>
+						<li><a id="feijoada" href="#americasur">フェジョアーダ</a></li>
+						<li><a id="chaarquicán" href="#americasur">チャルキカン</a></li>
+						<li><a id="bandejaPaisa" href="#americasur">バンデハ　パイサ</a></li>
+						<li><a id="ceviche" href="#americasur">セビチェ</a></li>
+						<li><a id="sancocho" href="#americasur">サンコチョ</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub azul"><a href="#barato">安くて作りやすい</a></li>
+						<li><a id="humita" href="#americasur">ウミタ</a></li>
+						<li><a id="chipá" href="#americasur">チパ</a></li>
+						<li><a id="arepas" href="#americasur">アレパ</a></li>
+						<li><a id="papaRellena" href="#americasur">パパ　レジェナ</a></li>
+						<li><a id="aguaPanela" href="#americasur">アグア　パネラ</a></li>
+					</ul>
+				</div>
+			</li>
+		    <li><a id="africa" href="#menucontinentes">アフリカ</a>
+				<div>
+					<ul>
+						<li class="titulosub rojo"><a href="#seccion2">国</a></li>
+						<li><a id="marruecos" href="#africa">モロッコ</a></li>
+						<li><a id="egipto" href="#africa">エジプト</a></li>
+						<li><a id="sudafrica" href="#africa">南アフリカ共和国</a></li>
+						<li><a id="sahara" href="#africa">サハラ地方</a></li>
+						<li><a id="islas y arabia" href="#africa">アラビア　や　島</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub verde"><a href="#popular">流行り</a></li>
+						<li><a id="babaGhannoush" href="#africa">ババガヌーシュ</a></li>
+						<li><a id="bobotie" href="#africa">ボボティ</a></li>
+						<li><a id="mreifisa" href="#africa">レイフィサ</a></li>
+						<li><a id="kabsa" href="#africa">カブサ</a></li>
+					</ul>
+					<ul>
+						<li class="titulosub azul"><a href="#barato">安くて作りやすい</a></li>
+						<li><a id="cuscus" href="#africa">クスクス</a></li>
+						<li><a id="bamia" href="#africa">バミア</a></li>
+						<li><a id="frikadelle" href="#africa">フリカデッレ</a></li>
+						<li><a id="aych" href="#africa">アイッチ</a></li>
+						<li><a id="ravitoto" href="#africa">ラビトト</a></li>
+					</ul>
+				</div>
+			</li>
+	    </ul>
+	  </nav>
+	</header>
+	<main>
+
+		<div id="listados">
+			<section id="novedades"><h2>最新追加</h2>
+				<ul>
+					<li><a href="receta.html">トルティージャ　デ　パタタ</a></li>
+					<li><a id="frikadelle" href="#africa">フリカデッレ</a></li>
+					<li><a id="sancocho" href="#americasur">サンチョチョ</a></li>
+					<li><a id="poutine" href="#americanorte">プティン</a></li>
+					<li><a id="polloTikkaMasala" href="#asia">ティカマサラ鶏肉</a></li>
+					<li><a id="chaarquicán" href="#americasur">チャルキカン</a></li>
+					<li><a id="goiCuon" href="#asia">生春巻き</a></li>
+					<li><a id="babaGhannoush" href="#africa">ババガヌーシュ</a></li>
+				</ul>
+			</section>
+
+			<section id="ranking"><h2>レシピ　ランキング</h2>
+				<ol>
+					<li><a id="Pizza" href="#europe">ナポリ　ピザ</a></li></li>
+					<li><a id="sushi" href="#asia">寿司</a></li>
+					<li><a id="chiliTexas" href="#americanorte">テキサス　チリ</a></li>
+					<li><a href="receta.html">トルティージャ　デ　パタタ</a></li>
+					<li><a id="hotDog" href="#americanorte">ホットドッグ</a></li>
+					<li><a id="currywurst" href="#europe">カリーヴルスト</a></li>
+					<li><a id="arepas" href="#americasur">アレパ</a></li>
+					<li><a id="cuscus" href="#africa">クスクス</a></li>
+				</ol>
+
+			</section>
+
+		</div>
+	</main>
+	<footer id="piepagina">
+      <ul>
+          <li><a id="contacto" href="contacto.html">お問い合わせ</a></li>
+          <li><a id="quienesSomos" href="FAQ.html">質問コーナー</a></li>
+          <li><a id="servicios" href="Registro.html">登録</a></li>
+      </ul>
+      <ul>
+          <li><a style="cursor: not-allowed;" id="equipo" href="#piepagina" onclick="noDisponible()">Cookieに関する声明</a></li>
+        <li><a id="trabajo" href="QuienesSomos.html">Gastroworld　に　ついて</a></li>
+          <li><a href="Comentarios.html">評価</a></li>
+      </ul>
+      <ul>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">免責事項　</a></li>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">契約条件</a></li>
+          <li><a style="cursor: not-allowed;" href="#piepagina" onclick="noDisponible()">プライバシーポリシー</a></li>
+	  </ul>
+      <ul id="redes">
+		<li><p>SNS:</p></li>
+		<li><a style="cursor: not-allowed;" class="twitter" href="#piepagina" onclick="noDisponible()"><img class="twitter" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_twitter3.png" alt="logo twitter"></a></li>
+		<li><a class ="instagram" href="https://www.instagram.com/_gastroworld__/?hl=es" target="_blank"><img class="instagram" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_instagram3.png" alt="logo Instagram"></a></li>
+		<li><a class ="facebook" href="https://m.facebook.com/PinxoTortilla/" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_facebook3.png" alt="logo facebook"></a></li>
+		<li><a class ="youtube" href="https://www.youtube.com" target="_blank"><img class="facebook" src="https://images.telepizza.com/vol/es/images/cms/redessociales/ico_youtube3.png" alt="logo youtube"></a></li>
+	  </ul>
+	</footer>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+
+/*INDICE IZQUIERDA*/
+
+#aside1{
+	border:3px solid black;
+	padding:3px;
+	margin:3px;
+	background-color:none;
+	width:8.8%;
+	float:left;
+	text-align:center;
+	position:fixed;
+	margin-top:5%;
+	padding-bottom:0.6%;
+}
+/*fin indice izquierda*/
+
+div{
+	text-align: center;
+
+}
+/*CONTACTO:info horario,buzón, sede. FAQ:respuestas QuienesSomos:nombres miembros de grupo*/
+div > h3{
+	text-align: center;
+}
+/*fin*/
+
+/*QuienesSomos:div*/
+#contenido{
+	margin-left: 10%;
+	border: black;
+  	border:;
+  	padding: 2%;
+}
+/*fin*/
+
+
+/*CONTACTO: contacto & tlf FAQ:preguntas frecuentes QuienesSomos:titulos; */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: 484848;
+}
+/*fin*/
+
+
+/*CONTACTO:titulos FAQ:contacto COMENTARIOS:titulo valoraciones QuinesSomos:contacto*/
+h2{
+	text-align:center;
+}
+/*fin*/
+
+
+/*COMENTARIOS: valoraciones*/
+#valoraciones article{
+	width:80%;
+	background:#8e8e8e;
+	display:block;
+	margin:auto;
+}
+#valoraciones article:last-child{
+	display:block;
+}
+.name{
+	text-align:right;
+}
+/*fin*/
+
+
+/*COMENTARIOS:añadir valoraciones*/
+#añadir{
+	width:16.3%;
+}
+#nombre{
+	width:16.1%;
+}
+article p{
+	padding:0.6%;
+}
+/*fin*/
+
+
+/*QUIENES SOMOS: nuestro equipo*/
+#equipo1{
+	display:flex;
+}
+#equipo1 div{
+	width:16em;
+	height:24em;
+	margin-left:-18%;
+	margin-right:2.5%;
+	margin-top:1.1%;
+	background:rgba(127,127,127,0.8);
+	border-radius:50%;
+	color:#fff;
+	opacity:0;
+	transition:all 0.6s ease;
+}
+#equipo1 > img:first-child{
+	margin-left:0;
+}
+#equipo1 div:hover{
+	opacity:1;
+}
+#equipo1 img{
+	width:15.7em;
+	height:24em;
+	border-radius:50%;
+	border:2px solid black;
+	margin:1% 2.4%;
+}
+/*fin*/
+
+
+/*COMENTARIOS:valoraciones  QuienesSomos: quienes somos, que servicios ofrecemos nuestro equipo*/
+p {
+  text-indent: 2%;
+  text-align: center;
+  white-space: pre-wrap;
+}
+/*fin*/
+
+
+/*todos los enalces de las páginas:CONTACTO, COMENTARIOS,FAQ & QuienesSomos*/
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+/*fin*/
+
+
+/*FAQ*/
+.pregunta {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .pregunta:hover {
+  background-color: #ccc;
+}
+
+.pregunta:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.respuesta {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/*fin*/
